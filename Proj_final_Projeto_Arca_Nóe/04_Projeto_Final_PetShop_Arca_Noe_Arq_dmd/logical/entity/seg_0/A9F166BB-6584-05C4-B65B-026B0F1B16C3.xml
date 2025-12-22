@@ -1,0 +1,255 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9F166BB-6584-05C4-B65B-026B0F1B16C3" name="TB_DIM_LOJA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:33:53 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_LOJA" id="580E48A2-9DDB-A1F3-8F96-CB314AE4512F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:07:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo SK_NUM_LOJA da tabela TB_DIM_LOJA, referente a "Código da loja". Identifica de forma única cada cadastro do estabelecimento no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LOJA" id="8D744B86-B75F-82FE-FCC5-8DCF80B8EBDB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:34:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome comercial da unidade ou filial. Facilita a identificação da loja em relatórios e no sistema, sendo a base para a gestão de múltiplas unidades de atendimento.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CNPJ" id="FF8B37F1-B84D-9683-67D2-DC08D08D2A2F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:43:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do Cadastro Nacional da Pessoa Jurídica da loja. É um identificador fiscal legalmente exigido, usado para auditorias, emissão de notas fiscais e conformidade regulatória.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOJA" id="2E4924CF-5575-DEAA-82B7-C5B2B279FFCC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:43:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número interno ou código de identificação da loja no sistema. Usado para referenciar a unidade de forma rápida em processos internos e para ligar transações e consultas à loja correspondente.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_LOGRADOURO" id="477D1CC1-858C-E290-D639-E1635EB57E4E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da rua, avenida ou praça do endereço físico da loja. Permite a localização geográfica da unidade e é fundamental para a navegação ou para serviços de entrega e atendimento externo.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_NUMERO_LOJA" id="AF00D96F-B4D1-215B-A50C-FA4EBB280778">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:45:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do imóvel da loja. Junto com o logradouro e bairro, compõe o endereço completo.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_FUNDACAO" id="BA054784-5ACA-B69C-9DA0-1623F3EE3168">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:46:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a loja foi estabelecida. Permite análises sobre a longevidade da loja e seu desempenho ao longo do tempo.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IM_SOBRE_SERVICO" id="34AE99FB-40ED-50E0-BCC1-A992F3C65E21">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:46:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentual de imposto sobre serviços (ISS) que deve ser aplicado às vendas e transações. Essencial para o cálculo correto dos impostos e para o cumprimento das obrigações fiscais.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CEP" id="F757E23E-C29A-0522-7801-6D72858932C9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:47:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de Endereçamento Postal. Ajuda a identificar a região da loja e pode ser usado para segmentar clientes por área geográfica, ou para serviços de entrega.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_BAIRRO" id="D31E5E71-7B01-E874-9A88-54B22001C37B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:48:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do bairro onde a loja está situada. Útil para análises geográficas e de mercado.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CIDADE" id="5973EAC2-361C-5FCD-34E2-6029F22FDD83">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:49:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade da loja. Essencial para análises demográficas, gestão regional e planejamento estratégico de expansão.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="5CECC774-DE35-39CF-ABC0-1AD29F59BC8F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-23 21:44:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do estado brasileiro, como 'São Paulo' ou 'Rio de Janeiro'. Permite a segmentação de dados por região e é crucial para o cumprimento de regulamentações fiscais e operacionais estaduais.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_ESTADO" id="0FE71D79-2CB0-6764-9719-260D2C54B24C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:49:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do estado brasileiro, como 'SP' ou 'RJ'. Permite a segmentação de dados por região e é crucial para o cumprimento de regulamentações fiscais e operacionais estaduais.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="F63A7BA2-0156-9857-6133-7FEDC04ACF45">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:38:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="E9D5AA03-0BCF-CFF7-07C2-27464B308B14">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:38:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da execução do processo ETL responsável pela carga.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="43E65BDF-04D5-5003-BCA4-C45BE8BF7227" name="SK_TB_DIM_LOJA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:43:30 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>580E48A2-9DDB-A1F3-8F96-CB314AE4512F</newElementsIDs>
+<usedAttributes>
+<attributeRef>580E48A2-9DDB-A1F3-8F96-CB314AE4512F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

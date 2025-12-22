@@ -1,0 +1,19 @@
+Dimensões;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;PET_ANIMAL;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Levantamento de necessidades do Projeto Pet Shop Arca de Nóe;;;;;Atributos Dimensionais;CD_TIPO_PESSOA;NM_PESSOA;DT_NASCIMENTO ;NR_RG;NR_CPF;DS_EMAIL;DS_ESTADO_CIVIL;DS_SEXO_PESSOA;ST_PESSOA;TP_ENDERECO;NR_ENDERECO;DS_COMPLEMENTO;DT_INICIO;DT_TERMINO;DS_LOGRADOURO;NR_CEP;NM_BAIRRO;NM_CIDADE;NM_ESTADO;SG_ESTADO ;DT_CARGA;DT_ATUALIZACAO;ST_REGISTRO_ATUAL;ID_PROCESSO_ETL;ID_ANIMAL;DT_NASCIMENTO_ANIMAL;DS_RACA;DS_ESPECIE;DT_CARGA;ST_REGISTRO_ATUAL;ID_PROCESSO_ETL;NM_LOJA;NR_CNPJ;NR_LOJA;DS_LOGRADOURO;DS_NUMERO_LOJA;DT_FUNDACAO;IM_SOBRE_SERVICO;NR_CEP;NM_BAIRRO;NM_CIDADE;NM_ESTADO;SG_ESTADO ;DT_CARGA;ID_PROCESSO_ETL;DT_REFERENCIA;NR_ANO;NR_SEMESTRE;DS_SEMESTRE_ANO;DS_SEMESTRE;DS_TRIMESTRE_ANO;DS_TRIMESTRE;NR_MES;NR_ANO_MES;DS_MES_ANO;DS_MES;DS_ABV_MES;DS_ABV_MES_ANO;DS_DIA_SEMANA;DS_DATA;NR_DIA_MES;NR_DIA_SEMANA;NR_DIA_ANO;DS_DIA_UTIL_FERIADO;DS_FIM_SEMANA;DS_DATA_EXTENSO;NR_HORA;ID_PROCESSO_ETL;DT_CARGA
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Métricas(Consulta dos Pets);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+QT_CONSULTAS;;;;;;;2;;;2;;1;1;;;;;;;;;3;3;3;3;;;;;2;2;2;2;;;;;4;;;;;;4;4;4;4;4;;;x;x;x;;;;;x;x;;;;;;;x;x;x;;;;x;;x
+%ISS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;4;4;;;;x;x;;;;;;x;x;;;;;;;x;x;x;;;;;;x
+VALOR TOTAL DOS IMPOSTOS;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;4;4;;;;x;x;;;;;;x;x;;;;;;;x;x;x;;;;;;x
+VALOR DE DESCONTO;;;;;;;;;;5,6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6;6;;;;;;6;6;;;;;;;6;6;6;;;;;;6
+VALOR TOTAL DA CONSULTA;;;;;;;;;;5,6;;;;;;;;;;;;;;;;;;;;;;5;;;;;;;;;;;;;;;;;;;5;5;5;;;;;5;5;;;;;;;5;5;5;;;;5;;5
+NR_CONSULTA;;;;;;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;x;5;5;5;5;x;x;x;x;x;x;x;x;x;x;x;5;5;5;5;5;5;;5;5;5;5;5;;;5;5;5;;;;;5;5;;;;;;;5;5;5;;;;5;;5
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

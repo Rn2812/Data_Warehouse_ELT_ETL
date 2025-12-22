@@ -1,0 +1,451 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82CAD7CC-F16C-8B5D-DD38-5496A69ECE2A" name="TB_DIM_TEMPO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:05:29 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_TEMPO" id="01424582-6B22-5A13-AA94-1690DC4BA90F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:06:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira da dimensão TEMPO]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_REFERENCIA" id="F41A8F6D-0858-944F-F37B-4A2547114C00">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:12:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data completa, sendo a chave primária da tabela de tempo. Ela serve de referência para todos os atributos temporais, permitindo uma análise flexível e multidimensional.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ANO" id="47CE8E52-264A-D455-28A4-6AC71BCFDCFB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:13:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do ano (ex: 2023). Essencial para análises anuais de desempenho, comparativos e tendências de longo prazo.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_SEMESTRE" id="3FB2ED79-6F52-2DAE-A7AC-4AB1FEF436BE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:13:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do semestre do ano (1 ou 2). Útil para a análise de desempenho em períodos maiores que o trimestre, como sazonalidade semestral.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_SEMESTRE_ANO" id="223488D1-44B8-A50D-3BC5-F8D93231E630">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:14:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_SEMESTRE" id="695E254D-6746-D382-F16C-C98F930CD0C1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:15:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TRIMESTRE" id="64DE0A89-8A0C-6D29-3B8B-FF93F61E7B13">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:16:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do trimestre (1 a 4). Essencial para o monitoramento de metas e resultados de curto prazo, além de permitir comparações trimestrais.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TRIMESTRE_ANO" id="8CAC1D5D-1407-9AC4-0B83-6FB2EBD5DA90">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:16:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TRIMESTRE" id="7CCC2218-4D37-380B-A4CE-E852190AD6C9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:17:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_MES" id="65522D6D-6916-612B-3F1E-6ED9FFA2F359">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:19:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do mês do ano (1 a 12). Permite análises de desempenho mensais, como vendas e consultas.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ANO_MES" id="ED5488D2-64B9-20DE-7F98-9DB572023B49">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:19:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Concatenação do ano e mês, como 202409. Útil para ordenação cronológica e para a criação de chaves compostas em outras tabelas.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MES" id="CBFE0834-A01C-388F-C4FC-D8C1DF6BA1A8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:20:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do mês por extenso (ex: "Setembro"). Facilita a leitura e compreensão dos relatórios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MES_ANO" id="D0A225CD-2ED5-4A8A-6CEA-F68EF3D35948">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:20:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do mês e ano por extenso (ex: "Setembro de 2024"). Ideal para títulos de relatórios e dashboards.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ABV_MES" id="11074A69-8552-785C-1810-602A081CA079">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:21:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação do nome do mês (ex: "Set"). Formato compacto para visualizações em dashboards e tabelas.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ABV_MES_ANO" id="7840D66F-6AFD-A08C-E876-C867F9ADA074">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:22:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação do mês e ano (ex: "Set 2024"). Formato compacto para rótulos em gráficos e relatórios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DIA_SEMANA" id="33CF29A2-ABC5-2470-CE98-0A0AD42E1C6D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:22:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do dia da semana (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DATA" id="365368FB-1C11-E693-89B4-518FD080FD7B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:23:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da data (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DIA_MES" id="6A9C1842-9D85-AA8F-7B2D-AC9CA75D3CB0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:24:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia dentro do mês (1 a 31). Permite a análise diária de métricas e ajuda a identificar padrões em curtos períodos de tempo.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DIA_SEMANA" id="47AD2C95-A635-933F-E39C-1C187C555FFE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:25:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia da semana, por exemplo, 1 para domingo e 7 para sábado. Útil para cálculos e lógica de negócios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DIA_ANO" id="93B82AE5-23C6-1148-21E5-780AC41FD797">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:25:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia dentro do ano, de 1 a 366 em anos bissextos. Permite análises de tendências diárias ao longo de um ano completo.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DIA_UTIL_FERIADO" id="4E5B82E0-0E9B-2AED-25C8-607B2FC74E9D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:26:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicador que distingue dias úteis de feriados. Crucial para analisar o impacto de feriados no desempenho operacional.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FIM_SEMANA" id="325F94D8-13D4-9B76-7CF7-EC5FEE4C9019">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicador para dias de fim de semana. Essencial para a análise da sazonalidade de atendimentos em relação aos dias de trabalho.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DATA_EXTENSO" id="5783D4CB-4AA1-F788-226E-0E0281C56CE5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:28:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[A data completa por extenso, em formato legível para humanos. Ótimo para relatórios e exibição em interfaces.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_HORA" id="EEC565FC-C3E4-F816-2CD5-F766BC161324">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:28:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número da hora do dia, de 00:00 a 23:59. Permite a análise do fluxo de atendimentos por hora, ajudando a identificar horários de pico e otimizar a alocação de equipe.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="2B696FA0-DAF2-67F9-0760-3296C137CC12">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:47:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_USUARIO_CARGA" id="D2FBC719-7676-64AD-B46A-EEBBD6627E48">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:48:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOTE_CARGA" id="864DC032-2E5F-EF14-6752-211D70BF3DF6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:49:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="DFDB205D-D456-A816-61DB-9DEA9C3BE4BA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:49:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="28B8D971-9C9B-25E7-B606-898F36EECB62">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="44E2A691-BC82-3158-3DCE-5409D9CE2432">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:50:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9DC4B496-1DBC-90BE-C8CE-0593D3EA55FA" name="TB_DIM_TEMPO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:06:17 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>01424582-6B22-5A13-AA94-1690DC4BA90F</newElementsIDs>
+<usedAttributes>
+<attributeRef>01424582-6B22-5A13-AA94-1690DC4BA90F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

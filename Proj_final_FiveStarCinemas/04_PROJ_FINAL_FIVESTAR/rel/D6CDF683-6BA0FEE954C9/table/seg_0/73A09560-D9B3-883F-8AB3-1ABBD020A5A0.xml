@@ -1,0 +1,418 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73A09560-D9B3-883F-8AB3-1ABBD020A5A0" name="DIM_CINEMA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:03 UTC</createdTime>
+<generatorID>9B04D1FC-DBBC-71D5-A75A-5D2DA34B8814</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_CD_LOJA" id="879D63B3-3090-3657-A6D3-35068200C4F2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo COD_LOJA da tabela DB_DIM_LOJA, referente a "Código da loja". Identifica de forma única cada pessoa cadastrada no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.]]></commentInRDBMS>
+<generatorID>CE22086C-4091-C89F-F5D6-D37295117426</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOJA_FIS" id="4F4F8862-E7D2-6805-7FDF-5A53E5E87D0A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número interno ou código de identificação da loja no sistema. Usado para referenciar a unidade de forma rápida em processos internos e para ligar transações e consultas à loja correspondente.]]></commentInRDBMS>
+<generatorID>ADF46ED5-5B88-B709-0D17-26671BE57092</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOJA" id="96318B9B-AA56-7BDD-02C1-E1D0295BDB33">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome comercial da unidade ou filial. Facilita a identificação da loja em relatórios e no sistema, sendo a base para a gestão de múltiplas unidades de atendimento.]]></commentInRDBMS>
+<generatorID>839BE654-E9B2-FC3F-CB77-CE3E43C99A0B</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CNPJ" id="41308297-B818-2CFD-DA26-2AD22E4DC619">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do Cadastro Nacional da Pessoa Jurídica da loja. É um identificador fiscal legalmente exigido, usado para auditorias, emissão de notas fiscais e conformidade regulatória.]]></commentInRDBMS>
+<generatorID>760335C2-7853-FAA5-91CD-5007D8D0E0D3</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FUNDACAO" id="BDEF938D-8C14-2920-19CA-82B93BA401B8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a loja foi estabelecida. Permite análises sobre a longevidade da loja e seu desempenho ao longo do tempo.]]></commentInRDBMS>
+<generatorID>CE4315ED-5F5F-E7AF-08EC-2199AEC08355</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SESSÃO" id="6E3B000D-2CE5-AE97-8905-050405EA6026">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo categórico que classifica a natureza de uma interação ou sessão do usuário. 
+Usado para segmentar e analisar diferentes tipos de comportamento (ex: 'LOGIN', 'COMPRA', 'SUPORTE_CHAT').]]></commentInRDBMS>
+<generatorID>AABBE0D6-2BF6-3F85-26C7-9438D6F1FE96</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IMPOSTO_SOBRE_SERVICO" id="5DFC0223-015D-7E53-F746-5D51836C8116">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentual de imposto sobre serviços (ISS) que deve ser aplicado às vendas e transações. Essencial para o cálculo correto dos impostos e para o cumprimento das obrigações fiscais.]]></commentInRDBMS>
+<generatorID>859A3EFE-7907-F9D8-BDF5-84090995386C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_IMP_ESTADUAIS" id="8A0F9A3E-476A-3C7C-CF56-27E7B2873439">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo de texto para armazenar a composição detalhada e humanamente legível dos impostos estaduais aplicados. Justifica o valor total calculado no campo TT_IMP_ESTADUAIS.(Ex: 'ICMS 18%' ou 'ICMS 17% + FCP 1%'.)]]></commentInRDBMS>
+<generatorID>2A61DC6F-7596-4590-B747-123E83D432E4</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="%TT_IMP_ESTADUAIS" id="88CE2972-BA60-90A0-5568-779422C3A405">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena o valor percentual total e consolidado dos impostos estaduais aplicáveis.
+Este valor numérico é utilizado para o cálculo do montante do imposto. Ex: 18.00 (para 18%).]]></commentInRDBMS>
+<generatorID>5C714746-953E-2108-EE68-6C2B85D7F90C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_IDIOMA" id="B7EA703F-4584-92A9-B7FB-BACF94269AB6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação do idioma principal ou preferencial associado a uma entidade (ex: loja, filme).-- Usado para internacionalização e localização de conteúdo ou serviços.]]></commentInRDBMS>
+<generatorID>C344E4EC-6607-BA04-D495-B8B45DD36D59</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SALA" id="01166375-DFC5-8208-38F9-5A4F2FEDBC69">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da sala dentro do cinema.-- Usado para mapeamento e rotas, reservas, ocupação, eventos, manutenção etc..., registrado de forma aphanúmerica sala 02A, Sala02B]]></commentInRDBMS>
+<generatorID>A866F928-3EDE-ED5E-492C-CBCAE1E6B4A6</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SALA" id="6117F28F-8BE0-B121-CBB9-80AF23F9CBBA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação do tipo ou formato da sala de cinema (ex: '2D', '3D', 'IMAX', 'PRIME', 'VIP').
+-- Define as características técnicas e a experiência oferecida pela sala.]]></commentInRDBMS>
+<generatorID>8959E586-2AC1-FBDF-9BD4-6F94EAEF5E54</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_SALA" id="7A7F2A91-3673-2953-4F30-7A6AC7B403F0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descreve e Classificação o tipo  de sala de cinema (ex: '2D', '3D', 'IMAX', 'PRIME', 'VIP').-- Define as características técnicas e a experiência oferecida pela sala.]]></commentInRDBMS>
+<generatorID>266B10AF-2CC9-C8C6-C6A4-A96D0F057C0B</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_POLTRONA" id="F81F9789-E4DD-48BE-0BBD-06E32FF51B6B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da poltrona dentro de uma sala de cinema.-- Usado para mapeamento de assentos, reservas e ocupação.]]></commentInRDBMS>
+<generatorID>9C4EB89E-5A71-8A48-AB16-486780A32AE8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ASSENTO" id="144FD7EC-9EB9-2A93-C919-53831D5DCE74">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação do tipo de assento em uma sala (ex: 'PADRAO', 'VIP', 'RECLINAVEL', 'NAMORADEIRA').-- Usado para diferenciar a experiência e precificação.]]></commentInRDBMS>
+<generatorID>3007B850-8D76-8B2C-90FC-0E20F19941A7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_ASSENTO" id="DC84FA10-F628-3041-CB6D-C72A024AB5BC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número total de assentos disponíveis em uma sala de cinema.-- Representa a capacidade máxima da sala para fins de planejamento e vendas.]]></commentInRDBMS>
+<generatorID>450C3F25-614D-90C6-1B00-690FA203E18C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_LOGRADOURO" id="105F0058-4739-616F-BDAE-6D06815F95CB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da rua, avenida ou praça do endereço físico da loja. Permite a localização geográfica da unidade e é fundamental para a navegação ou para serviços de entrega e atendimento externo.]]></commentInRDBMS>
+<generatorID>69F81B6E-9D2C-393C-BFE4-6B09E8E582B1</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOJA_END" id="D558FA51-4805-DAC4-F79A-FB241D1B66EE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do imóvel da loja. Junto com o logradouro e bairro, compõe o endereço completo.]]></commentInRDBMS>
+<generatorID>C153E540-FE8B-DCE6-4917-80A22B5E59BE</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_BAIRRO" id="CA0A7E30-FD53-393B-27D1-FC1B6CAA5390">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do bairro onde a loja está situada. Útil para análises geográficas e de mercado.]]></commentInRDBMS>
+<generatorID>B20FEDF0-D918-97CD-20B3-FA6A421C612F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="2538E6BD-D5AE-E5B0-78D8-01DD4B688877">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade da loja. Essencial para análises demográficas, gestão regional e planejamento estratégico de expansão.]]></commentInRDBMS>
+<generatorID>C73BED50-4D99-7BB7-1D0E-C97087C46A7D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PAIS_LOJA" id="81DFADA4-85D2-6148-4964-FC2EF4068EF4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome detalhado do país onde a loja está situada]]></commentInRDBMS>
+<generatorID>4B1C058F-86D8-F76D-2C6F-4E57F94DA234</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE_LOJA" id="B3059B32-9548-DE66-FD17-0993D27A779F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade da loja. Essencial para análises demográficas, gestão regional e planejamento estratégico de expansão.]]></commentInRDBMS>
+<generatorID>4A9FE3A9-B310-2A7F-BA0C-4EC5BECBBB06</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ESTADO" id="B13A5220-1550-7D3C-03E5-26CB702BB951">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do nome do estado]]></commentInRDBMS>
+<generatorID>6E78B3E0-03FA-09CC-CD57-D5DF4779C7EA</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="75DB1157-A347-5ADD-098E-16D88A295E1C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do estado brasileiro, como 'SP' ou 'RJ'. Permite a segmentação de dados por região e é crucial para o cumprimento de regulamentações fiscais e operacionais estaduais.]]></commentInRDBMS>
+<generatorID>B0C35593-BCA5-D175-B2DE-FBB78BD47AB1</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PAIS_LOJA" id="26C91631-5DE5-2E28-990C-AF1FABAFECA1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do nome do país onde a loja está situada]]></commentInRDBMS>
+<generatorID>9F5D5ED8-E59D-33C6-4807-A288069DA11E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CEP" id="BA6480A3-D0EA-5309-5B81-C35E388977FC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.]]></commentInRDBMS>
+<generatorID>7F0959B0-3184-CAD6-70B5-2FA9541B2C49</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="989E0A50-D30E-9059-2286-2A28E85DAF2C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<generatorID>9561DD49-CE33-CAC7-AC36-4D903AD7E366</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="76843D2E-745E-91E6-C7E9-140A1E0BA26B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<generatorID>5D2495F5-59FE-05E6-734D-D59E99E855A6</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="FE71715E-ED7B-0017-BC13-0E8C6CEFD28D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<generatorID>1DCBD4E7-DE85-4D91-6D04-87D97550290C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="58F2B116-E26F-C11B-42AF-641A775DC538">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<generatorID>7095738C-CF5A-F1B7-5064-718EA052A62A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34062126-08D6-7BDA-56E1-B9DD8B689475" name="DIM_LOJA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>CB06541E-E01B-27B7-CD9F-B0D356C0F18D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="879D63B3-3090-3657-A6D3-35068200C4F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

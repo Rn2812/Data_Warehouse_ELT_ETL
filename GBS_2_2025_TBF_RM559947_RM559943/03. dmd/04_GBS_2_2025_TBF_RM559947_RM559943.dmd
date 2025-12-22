@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="04_GBS_2_2025_TBF_RM559947_RM559943" id="5E2CAF95-9B78-5322-2723-9173985FC269" version="3.5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 22:17:00 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>5E2CAF95-9B78-5322-2723-9173985FC269</designId>
+</OSDM_Design>

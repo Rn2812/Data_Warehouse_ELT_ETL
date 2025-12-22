@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_PESQUISA_FATO_AVALIACAO" directorySegmentName="seg_0" id="2BD4CB09-2A1C-76BB-1A14-6DB50C1216D8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:14:52 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<sourcePk>7F4E2613-1208-27DA-ECE3-1C41B29B8CEC</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E64F5035-9B9E-12AC-699F-507DC30A2B32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>44AD48B6-F6D8-D440-EA66-7FA39A39DF3D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

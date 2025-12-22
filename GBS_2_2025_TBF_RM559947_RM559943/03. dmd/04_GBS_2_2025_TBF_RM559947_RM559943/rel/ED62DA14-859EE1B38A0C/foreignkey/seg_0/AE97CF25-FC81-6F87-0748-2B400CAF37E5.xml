@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE97CF25-FC81-6F87-0748-2B400CAF37E5" containerWithKeyObject="BD2327AF-253C-6CB8-CAAC-BC73EDD14ABF" localFKIndex="7FFB5E9B-40C9-C8B1-3B3D-5299CAB1E98E" name="DIM_PROFISSAO_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>B7FDC1E3-7635-8457-F049-59AD951C11A6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<referredTableLongName>DIM_PROFISSAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F2EB4BC7-4A4E-E08E-50F6-D46680F368FC</referredTableID>
+<keyObject>289A7428-BB9B-321F-67D4-8BA0D7F5B5FA</keyObject>
+<referredKeyID>289A7428-BB9B-321F-67D4-8BA0D7F5B5FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_PROFISSAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,242 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA73C456-5F09-F570-49D2-C05463BFAA9C" name="TB_DIM_VEICULO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:21:13 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_VEICULO" id="868CDF52-AC66-08CF-E12F-B11B184FFFB1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:21:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira da dimensão VEICULO]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_VEICULO" id="EAA9A2C8-EFD8-9489-9D3F-1559493F1EF2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:25:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhado tipo de veiculo(carro, moto, caminhão etc.)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MARCA" id="D2C6149A-25B6-B693-8D5A-F51B1B24515C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:26:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada da Marca do veículo]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MODELO" id="0502F6BF-336C-70E5-0671-EA54D9044FE5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:26:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do Modelo]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_PLACA" id="1177C2B9-C32E-5060-244E-91B571AA12D9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:27:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada da Placa]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_COR" id="7980FFF0-D48E-5A8F-FA4B-74C25ED2DB1A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:28:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada da cor]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PLACA" id="F1559243-2BD4-2F7C-67BE-BAB0FDBA413A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:29:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada da nacionalidade da placa('Nacional', 'Mercosul-Estrangeira', 'Outra-Estrangeira')]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FG_PLACA_ESTRANGEIRA" id="EFF7D771-E642-994D-862B-A30D72A8AE94">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:31:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO DE DESCRIÇÃO SE A PLACA É ESTRANGEIRA OU NÃO(SIM/NÃO)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PS_ORIGEM_PLACA" id="ECEAF6D3-F6C1-EBED-0967-2F08A4878598">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:31:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[PAÍS DE ORIGEM DA PLACA]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="E6F5A637-80AD-CFAF-E767-A6FAD4D83275">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:32:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_USUARIO_CARGA" id="1B6712B2-4E2D-BDC3-C400-23CCCBC8B0CC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:32:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOTE_CARGA" id="51E1E995-7F46-0673-940E-90A654E849B9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:33:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="A505AE17-B966-7776-6C63-57367A18B423">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:33:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="0A8F28EC-4F20-88A1-1FEC-BB4399671A3D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:34:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="4F30C1F4-1194-4D0A-8280-7D2346E7142A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:35:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F5E2784-225E-B7D1-9093-4AE245B74C06" name="TB_DIM_VEICULO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 21:24:22 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>868CDF52-AC66-08CF-E12F-B11B184FFFB1</newElementsIDs>
+<usedAttributes>
+<attributeRef>868CDF52-AC66-08CF-E12F-B11B184FFFB1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

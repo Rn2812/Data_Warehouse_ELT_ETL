@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="04_PROJ_FINAL_RADAR_INTELIGENTE" id="2871A9D8-18AE-399D-D4D4-1316FE57DEBA" version="3.5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:44:29 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2871A9D8-18AE-399D-D4D4-1316FE57DEBA</designId>
+</OSDM_Design>

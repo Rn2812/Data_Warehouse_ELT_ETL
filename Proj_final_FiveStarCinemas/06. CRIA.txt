@@ -1,0 +1,848 @@
+-- Gerado por Oracle SQL Developer Data Modeler 24.3.1.351.0831
+--   em:        2025-10-19 16:29:06 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE DIM_CINEMA 
+    ( 
+     SK_CD_LOJA            NUMBER  NOT NULL , 
+     NR_LOJA_FIS           VARCHAR2 (10)  NOT NULL , 
+     NM_LOJA               VARCHAR2 (50)  NOT NULL , 
+     NR_CNPJ               VARCHAR2 (14)  NOT NULL , 
+     DT_FUNDACAO           DATE  NOT NULL , 
+     TP_SESSÃO             VARCHAR2 (50)  NOT NULL , 
+     IMPOSTO_SOBRE_SERVICO NUMBER (10,2)  NOT NULL , 
+     DS_IMP_ESTADUAIS      VARCHAR2 (150)  NOT NULL , 
+     "%TT_IMP_ESTADUAIS"   NUMBER (10,2)  NOT NULL , 
+     TP_IDIOMA             VARCHAR2 (30)  NOT NULL , 
+     NR_SALA               VARCHAR2 (10)  NOT NULL , 
+     TP_SALA               VARCHAR2 (50)  NOT NULL , 
+     DS_SALA               VARCHAR2 (50)  NOT NULL , 
+     NR_POLTRONA           VARCHAR2 (20)  NOT NULL , 
+     TP_ASSENTO            VARCHAR2 (50)  NOT NULL , 
+     QT_ASSENTO            NUMBER (10)  NOT NULL , 
+     DS_LOGRADOURO         VARCHAR2 (150)  NOT NULL , 
+     NR_LOJA_END           VARCHAR2 (150)  NOT NULL , 
+     NM_BAIRRO             VARCHAR2 (50)  NOT NULL , 
+     NM_CIDADE             VARCHAR2 (150)  NOT NULL , 
+     NM_PAIS_LOJA          VARCHAR2 (100)  NOT NULL , 
+     NM_CIDADE_LOJA        VARCHAR2 (100)  NOT NULL , 
+     NM_ESTADO             VARCHAR2 (100)  NOT NULL , 
+     SG_ESTADO             VARCHAR2 (2)  NOT NULL , 
+     DS_PAIS_LOJA          VARCHAR2 (100)  NOT NULL , 
+     NR_CEP                VARCHAR2 (8)  NOT NULL , 
+     DT_CARGA              DATE  NOT NULL , 
+     DT_ATUALIZACAO        DATE  NOT NULL , 
+     ID_PROCESSO_ETL       NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL     VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.SK_CD_LOJA IS 'Campo COD_LOJA da tabela DB_DIM_LOJA, referente a "Código da loja". Identifica de forma única cada pessoa cadastrada no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_LOJA_FIS IS 'Número interno ou código de identificação da loja no sistema. Usado para referenciar a unidade de forma rápida em processos internos e para ligar transações e consultas à loja correspondente.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_LOJA IS 'Nome comercial da unidade ou filial. Facilita a identificação da loja em relatórios e no sistema, sendo a base para a gestão de múltiplas unidades de atendimento.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_CNPJ IS 'Número do Cadastro Nacional da Pessoa Jurídica da loja. É um identificador fiscal legalmente exigido, usado para auditorias, emissão de notas fiscais e conformidade regulatória.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DT_FUNDACAO IS 'Data em que a loja foi estabelecida. Permite análises sobre a longevidade da loja e seu desempenho ao longo do tempo.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.TP_SESSÃO IS 'Campo categórico que classifica a natureza de uma interação ou sessão do usuário. 
+Usado para segmentar e analisar diferentes tipos de comportamento (ex: ''LOGIN'', ''COMPRA'', ''SUPORTE_CHAT'').' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.IMPOSTO_SOBRE_SERVICO IS 'Percentual de imposto sobre serviços (ISS) que deve ser aplicado às vendas e transações. Essencial para o cálculo correto dos impostos e para o cumprimento das obrigações fiscais.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DS_IMP_ESTADUAIS IS 'Campo de texto para armazenar a composição detalhada e humanamente legível dos impostos estaduais aplicados. Justifica o valor total calculado no campo TT_IMP_ESTADUAIS.(Ex: ''ICMS 18%'' ou ''ICMS 17% + FCP 1%''.)' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA."%TT_IMP_ESTADUAIS" IS 'Armazena o valor percentual total e consolidado dos impostos estaduais aplicáveis.
+Este valor numérico é utilizado para o cálculo do montante do imposto. Ex: 18.00 (para 18%).' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.TP_IDIOMA IS 'Classificação do idioma principal ou preferencial associado a uma entidade (ex: loja, filme).-- Usado para internacionalização e localização de conteúdo ou serviços.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_SALA IS 'Identificador único da sala dentro do cinema.-- Usado para mapeamento e rotas, reservas, ocupação, eventos, manutenção etc..., registrado de forma aphanúmerica sala 02A, Sala02B' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.TP_SALA IS 'Classificação do tipo ou formato da sala de cinema (ex: ''2D'', ''3D'', ''IMAX'', ''PRIME'', ''VIP'').
+-- Define as características técnicas e a experiência oferecida pela sala.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DS_SALA IS 'Descreve e Classificação o tipo  de sala de cinema (ex: ''2D'', ''3D'', ''IMAX'', ''PRIME'', ''VIP'').-- Define as características técnicas e a experiência oferecida pela sala.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_POLTRONA IS 'Identificador único da poltrona dentro de uma sala de cinema.-- Usado para mapeamento de assentos, reservas e ocupação.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.TP_ASSENTO IS 'Classificação do tipo de assento em uma sala (ex: ''PADRAO'', ''VIP'', ''RECLINAVEL'', ''NAMORADEIRA'').-- Usado para diferenciar a experiência e precificação.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.QT_ASSENTO IS 'Número total de assentos disponíveis em uma sala de cinema.-- Representa a capacidade máxima da sala para fins de planejamento e vendas.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DS_LOGRADOURO IS 'Nome da rua, avenida ou praça do endereço físico da loja. Permite a localização geográfica da unidade e é fundamental para a navegação ou para serviços de entrega e atendimento externo.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_LOJA_END IS 'Número do imóvel da loja. Junto com o logradouro e bairro, compõe o endereço completo.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_BAIRRO IS 'Nome do bairro onde a loja está situada. Útil para análises geográficas e de mercado.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_CIDADE IS 'Nome da cidade da loja. Essencial para análises demográficas, gestão regional e planejamento estratégico de expansão.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_PAIS_LOJA IS 'Nome detalhado do país onde a loja está situada' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_CIDADE_LOJA IS 'Nome da cidade da loja. Essencial para análises demográficas, gestão regional e planejamento estratégico de expansão.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NM_ESTADO IS 'Descrição detalhada do nome do estado' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.SG_ESTADO IS 'Sigla do estado brasileiro, como ''SP'' ou ''RJ''. Permite a segmentação de dados por região e é crucial para o cumprimento de regulamentações fiscais e operacionais estaduais.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DS_PAIS_LOJA IS 'Descrição detalhada do nome do país onde a loja está situada' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.NR_CEP IS 'Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_CINEMA.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE DIM_CINEMA 
+    ADD CONSTRAINT DIM_LOJA PRIMARY KEY ( SK_CD_LOJA ) ;
+
+CREATE TABLE DIM_CLIENTE 
+    ( 
+     SK_CD_PESSOA        NUMBER  NOT NULL , 
+     CD_TIPO_PESSOA      NUMBER (10)  NOT NULL , 
+     NM_PESSOA           VARCHAR2 (50)  NOT NULL , 
+     NR_RG               VARCHAR2 (12)  NOT NULL , 
+     NR_CPF              VARCHAR2 (15)  NOT NULL , 
+     DT_NASCIMENTO       DATE  NOT NULL , 
+     TP_CLIENTE          VARCHAR2 (50)  NOT NULL , 
+     SX_PESSOA           VARCHAR2 (3)  NOT NULL , 
+     ST_PESSOA           VARCHAR2 (3)  NOT NULL , 
+     ESTADO_CIVIL        VARCHAR2 (10)  NOT NULL , 
+     EMAIL               VARCHAR2 (100)  NOT NULL , 
+     NR_ENDERECO         NUMBER (6)  NOT NULL , 
+     DS_COMPLEMENTO      VARCHAR2 (20)  NOT NULL , 
+     DT_INICIO           DATE  NOT NULL , 
+     DT_TERMINO          DATE  NOT NULL , 
+     TP_ENDERECO         VARCHAR2 (5)  NOT NULL , 
+     NM_LOGRADOURO       VARCHAR2 (100)  NOT NULL , 
+     NM_BAIRRO           VARCHAR2 (50)  NOT NULL , 
+     NM_CIDADE           VARCHAR2 (50)  NOT NULL , 
+     NM_ESTADO           VARCHAR2 (50)  NOT NULL , 
+     SG_ESTADO           VARCHAR2 (2)  NOT NULL , 
+     NR_CEP              VARCHAR2 (9)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL , 
+     NM_PAIS_CLI         VARCHAR2 (100)  NOT NULL , 
+     DS_ESCOLARIDADE_CLI VARCHAR2 (100)  NOT NULL , 
+     DS_RELIGIAO_CLI     VARCHAR2 (100)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.SK_CD_PESSOA IS 'Campo COD_PESSOA da tabela DB_DIM_PESSOA, referente a "Código da Pessoa". Identifica de forma única cada pessoa cadastrada no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.CD_TIPO_PESSOA IS 'Campo COD_TIPO_PESSOA da tabela DB_DIM_PESSOA, referente a "Código do Tipo de Pessoa". Define se a pessoa é cliente, funcionário, fornecedor ou outra categoria. Tipo: NUMBER, tamanho: 4 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_PESSOA IS 'Campo NOME_PESSOA da tabela DB_DIM_PESSOA, referente a "Nome da Pessoa". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NR_RG IS 'Campo NUM_RG da tabela DB_DIM_PESSOA, referente a "Número do RG". Guarda o registro geral da pessoa, documento oficial de identificação. Tipo: VARCHAR2, tamanho: 10 bytes.
+Colocamos 12 caracteres, considerando 00.000.000-0' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NR_CPF IS 'Campo NUM_CPF da tabela DB_DIM_PESSOA, referente a "Número do CPF". Armazena o CPF válido da pessoa, usado para cadastros fiscais e jurídicos. Tipo: VARCHAR2, tamanho: 13 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DT_NASCIMENTO IS 'Campo DT_NASCIMENTO da tabela DB_DIM_PESSOA, referente a "Data de Nascimento". Registra a data de nascimento da pessoa para identificação e controle de idade. Tipo: DATE.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.TP_CLIENTE IS 'Abreviação que define a natureza do cliente(PF, MEI, PJ, etc.), diferenciando finalidades do cadastro, comercial, cobrança ou entrega, acompanhamento. Campo de texto curto, padronizado.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.SX_PESSOA IS 'Campo SEXO_PESSOA da tabela DB_DIM_PESSOA, referente a "Sexo da Pessoa". Identifica o gênero da pessoa com código único (M/F/Outro). Tipo: CHAR, tamanho: 1 byte.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.ST_PESSOA IS 'Os campos ESTADO_CIVIL (VARCHAR5(10)) e SEXO_PESSOA (CHAR(1)) são atributos demográficos que ajudam a compor um perfil mais detalhado do cliente. O estado civil pode indicar diferentes necessidades e padrões de consumo, enquanto a informação de sexo permite a segmentação para produtos ou serviços com apelo de gênero específico. Embora sejam informações sensíveis, quando utilizadas de forma agregada e anônima, contribuem para análises de mercado mais profundas, permitindo que a empresa entenda melhor a composição de sua base de clientes e personalize suas ofertas de maneira mais eficaz.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.ESTADO_CIVIL IS 'Campo ESTADO_CIVIL da tabela DB_DIM_PESSOA, referente a "Estado Civil". Informa a condição civil da pessoa (solteiro, casado, etc.). Tipo: VARCHAR2, tamanho: 10 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.EMAIL IS 'Campo EMAIL da tabela DB_DIM_PESSOA, referente a "E-mail". Guarda o endereço eletrônico da pessoa para contato e comunicação. Tipo: VARCHAR2, tamanho: 100 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NR_ENDERECO IS 'Número da edificação no logradouro, identificando a posição do imóvel (ex.: 123, 4567). Campo numérico inteiro, sem formatação, aceitando até 6 dígitos. Essencial para localização e correspondência.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DS_COMPLEMENTO IS 'Informação complementar do endereço que detalha a unidade interna (ex.: APTO 101, BLOCO B, CASA 2). Campo de texto opcional, até 20 caracteres, útil para localizar entradas, torres ou conjuntos.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DT_INICIO IS 'Data a partir da qual o registro passa a valer. Marca o início da vigência de um endereço ou vínculo. Armazena somente data (AAAA-MM-DD), sem hora, usada para histórico, versionamento e auditoria.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DT_TERMINO IS 'Data em que a validade do registro se encerra. Indica fim de vigência de endereço ou período. Apenas data (AAAA-MM-DD), sem hora. Permite controle de histórico, cortes temporais e consultas ativas.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.TP_ENDERECO IS 'Abreviação que define a natureza do endereço (RES, COM, COB, ENT, etc.), diferenciando finalidades residencial, comercial, cobrança ou entrega. Campo de texto curto, padronizado, com até 5 caracteres.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_LOGRADOURO IS 'Nome completo do logradouro onde o imóvel se localiza (rua, avenida, alameda, estrada, etc.). Campo de texto livre, até 100 caracteres, sem abreviações obrigatórias. Base para CEP e roteirização.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_BAIRRO IS 'Campo NOME_BAIRRO da tabela DB_DIM_PESSOA, referente a "Nome dO bairro". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_CIDADE IS 'Nome da cidade (município) onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_ESTADO IS 'Nome Do Estado onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.SG_ESTADO IS 'Sigla da Unidade Federativa (UF) do endereço, com duas letras (ex.: SP, RJ, MG). Campo de texto fixo, 2 caracteres, validado contra lista oficial. Essencial para padronização e regras fiscais.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NR_CEP IS 'Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.
+incluí 9 caracter incluindo o traçõ -' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.NM_PAIS_CLI IS 'NOME DO PAÍS ONDE O CLIENTE RESIDE' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DS_ESCOLARIDADE_CLI IS 'DESCRIÇÃO DA ESCOLARIDADE DO CLIENTE' 
+;
+
+COMMENT ON COLUMN DIM_CLIENTE.DS_RELIGIAO_CLI IS 'DESCRIÇÃO DA RELIGIÃO OU DAS PREFERENCIAS DOS CLIENTE' 
+;
+
+ALTER TABLE DIM_CLIENTE 
+    ADD CONSTRAINT DIM_CLIENTE PRIMARY KEY ( SK_CD_PESSOA ) ;
+
+CREATE TABLE DIM_CLIMA 
+    ( 
+     SK_CD_CLIMA          NUMBER  NOT NULL , 
+     DS_CLIMA             VARCHAR2 (30)  NOT NULL , 
+     TP_TEMPERATURA       VARCHAR2 (15)  NOT NULL , 
+     NR_TEMPERATURA_MEDIA NUMBER (5,2)  NOT NULL , 
+     NR_UMIDADE           NUMBER (5,2)  NOT NULL , 
+     DS_CONDICAO_EXTREMA  VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA             DATE  NOT NULL , 
+     DT_ATUALIZACAO       DATE  NOT NULL , 
+     ID_PROCESSO_ETL      NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL    VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.SK_CD_CLIMA IS 'Chave substituta da dimensão clima' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.DS_CLIMA IS 'Descrição do clima (Ensolarado, Chuvoso, Nublado etc.)' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.TP_TEMPERATURA IS 'Categoria (Alta, Média, Baixa)' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.NR_TEMPERATURA_MEDIA IS 'Temperatura média do dia' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.NR_UMIDADE IS 'Percentual de umidade' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.DS_CONDICAO_EXTREMA IS 'Ex: “Tempestade”, “Neve”, “Calor Extremo”' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.DT_CARGA IS 'Data de carga no DW, Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.DT_ATUALIZACAO IS 'Data da Última atualização, Esse campo sera para mostrar a Data em que o registro s foram atualizados no DW' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.ID_PROCESSO_ETL IS 'Identificador do processo ETL, Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_CLIMA.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE DIM_CLIMA 
+    ADD CONSTRAINT DIM_CLIMA PRIMARY KEY ( SK_CD_CLIMA ) ;
+
+CREATE TABLE DIM_FILME 
+    ( 
+     SK_CD_FILME         NUMBER  NOT NULL , 
+     DS_FILME            VARCHAR2 (100)  NOT NULL , 
+     CD_DISTRIBUIDOR     NUMBER (10)  NOT NULL , 
+     NM_DISTRIBIDOR      VARCHAR2 (100)  NOT NULL , 
+     NM_FILME            VARCHAR2 (150)  NOT NULL , 
+     NM_IDIOMA_FILME     VARCHAR2 (30)  NOT NULL , 
+     TP_TRADUCAO_FILME   VARCHAR2 (30)  NOT NULL , 
+     CL_INDICATIVA_FILME NUMBER (2)  NOT NULL , 
+     DT_ESTREIA_FILME    VARCHAR2 (50)  NOT NULL , 
+     DS_GENERO_FILME     VARCHAR2 (50)  NOT NULL , 
+     NM_TITULO_FILME     VARCHAR2 (50)  NOT NULL , 
+     DS_DURAÇÃO_FILME    VARCHAR2 (5)  NOT NULL , 
+     NM_PAIS_FILME       VARCHAR2 (50)  NOT NULL , 
+     NM_IDIOMA_ORIGINAL  VARCHAR2 (30)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_FILME.SK_CD_FILME IS 'Identificador único do filme (Chave Primária da Dimensão).-- Usado para ligar a dimensão às tabelas Fato (ex: FATO_BILHETERIA).' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DS_FILME IS 'Sinopse curta (logline) ou tagline de marketing do filme.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.CD_DISTRIBUIDOR IS 'Identificador único da empresa distribuidora. Pode ser uma Chave Estrangeira (FK)-- para uma DIM_DISTRIBUIDOR ou um código de negócio.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_DISTRIBIDOR IS 'Nome comercial da empresa distribuidora (ex: ''Walt Disney Studios'', ''Warner Bros. Pictures'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_FILME IS 'Título comercial do filme no território (ex: ''O Rei Leão'').-- Principal descritor usado em filtros e relatórios.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_IDIOMA_FILME IS 'Nome do Idioma de exibição da cópia do filme (ex: ''Português'', ''Inglês'', ''Espanhol'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.TP_TRADUCAO_FILME IS 'Idioma de exibição da cópia do filme (ex: ''Dublado'', ''Legendado'', ''Nacional'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.CL_INDICATIVA_FILME IS 'Classificação de idade indicativa (censura) do filme. Ex: 0 (Livre), 10, 12, 14, 16, 18.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DT_ESTREIA_FILME IS 'Data oficial de lançamento do filme (estreia) no país ou circuito.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DS_GENERO_FILME IS 'Gênero cinematográfico principal do filme (ex: ''Ação'', ''Comédia Romântica'', ''Terror'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_TITULO_FILME IS 'Título original do filme, no idioma de produção. Ex: ''Die Hard''.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DS_DURAÇÃO_FILME IS 'Duração (runtime) do filme. Formato VARCHAR, pode armazenar ''120m'' ou ''02:00''.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_PAIS_FILME IS 'País de origem ou produção principal do filme (ex: ''EUA'', ''Brasil'', ''Coreia do Sul'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.NM_IDIOMA_ORIGINAL IS 'Idioma principal falado no filme em sua produção original (ex: ''Inglês'', ''Coreano'').' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_FILME.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN DIM_FILME.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_FILME.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE DIM_FILME 
+    ADD CONSTRAINT DIM_FILME PRIMARY KEY ( SK_CD_FILME ) ;
+
+CREATE TABLE DIM_FORMA_PAGAMENTO 
+    ( 
+     SK_CD_PAG         NUMBER  NOT NULL , 
+     CD_TIPO_PAG       NUMBER (10)  NOT NULL , 
+     DS_TIPO_PAG       VARCHAR2 (50)  NOT NULL , 
+     NM_FORMA_PAG      VARCHAR2 (120)  NOT NULL , 
+     DS_FORMA_PAG      VARCHAR2 (160)  NOT NULL , 
+     NR_TAXA_PAG       NUMBER (2,2)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_FORMA_PAGAMENTO.SK_CD_PAG IS 'Campo SK_TEMPO da tabela TB_DIM_TEMPO, referente a "Código da loja". Identifica de forma única cada cadastro do estabelecimento no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_FORMA_PAGAMENTO.CD_TIPO_PAG IS 'ESSE CAMPO REGISTRA O CÓDIGO DO TIPO DE PAGAMENTO CONFORME A FORMA DE PAGAMENTO SELECIONADA NO MOMENTO DA COMPRA/VENDA DO BILHETE.' 
+;
+
+COMMENT ON COLUMN DIM_FORMA_PAGAMENTO.NM_FORMA_PAG IS 'Armazena o nome comercial ou rótulo principal da forma de pagamento. É o atributo principal-- usado para filtros em relatórios. Ex: ''Cartão de Crédito Visa'', ''Pix'', ''Boleto Bancário''.' 
+;
+
+ALTER TABLE DIM_FORMA_PAGAMENTO 
+    ADD CONSTRAINT DIM_FORMA_PAGAMENTO PRIMARY KEY ( SK_CD_PAG ) ;
+
+CREATE TABLE DIM_INGRESSO 
+    ( 
+     SK_CD_TIPO_INGRESSO NUMBER  NOT NULL , 
+     DS_TIPO_INGRESSO    VARCHAR2 (50)  NOT NULL , 
+     CD_PROMOCAO         NUMBER (8)  NOT NULL , 
+     DS_PROMOCAO         VARCHAR2 (100)  NOT NULL , 
+     DT_INICIO_PROMOCAO  DATE  NOT NULL , 
+     DT_FIM_PROMOCAO     DATE  NOT NULL , 
+     TP_PROMOCAO         VARCHAR2 (50)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.SK_CD_TIPO_INGRESSO IS 'Chave substituta da dimensão Ingresso' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.DS_TIPO_INGRESSO IS 'descrição detalhada do tipo de ingresso(Promoção, combo, unitário, meia estudante, meia idoso).' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.CD_PROMOCAO IS 'CD_PROMOCAO - lista os códigos classificados para a promoção ou campanha.' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.DS_PROMOCAO IS 'descrição detalhada do tipo de promoção(Promoção, combo, unitário, meia estudante, meia idoso).' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.DT_INICIO_PROMOCAO IS 'data de início da promoção ou campanha' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.DT_FIM_PROMOCAO IS 'data de fim da promoção ou campanha' 
+;
+
+COMMENT ON COLUMN DIM_INGRESSO.TP_PROMOCAO IS 'descrição curta com o nome do tipo de promoção(Dia do professor, dia dos namorados etc....)' 
+;
+
+ALTER TABLE DIM_INGRESSO 
+    ADD CONSTRAINT DIM_INGRESSO PRIMARY KEY ( SK_CD_TIPO_INGRESSO ) ;
+
+-- Script de criação da tabela DIM_PRODUTO
+
+CREATE TABLE DIM_PRODUTO 
+    ( 
+     SK_CD_PRODUTO           NUMBER  NOT NULL , 
+     DS_PRODUTO              VARCHAR2 (100)  NOT NULL , 
+     TP_PRODUTO              VARCHAR2 (20)  NOT NULL , 
+     VL_PRODUTO              NUMBER (10,2)  NOT NULL , 
+     DS_CATEGORIA_PRODUTO    VARCHAR2 (100)  NOT NULL , 
+     DS_SUBCATEGORIA_PRODUTO VARCHAR2 (100)  NOT NULL , 
+     DT_VALIDADE             DATE  NOT NULL , 
+     DT_PRODUCAO             DATE  NOT NULL , 
+     VR_PRODUTO              NUMBER (10)  NOT NULL , -- CORRIGIDO: de NUMBER(100) para NUMBER(10)
+     ST_PRODUTO              VARCHAR2 (3)  NOT NULL , 
+     CV_REGISTRO_PRODUTO     VARCHAR2 (100)  NOT NULL , 
+     NM_PRODUTO              VARCHAR2 (100)  NOT NULL , 
+     UN_MEDIDA               VARCHAR2 (100)  NOT NULL , 
+     MC_PRODUTO              VARCHAR2 (100)  NOT NULL , 
+     DT_CARGA                DATE  NOT NULL , 
+     DT_ATUALIZACAO          DATE  NOT NULL , 
+     ID_PROCESSO_ETL         NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL       VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.SK_CD_PRODUTO IS '(Chave Primária). Identificador numérico único (Surrogate Key) do produto no Data Warehouse. Usado para ligar esta dimensão à(s) tabela(s) Fato.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DS_PRODUTO IS 'Campo de texto longo para especificações, sinopse (se for um filme/ingresso) ou descrição de marketing do produto. Complementa o NM_PRODUTO.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.TP_PRODUTO IS 'Campo de agrupamento de alto nível (hierarquia). Ex: ''Ingresso'', ''Bomboniere'', ''Serviço''.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.VL_PRODUTO IS 'Armazena o preço de tabela, custo unitário ou valor de referência do produto. (Observação: O tipo de dado VARCHAR parece incorreto, deveria ser NUMERIC(10,2)).' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DS_CATEGORIA_PRODUTO IS 'Primeiro nível de agrupamento hierárquico (ex: ''Bebidas'', ''Pipocas'', ''Ingressos 2D'').' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DS_SUBCATEGORIA_PRODUTO IS 'Segundo nível de agrupamento, subordinado à Categoria (ex: ''Refrigerantes'', ''Pipoca Salgada'', ''Ingresso Meia-Entrada'').' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DT_VALIDADE IS 'Atributo de data que armazena o vencimento do lote do produto. Essencial para controle de shelf life (vida útil) em produtos de bomboniere.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DT_PRODUCAO IS 'Atributo de data que armazena a fabricação do lote do produto.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.VR_PRODUTO IS 'Número de versão, release ou modelo do produto. Útil para rastrear mudanças no item.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.ST_PRODUTO IS 'Campo de controle que indica a situação comercial do produto (ex: ''ATIVO'', ''INATIVO'', ''DESCONTINUADO'').' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.CV_REGISTRO_PRODUTO IS 'Campo técnico, geralmente usado para armazenar uma chave de integração (chave de negócio) do sistema original ou um fator de conversão de unidades' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.NM_PRODUTO IS 'O nome comercial, curto e principal do produto, usado na maioria dos relatórios e filtros (ex: ''Pipoca Grande Manteiga'', ''Ingresso Inteira - Sala VIP'').' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.UN_MEDIDA IS 'Unidade padrão de venda ou estoque do produto (ex: ''UN'' (unidade), ''KG'' (quilo), ''L'' (litro), ''PCT'' (pacote)).' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.MC_PRODUTO IS 'Nome da marca (fabricante) do produto (ex: ''Coca-Cola'', ''Fini'', ''Marca Própria''). Permite análises de market share.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_PRODUTO.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE DIM_PRODUTO 
+    ADD CONSTRAINT DIM_PRODUTO PRIMARY KEY ( SK_CD_PRODUTO ) ;
+
+CREATE TABLE DIM_TEMPO 
+    ( 
+     SK_CD_TEMPO         NUMBER  NOT NULL , 
+     DT_REFERENCIA       DATE  NOT NULL , 
+     NR_ANO              NUMBER (4)  NOT NULL , 
+     NR_SEMESTRE         NUMBER (2)  NOT NULL , 
+     DS_SEMESTRE         VARCHAR2 (20)  NOT NULL , 
+     DS_SEMESTRE_ANO     VARCHAR2 (20)  NOT NULL , 
+     NR_TRIMESTRE        NUMBER (2)  NOT NULL , 
+     DS_TRIMESTRE        VARCHAR2 (10)  NOT NULL , 
+     DS_TRIMESTRE_ANO    VARCHAR2 (20)  NOT NULL , 
+     NR_MES              NUMBER (2)  NOT NULL , 
+     DS_MES              VARCHAR2 (20)  NOT NULL , 
+     NR_ANO_MES          NUMBER (6)  NOT NULL , 
+     DS_MES_ANO          VARCHAR2 (20)  NOT NULL , 
+     DS_ABV_MES          VARCHAR2 (3)  NOT NULL , 
+     DS_ABV_MES_ANO      VARCHAR2 (10)  NOT NULL , 
+     DS_DIA_SEMANA       VARCHAR2 (15)  NOT NULL , 
+     DS_DATA             VARCHAR2 (20)  NOT NULL , 
+     NR_DIA_MES          NUMBER (4)  NOT NULL , 
+     NR_DIA_SEMANA       NUMBER (2)  NOT NULL , 
+     NR_DIA_ANO          NUMBER (3)  NOT NULL , 
+     DS_DIA_UTIL_FERIADO VARCHAR2 (10)  NOT NULL , 
+     DS_FIM_SEMANA       VARCHAR2 (10)  NOT NULL , 
+     DS_DATA_EXTENSO     VARCHAR2 (30)  NOT NULL , 
+     NR_HORA             VARCHAR2 (5)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.SK_CD_TEMPO IS 'Campo SK_TEMPO da tabela TB_DIM_TEMPO, referente a "Código da loja". Identifica de forma única cada cadastro do estabelecimento no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DT_REFERENCIA IS 'Data completa, sendo a chave primária da tabela de tempo. Ela serve de referência para todos os atributos temporais, permitindo uma análise flexível e multidimensional.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_ANO IS 'Número do ano (ex: 2023). Essencial para análises anuais de desempenho, comparativos e tendências de longo prazo.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_SEMESTRE IS 'Número do semestre do ano (1 ou 2). Útil para a análise de desempenho em períodos maiores que o trimestre, como sazonalidade semestral.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_SEMESTRE IS 'Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_SEMESTRE_ANO IS 'Recuperando dados. Aguarde alguns segundos e tente cortar ou copiar novamente.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_TRIMESTRE IS 'Número do trimestre (1 a 4). Essencial para o monitoramento de metas e resultados de curto prazo, além de permitir comparações trimestrais.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_TRIMESTRE IS 'Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_TRIMESTRE_ANO IS 'Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_MES IS 'Número do mês do ano (1 a 12). Permite análises de desempenho mensais, como vendas e consultas.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_MES IS 'Nome do mês por extenso (ex: "Setembro"). Facilita a leitura e compreensão dos relatórios.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_ANO_MES IS 'Concatenação do ano e mês, como 202409. Útil para ordenação cronológica e para a criação de chaves compostas em outras tabelas.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_MES_ANO IS 'Nome do mês por extenso (ex: "Setembro"). Facilita a leitura e compreensão dos relatórios.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_ABV_MES IS 'Abreviação do nome do mês (ex: "Set"). Formato compacto para visualizações em dashboards e tabelas.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_ABV_MES_ANO IS 'Abreviação do mês e ano (ex: "Set 2024"). Formato compacto para rótulos em gráficos e relatórios.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_DIA_SEMANA IS 'Nome do dia da semana (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_DATA IS 'Nome da data (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_DIA_MES IS 'Número do dia dentro do mês (1 a 31). Permite a análise diária de métricas e ajuda a identificar padrões em curtos períodos de tempo.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_DIA_SEMANA IS 'Número do dia da semana, por exemplo, 1 para domingo e 7 para sábado. Útil para cálculos e lógica de negócios.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_DIA_ANO IS 'Número do dia dentro do ano, de 1 a 366 em anos bissextos. Permite análises de tendências diárias ao longo de um ano completo.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_DIA_UTIL_FERIADO IS 'Indicador que distingue dias úteis de feriados. Crucial para analisar o impacto de feriados no desempenho operacional.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_FIM_SEMANA IS 'Indicador para dias de fim de semana. Essencial para a análise da sazonalidade de atendimentos em relação aos dias de trabalho.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DS_DATA_EXTENSO IS 'A data completa por extenso, em formato legível para humanos. Ótimo para relatórios e exibição em interfaces.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.NR_HORA IS 'Número da hora do dia, de 00:00 a 23:59. Permite a análise do fluxo de atendimentos por hora, ajudando a identificar horários de pico e otimizar a alocação de equipe.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN DIM_TEMPO.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE DIM_TEMPO 
+    ADD CONSTRAINT DIM_TEMPO PRIMARY KEY ( SK_CD_TEMPO ) ;
+
+CREATE TABLE FTO_VENDA 
+    ( 
+     SK_CD_PESSOA        NUMBER  NOT NULL , 
+     SK_CD_LOJA          NUMBER  NOT NULL , 
+     SK_CD_TEMPO         NUMBER  NOT NULL , 
+     SK_CD_FILME         NUMBER  NOT NULL , 
+     SK_CD_PRODUTO       NUMBER  NOT NULL , 
+     SK_CD_PAG           NUMBER  NOT NULL , 
+     SK_CD_CLIMA         NUMBER  NOT NULL , 
+     SK_CD_TIPO_INGRESSO NUMBER  NOT NULL , 
+     CD_VENDA            NUMBER  NOT NULL , 
+     NR_VENDA            NUMBER (10)  NOT NULL , 
+     VL_VENDA            NUMBER (10,2)  NOT NULL , 
+     QT_VENDIDA          NUMBER (5)  NOT NULL , 
+     DS_FORMA_PAG        VARCHAR2 (160)  NOT NULL , 
+     VL_DESCONTO         NUMBER (10,2)  NOT NULL , 
+     DT_VENDA            DATE  NOT NULL , 
+     ST_VENDA            VARCHAR2 (10)  NOT NULL , 
+     VL_LIQUIDO          NUMBER (10,2)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN FTO_VENDA.CD_VENDA IS 'Armazena o CÓDIGO identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.NR_VENDA IS '(Dimensão Degenerada). Armazena o identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.VL_VENDA IS '(Métrica). Armazena o valor bruto total da venda antes da aplicação de quaisquer descontos. É a base de cálculo para a receita.' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.QT_VENDIDA IS '(Métrica). Armazena a quantidade de unidades vendidas (ex: 2 ingressos, 1 pipoca). É uma métrica fundamental para análises de volume.' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.DS_FORMA_PAG IS 'Campo textual para detalhes adicionais, regras de negócio ou explicações sobre a forma-- de pagamento, que não cabem no nome. Ex: ''Pagamento à vista via QR Code PIX''.' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.VL_DESCONTO IS '(Métrica). Armazena o valor monetário total do desconto aplicado à venda (ex: meia-entrada, cupom promocional).' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.DT_VENDA IS '(Atributo de Fato / Ruim). Data/hora em que a transação ocorreu. Melhoria: Este campo deve ser uma Chave Estrangeira (ID_TEMPO) que aponta para uma DIM_TEMPO (Dimensão Calendário).' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.ST_VENDA IS '(Atributo de Fato / Ruim). Campo de texto que indica a situação da venda (ex: ''APROVADA'', ''CANCELADA''). Melhoria: Este campo deve ser uma Chave Estrangeira (CD_STATUS) que aponta para uma DIM_STATUS_VENDA.' 
+;
+
+COMMENT ON COLUMN FTO_VENDA.VL_LIQUIDO IS '(Métrica). A métrica de receita mais importante. É o valor final pago pelo cliente, calculado como (VL_VENDA - VL_DESCONTO).' 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT FTO_VENDA PRIMARY KEY ( SK_CD_PESSOA, SK_CD_LOJA, SK_CD_TEMPO, SK_CD_FILME, SK_CD_PRODUTO, SK_CD_PAG, SK_CD_CLIMA, SK_CD_TIPO_INGRESSO ) ;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_CINEMA_FTO_CLIENTE FOREIGN KEY 
+    ( 
+     SK_CD_LOJA
+    ) 
+    REFERENCES DIM_CINEMA 
+    ( 
+     SK_CD_LOJA
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_CLIENTE_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_PESSOA
+    ) 
+    REFERENCES DIM_CLIENTE 
+    ( 
+     SK_CD_PESSOA
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_CLIMA_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_CLIMA
+    ) 
+    REFERENCES DIM_CLIMA 
+    ( 
+     SK_CD_CLIMA
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_FILME_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_FILME
+    ) 
+    REFERENCES DIM_FILME 
+    ( 
+     SK_CD_FILME
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_FORMA_PAGAMENTO_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_PAG
+    ) 
+    REFERENCES DIM_FORMA_PAGAMENTO 
+    ( 
+     SK_CD_PAG
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_INGRESSO_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_TIPO_INGRESSO
+    ) 
+    REFERENCES DIM_INGRESSO 
+    ( 
+     SK_CD_TIPO_INGRESSO
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_PRODUTO_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_PRODUTO
+    ) 
+    REFERENCES DIM_PRODUTO 
+    ( 
+     SK_CD_PRODUTO
+    ) 
+;
+
+ALTER TABLE FTO_VENDA 
+    ADD CONSTRAINT DIM_TEMPO_FTO_VENDA FOREIGN KEY 
+    ( 
+     SK_CD_TEMPO
+    ) 
+    REFERENCES DIM_TEMPO 
+    ( 
+     SK_CD_TEMPO
+    ) 
+;
+
+
+
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                             9
+-- CREATE INDEX                             0
+-- ALTER TABLE                             17
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

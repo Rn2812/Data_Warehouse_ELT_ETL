@@ -1,0 +1,288 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7601362-BABA-8437-3F0E-C52855D2F75A" name="TB_FTO_CONSULTA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:33:25 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NR_CONSULTA" id="3D4CB233-E254-3247-7555-B441817B1685">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:34:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único para cada consulta ou atendimento. Serve como chave primária para esta tabela e é o ponto central para rastrear todos os detalhes de um serviço prestado, como valor, itens e status.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CONSULTA " id="0EEAB316-AFCE-5906-CCEA-9530F9A604EA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:39:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora em que a consulta foi realizada. Fundamental para análises de volume de atendimentos ao longo do tempo (diário, semanal, mensal), sazonalidade e desempenho operacional da loja.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_TOTAL_CONSULTA" id="7A353B11-6A84-EE5E-CBD5-5B61A82F225A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:39:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor final pago pelo cliente por todos os serviços e produtos em uma única consulta. É a principal métrica para análises de receita e desempenho financeiro.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_CONSULTA" id="34CB3755-B267-5322-7063-B5E9AE7200BE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:40:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status atual da consulta (por exemplo, "Agendada", "Realizada", "Cancelada"). É útil para a gestão do fluxo de trabalho e para identificar consultas que não foram concluídas.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ITEM_CONSULTA" id="DFA2C4E6-817A-552D-766F-DC63AF520AE2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 23:47:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código que identifica um item individual dentro de uma consulta. Permite detalhar o que foi comprado ou utilizado (exames, vacinas, produtos) e analisar o desempenho de cada serviço.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_UNIT_SERVICO" id="C104D2C0-548D-05F6-23FA-81FC4AA74C89">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:04:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço de um único item ou serviço. Essencial para o cálculo do valor total e para a análise de rentabilidade de cada produto ou serviço.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_SERVICO" id="49B435B0-6F53-5D02-52F6-005893E43F92">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:04:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de um serviço ou produto específico adquirido. Utilizado para calcular o valor total do item e para o controle de estoque de produtos vendidos.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_ITEM_SERVICO" id="F9BAC866-6181-4211-1D57-8DF916501B6B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:05:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do item de serviço, como "Concluído" ou "Pendente".
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_DESCONTO" id="CC5AE6AE-5694-3F6D-347A-E15A30E1823B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:05:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[OBS: INCLUIR NA ORIGEM DOS DADOS  - Valor de desconto aplicado. Importante para a análise de margem de lucro e para entender a eficácia de promoções.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DESCONTO" id="C4507CF6-DAF2-A52C-BB93-090CFB8D0E69">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:22:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[OBS: INCLUIR NA ORIGEM DOS DADOS  - Descrição do desconto aplicado. Importante para a análise de margem de lucro e para entender a eficácia de promoções.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_FONTE_DADOS" id="9123D187-C7E4-62F0-B1DD-C1CC743DA1A5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:42:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da tabela, arquivo ou sistema de origem de onde os dados foram extraídos.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="2C99C8C4-C9EF-25E5-5654-89CA5BB4D28F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:40:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW.
+ ]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="F11F80B2-6D58-E5DE-BE49-90AD017C30BC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:41:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da execução do processo ETL responsável pela carga.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_PESSOA" id="257F6D25-1452-AA47-58CF-DB32AA669FD6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:12:09 UTC</createdTime>
+<generatorID>0A1DD00B-99C7-C053-6732-469D979ABE20</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<referedAttribute>43FC1EA3-1E50-CA3B-E8DD-82F9B9D4B0AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_ANIMAL" id="7CCD1319-1A9B-7101-B75D-59DF72C34ADF">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:14:40 UTC</createdTime>
+<generatorID>1BD6EC54-7378-4000-B60E-F14D8EDD92E2</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<referedAttribute>6787D9F6-4213-102F-27A0-7C3C646A49CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_LOJA" id="AF0DF753-1E65-8118-AD1B-11E69C1B8468">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:15:04 UTC</createdTime>
+<generatorID>D3885190-3B82-E8D6-2F29-BCCB8183BB02</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<referedAttribute>580E48A2-9DDB-A1F3-8F96-CB314AE4512F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_TEMPO" id="9FDF036D-2BA3-402B-B7A7-D047592129A3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:20:40 UTC</createdTime>
+<generatorID>D137CB4B-AAB6-66B5-69AD-DC4353583A19</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<referedAttribute>8BFA2471-DA0D-E4FC-4E91-E0803C78B7B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E243D493-5849-E644-1F28-AEB025F27BEA" name="SK_FTO_CONSULTA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-10 00:11:11 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>0A1DD00B-99C7-C053-6732-469D979ABE20,1BD6EC54-7378-4000-B60E-F14D8EDD92E2,D3885190-3B82-E8D6-2F29-BCCB8183BB02,D137CB4B-AAB6-66B5-69AD-DC4353583A19</newElementsIDs>
+<usedAttributes>
+<attributeRef>257F6D25-1452-AA47-58CF-DB32AA669FD6</attributeRef>
+<attributeRef>7CCD1319-1A9B-7101-B75D-59DF72C34ADF</attributeRef>
+<attributeRef>AF0DF753-1E65-8118-AD1B-11E69C1B8468</attributeRef>
+<attributeRef>9FDF036D-2BA3-402B-B7A7-D047592129A3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

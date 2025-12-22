@@ -1,0 +1,213 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="378C0578-FA1C-B537-813E-2E1EA57C5505" name="DB_DIM_CLIENTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<generatorID>AA6B18BC-FB8B-1047-50A6-BFF5C213173D</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_CLIENTE" id="B8F2CFAB-640C-2369-40E7-110E5E3EEA13">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR A CHAVE SURROGATE DA DIMENSÃO CLIENTE.
+ESTE ATRIBUTO SERÁ PREENCHIDO AUTOMATICAMENTE INTERNAMENTE PELA CARGA DE DADOS.]]></commentInRDBMS>
+<generatorID>326DA0CE-5B02-57B2-AEDC-6BB747A4E170</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CLIENTE" id="34BB4BD8-C5F8-0DED-CCC9-8B99C2B94397">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTE ATRIBUTO IRÁ ARMAZENAR O NOME DO CLIENTE]]></commentInRDBMS>
+<generatorID>1E8617C0-185F-0839-9A5A-3B054736F909</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CLIENTE_ORIGEM_DADOS" id="BE8682B6-F87A-166D-519A-2E9360875876">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTE ATRIBUTO IRÁ ARMAZENAR O CÓDIGO DO CLIENTE NA ORIGEM DOS DADOS.
+ESTE ATRIBUTO É OBRIGATÓRIO E SERÁ UTILIZADO PARA CRIAR RASTREABILIDADE COM OS DADOS DE ORIGEM.]]></commentInRDBMS>
+<generatorID>7157686E-DC7C-7BE8-74E8-C5B3FA1972F4</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ESTRELAS" id="CCE4FF9C-1D4F-2F2C-B131-FFE3C5262D79">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTE ATRIBUTO IRÁ ARMAZENAR O NÚMERO DE ESTRELAS DO CLIENTE.
+ESTE ATRIBUTO É OBRIGATÓRIO E PODEMOS ARMAZENAR OS NÚMEROS ENTRE 1 E 5.
+ONDE 1 SIMBOLIZA A BAIXA FIDELIDADE E 5 ALTA FIDELIDADE.]]></commentInRDBMS>
+<generatorID>9FC56E2A-9221-9774-9DE0-8C19C69F8941</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_SEXO_CLIENTE" id="816E9EAF-C590-675C-1633-22947214B3B2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTE ATRIBUTO IRÁ ARMAZENAR O SEXO DO CLIENTE.
+ESTE ATRIBUTO É OBRIGATÓRIO E PODEMOS ARMAZENAR OS DADOS DA ORIENTAÇÃO SEXUAL, OU COMO O CLIENTE SE IDENTIFICA.]]></commentInRDBMS>
+<generatorID>09FF2963-7416-B531-FBA4-15C5D0A138EC</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="57A5587E-0522-BE7B-3DAD-844745D846F8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR A DO ESTADO DO CLIENTE.
+SEU CONTEÚDO IRÁ ARMAZENAR TODAS AS SIGLAS DO ESTADO DO CLIENTE EXISTENTES.]]></commentInRDBMS>
+<generatorID>9EEBF1BA-9B4C-55B3-7D26-775EA7B793C2</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ESTADO" id="257159FC-88B7-61BE-47AC-3CAACCBF949E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR O NOME DO ESTADO DO CLIENTE.
+SEU CONTEÚDO IRÁ ARMAZENAR O NOME DE TODOS OS ESTADOS ONDE HAJAM CLIENTE..]]></commentInRDBMS>
+<generatorID>E9DF5B76-7C2D-2F53-1F8B-3A5BDC3FCF8E</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="3F816D3D-229B-01D3-68EF-3980DC0EE10F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR O NOME DA CIDADE DO CLIENTE.
+SEU CONTEÚDO IRÁ ARMAZENAR O NOME DE TODAS AS CIDADES ONDE HAJAM CLIENTE..]]></commentInRDBMS>
+<generatorID>4124FE0A-BBA7-CD84-0160-56A0CF2A3DAE</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_BAIRRO" id="00874F52-C463-0577-CAD1-F103D29F8BD5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR O NOME DO BAIRRO DO CLIENTE.
+SEU CONTEÚDO IRÁ ARMAZENAR O NOME DE TODOS OS BAIRROS ONDE HAJAM CLIENTE..]]></commentInRDBMS>
+<generatorID>EC6129E8-CF51-EB89-B3D4-64F7B8B6ECE1</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOGRADOURO" id="526C9289-454D-7595-369E-476109509846">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTÁ CHAVE IRÁ ARMAZENAR O NOME DA RUA E CPMPLEMENTOS DO ENDEREÇO  DO CLIENTE.
+SEU CONTEÚDO IRÁ ARMAZENAR O NOME DE TODOS OS LOGRADOUROS ONDE HAJAM CLIENTE..]]></commentInRDBMS>
+<generatorID>47B6E0CC-613B-07E8-99BE-3219BA8DCDF3</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CLIENTE_ORIGEM" id="8F0BB678-663C-1743-425F-52E836CB06F3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-26 00:38:39 UTC</createdTime>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOTE_CARGA" id="BC2D4E2B-6BD6-75EA-31AA-A7A56EED9C82">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-26 00:40:35 UTC</createdTime>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF" id="F9CD5CC2-075E-783E-4DB0-C028FC936F13">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-26 01:13:57 UTC</createdTime>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ORIGEM_DOS_DADOS" id="3889E871-CC20-8114-4D9A-6A156DAF259C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-26 01:16:08 UTC</createdTime>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EE4D525-2213-3193-45C4-B94D3A56E09B" name="DB_SK_DIM_CLIENTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-08-21 21:47:46 UTC</createdTime>
+<generatorID>7FE01A81-B35E-3C4E-0883-738A275F0DF6</generatorID>
+<ownerDesignName>Projeto_DW_DBURGER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8F2CFAB-640C-2369-40E7-110E5E3EEA13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

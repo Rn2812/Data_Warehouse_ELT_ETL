@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="11C4BE3E-C961-50A9-1EE1-55A8B6A49948" containerWithKeyObject="C603D4CD-2687-22F3-8D18-46EDE63B9703" localFKIndex="10AF9871-29CF-8C20-E0FF-F1BEE4DB6E54" name="DIM_COND_PISTA_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>7AE49FDE-F208-B3F0-8CED-6BC53C379CE7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<referredTableLongName>TB_DIM_COND_PISTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>629DE4AE-1652-996A-F4F5-29D45903782A</referredTableID>
+<keyObject>B93570EE-0BF6-CC17-0DA4-A8A279DC906F</keyObject>
+<referredKeyID>B93570EE-0BF6-CC17-0DA4-A8A279DC906F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_COND_PISTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

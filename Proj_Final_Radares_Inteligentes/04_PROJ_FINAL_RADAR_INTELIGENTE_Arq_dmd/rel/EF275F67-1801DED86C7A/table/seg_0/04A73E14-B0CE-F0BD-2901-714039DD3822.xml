@@ -1,0 +1,203 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="04A73E14-B0CE-F0BD-2901-714039DD3822" name="TB_DIM_RADAR">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>82CE367D-6718-893E-304C-904C949020C4</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_RADAR" id="D5F26BE9-9BD1-F917-271E-AD63EE233C8A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira da dimensão RADAR]]></commentInRDBMS>
+<generatorID>0FF297AF-D49A-A513-5552-6BA7EF34E546</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_RADAR" id="DCDD0C9F-81B0-635B-0BB4-1CCEBC9999DA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número único do radar, pode conter letras e números em sua composição.]]></commentInRDBMS>
+<generatorID>11F8485F-9EBF-F785-A410-9B733BC01605</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_FABRICANTE" id="2D635E1A-C675-F1A4-9494-4F0135C47698">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fabricante do radar]]></commentInRDBMS>
+<generatorID>5205F342-BDB2-D29E-BD75-82591E960D85</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FABRICACAO" id="E2E1EF0D-C9FA-800F-D5C4-46BAAC5EA7C0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de fabricação do radar]]></commentInRDBMS>
+<generatorID>3A46249A-23CB-D066-485A-8D8BCC0B6D02</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMA_MANUTENCAO" id="46B6BB0D-DF82-B219-BF24-03E42E3F2713">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da última manutenção]]></commentInRDBMS>
+<generatorID>11E69239-EA4A-EF82-270E-6615758F2A33</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_MODELO" id="6C200BBF-4F5C-2D51-5DAA-DDC175FB305A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do modelo do radar]]></commentInRDBMS>
+<generatorID>A0892136-AC05-131B-C1E9-3F0A070C3158</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_RADAR" id="17DE9C55-B613-FA6F-C068-1D3574733416">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO DO RADAR IMPLANTADO(FIXO OU MOVEL).]]></commentInRDBMS>
+<generatorID>1A0180A4-917B-F937-036B-DE726C0158F8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ULTIMA_ATUALIZACAO_RADAR" id="796DB680-A614-52C6-1FC7-D59F9C667D38">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[ESTE CAMPO COMTEM A DATA DA ÚLTIMA ATUALIZAÇÃO DO SOFTWARE DO RADAR]]></commentInRDBMS>
+<generatorID>39C88CA3-1852-0BCD-8391-79046828CE3B</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="5E3F5439-5FC5-4259-0DC2-CE1F31485E14">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<generatorID>F74D224C-038A-3EA8-714C-8286D209BF44</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO_CARGA" id="22AA3A70-B0D3-725F-8D56-8C5BE1D63C6A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<generatorID>B7902250-E9FC-FECD-A084-4192C03D8C52</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOTE_CARGA" id="9D8F8008-D515-D47B-D60A-956A3910D681">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<generatorID>FB563149-6168-4CC5-BB5C-111849168E71</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="A827CB9B-778A-774A-D682-D9B2870F84D2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<generatorID>E020F928-C35F-1264-8E47-91CABB6A6763</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="4B4D0A09-1FDD-0D0A-305E-4E9E8018EA82">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<generatorID>E1F2A6BE-9774-0075-293D-FF4F3F854097</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="B1CBE4CF-ECFA-92F5-13FA-F7E9CA71ABE8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<generatorID>0C46C9B7-C8D0-FE41-E73B-1F705974F99E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4142954C-1FDE-C270-055F-1CB17FAFFDE8" name="TB_DIM_RADAR">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>D2E061E1-9546-8E35-C6F5-695D1BC19E9A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5F26BE9-9BD1-F917-271E-AD63EE233C8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

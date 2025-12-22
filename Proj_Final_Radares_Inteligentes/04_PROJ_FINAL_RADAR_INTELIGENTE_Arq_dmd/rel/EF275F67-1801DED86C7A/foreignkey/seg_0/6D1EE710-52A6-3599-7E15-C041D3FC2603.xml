@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6D1EE710-52A6-3599-7E15-C041D3FC2603" containerWithKeyObject="C603D4CD-2687-22F3-8D18-46EDE63B9703" localFKIndex="34E67D22-8DA6-A4B1-986C-7D3A9E3D82A4" name="DIM_TEMPO_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>A1D3B418-74E4-2DB1-BAEA-C7843F762C7D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<referredTableLongName>TB_DIM_TEMPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FE344859-297C-443E-403D-4166FA643678</referredTableID>
+<keyObject>94EDAB89-CDAF-CC27-DC2D-09A8F46A9024</keyObject>
+<referredKeyID>94EDAB89-CDAF-CC27-DC2D-09A8F46A9024</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_TEMPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

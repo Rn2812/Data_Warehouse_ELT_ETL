@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89E784A1-79E8-E11F-3B6B-1A0E518C7950" containerWithKeyObject="26C2B0DE-E038-4C70-B1DF-5F0BDF9D237A" localFKIndex="BE54C6E2-A856-7CBD-BEF7-ADE9CD9699AB" name="DIM_PESSOA_FTO_CONSULTA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<generatorID>0A1DD00B-99C7-C053-6732-469D979ABE20</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<referredTableLongName>TB_DIM_PESSOA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0F5DCE2F-7A7A-25B4-1755-90DF65925ABF</referredTableID>
+<keyObject>260619A8-BA05-8955-C35A-5C94941463B5</keyObject>
+<referredKeyID>260619A8-BA05-8955-C35A-5C94941463B5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_PESSOA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

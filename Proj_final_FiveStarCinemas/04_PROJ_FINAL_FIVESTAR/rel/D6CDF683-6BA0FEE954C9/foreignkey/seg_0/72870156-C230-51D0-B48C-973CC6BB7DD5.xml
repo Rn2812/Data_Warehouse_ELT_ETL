@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="72870156-C230-51D0-B48C-973CC6BB7DD5" containerWithKeyObject="92C5C46D-CB50-39DE-1F36-C1043F3AB25C" localFKIndex="4EE5CC4C-F208-2605-26C1-9EA780F65F23" name="DIM_FILME_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>17635AC3-931C-01EF-26F8-D2272B5D2470</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<referredTableLongName>DIM_FILME</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DF4BB9C-5626-D71C-57F7-4AC38ADA0D62</referredTableID>
+<keyObject>74573173-4660-471E-4CDE-C4D4B1FEC0D0</keyObject>
+<referredKeyID>74573173-4660-471E-4CDE-C4D4B1FEC0D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_CD_FILME</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

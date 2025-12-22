@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3DA511B1-666D-02A6-96A4-33EC80DC3624" name="DIM_PARTICIPANTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>4E149640-D1E8-E8CF-461A-39B1147DDC26</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_PARTIC" id="FC5D315E-417E-BC20-92E5-D584BBE28871">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>03E0A15C-12DC-81AE-DC6C-38E1343BC267</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_PARTIC" id="1A33C362-7143-F717-450B-450E4D5F6338">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>1951CE57-A306-7DD8-8DB8-DCCFD3A72B81</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PARTIC" id="F3C3E51F-6F3A-1FC4-463B-DC93519AF525">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>C6D9676B-DE0A-3E8C-B421-63EAA8846C8F</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CPF" id="37833111-7F5C-4686-47B8-CF0DF31E777A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>99B1634A-A845-8B51-6404-2CA122265624</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ANIVERSARIO" id="5F71A038-9D63-355F-21BB-C798A85C4742">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>6A3BFF23-BF5C-391D-6F2C-7B436EBF8190</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_GENERO" id="FE4E0D27-1EA2-0824-8F34-C48ADC5606AA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>F2F6F33B-D437-99DE-5D44-5F90B044C27A</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_NIVEL_ESCOLARIDADE" id="A6F5F288-B066-2DAA-936B-B139CF44B99F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>689FC2CA-648C-8093-D4A3-A40515F0AD83</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="CEA47DE5-CC09-3113-1475-27C85D38FF35">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>F2A13F0D-A456-981D-72A6-1C0ED12E453E</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="0E5EC23B-6BD3-11F9-EF95-CD98C1981DB3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>08C58FD8-B0DF-D472-B5D6-F10DAFFE92A0</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="8A680297-E63E-FA9C-4ADF-68F731E3687E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>90559144-3043-5509-8ABB-70E793242C68</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="094D0A8B-7944-A2D8-DF1A-31EEC148B015">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>5190D376-7E0A-0CD8-D7F7-70FC530DB774</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C202520-900A-2131-B139-C989EE61FB90" name="DIM_PARTICIPANTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>2A84AA69-432F-2BFA-6898-A8EFC1608AF9</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC5D315E-417E-BC20-92E5-D584BBE28871"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

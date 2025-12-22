@@ -1,0 +1,331 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6AEECC0A-E025-A2FF-1412-45069CBE6D98" name="FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:47:24 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_CD_PESSOA" id="916A7753-1D3A-6920-0281-162EE0CB10F7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:28:52 UTC</createdTime>
+<generatorID>9542DAE2-F8F7-0F86-6607-6E19F3EF54D1</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>97B09C78-CC46-3C05-ED23-96B8C03AFEF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_LOJA" id="BFF9D925-68ED-5489-164D-EA503AF14538">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:29:30 UTC</createdTime>
+<generatorID>A37AD8D7-36B7-0EA7-0836-89899DF64489</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>CE22086C-4091-C89F-F5D6-D37295117426</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_TEMPO" id="76F0C2D0-EF36-11A3-1FF7-784F720AD06C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:32:55 UTC</createdTime>
+<generatorID>423A903E-019C-EA88-7BEC-2FB596C02333</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>9CFF222E-0FAC-6346-4FA7-DB819BFDD876</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_FILME" id="52769CC2-FDDD-A9C9-F2AA-7434D05197FF">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:33:21 UTC</createdTime>
+<generatorID>17635AC3-931C-01EF-26F8-D2272B5D2470</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>63382550-5BD8-1DDE-B184-B9CB0E181372</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_PRODUTO" id="578748D1-F73B-930E-D622-1A18E06500F2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:33:49 UTC</createdTime>
+<generatorID>7A8A84FE-9420-560B-43A3-47C503FB9044</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>B754A380-7299-5B63-E22E-4EF2446ABD1A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_PAG" id="00AF7835-21D3-6A8B-EEFA-6B59C5C9B654">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:34:15 UTC</createdTime>
+<generatorID>2583DAD8-9E74-B25B-893D-B9CB94CDBEAD</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>DFEC515E-2CD6-767A-A73C-70B72F1132DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_CLIMA" id="9FA71614-CE5D-E955-CA30-6F529E639A3F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:28:26 UTC</createdTime>
+<generatorID>89076631-55B1-081C-577B-B0710B50B3FE</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>623C9444-69F3-AE51-6FC5-1E09BD813C66</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_CD_TIPO_INGRESSO" id="FB3B4FCE-B0C3-5334-0F69-D23EDBFE4D92">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:22:19 UTC</createdTime>
+<generatorID>972ED342-AD17-356E-CB90-AF7B2C36AFE5</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<referedAttribute>47F3F8DC-DDA6-BDB2-31C7-C1932E4790A4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_VENDA" id="17DA1402-F068-11F2-BFAD-4B237711F642">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:47:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena o CÓDIGO identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_VENDA" id="3B6789CE-A92C-2E13-3BB5-65D2D3E778B8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:48:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Dimensão Degenerada). Armazena o identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_VENDA" id="5F7B3F7C-5E92-F533-07DC-3377C29A6496">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:49:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena o valor bruto total da venda antes da aplicação de quaisquer descontos. É a base de cálculo para a receita.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_VENDIDA" id="4A2B3DC5-63BB-96FD-7967-6FBE6079AA52">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:49:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena a quantidade de unidades vendidas (ex: 2 ingressos, 1 pipoca). É uma métrica fundamental para análises de volume.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FORMA_PAG" id="822B1225-4F81-7CEE-331B-CDDA3BEC0239">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:03:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo textual para detalhes adicionais, regras de negócio ou explicações sobre a forma-- de pagamento, que não cabem no nome. Ex: 'Pagamento à vista via QR Code PIX'.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_DESCONTO" id="FB4D2995-F4B2-F036-6459-39C35D878A4E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena o valor monetário total do desconto aplicado à venda (ex: meia-entrada, cupom promocional).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_VENDA" id="C97D9F4A-4044-F98A-9772-36DB35CF3C87">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:51:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Atributo de Fato / Ruim). Data/hora em que a transação ocorreu. Melhoria: Este campo deve ser uma Chave Estrangeira (ID_TEMPO) que aponta para uma DIM_TEMPO (Dimensão Calendário).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_VENDA" id="588BA4D4-824E-5064-D863-95368A717BEC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:50:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Atributo de Fato / Ruim). Campo de texto que indica a situação da venda (ex: 'APROVADA', 'CANCELADA'). Melhoria: Este campo deve ser uma Chave Estrangeira (CD_STATUS) que aponta para uma DIM_STATUS_VENDA.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_LIQUIDO" id="1C1BF85B-312B-B497-4659-77E9924EAD57">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:52:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). A métrica de receita mais importante. É o valor final pago pelo cliente, calculado como (VL_VENDA - VL_DESCONTO).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="DCA752A4-62C6-71BE-00CF-C460D2A196D6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:52:41 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="7A145EFE-D1B2-B38A-0980-6D6B9C3C0268">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:52:41 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="A1BAA056-9F8B-5E3A-E8EF-B93BA4BFAB88">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 19:01:20 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="631C5D1C-BC0F-781D-6BFA-AFBB98848573">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 19:01:20 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B454C379-5B04-D55A-73F8-CAFEF0868E75" name="FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:48:24 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9542DAE2-F8F7-0F86-6607-6E19F3EF54D1,A37AD8D7-36B7-0EA7-0836-89899DF64489,423A903E-019C-EA88-7BEC-2FB596C02333,17635AC3-931C-01EF-26F8-D2272B5D2470,7A8A84FE-9420-560B-43A3-47C503FB9044,2583DAD8-9E74-B25B-893D-B9CB94CDBEAD,89076631-55B1-081C-577B-B0710B50B3FE,972ED342-AD17-356E-CB90-AF7B2C36AFE5</newElementsIDs>
+<usedAttributes>
+<attributeRef>916A7753-1D3A-6920-0281-162EE0CB10F7</attributeRef>
+<attributeRef>BFF9D925-68ED-5489-164D-EA503AF14538</attributeRef>
+<attributeRef>76F0C2D0-EF36-11A3-1FF7-784F720AD06C</attributeRef>
+<attributeRef>52769CC2-FDDD-A9C9-F2AA-7434D05197FF</attributeRef>
+<attributeRef>578748D1-F73B-930E-D622-1A18E06500F2</attributeRef>
+<attributeRef>00AF7835-21D3-6A8B-EEFA-6B59C5C9B654</attributeRef>
+<attributeRef>9FA71614-CE5D-E955-CA30-6F529E639A3F</attributeRef>
+<attributeRef>FB3B4FCE-B0C3-5334-0F69-D23EDBFE4D92</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

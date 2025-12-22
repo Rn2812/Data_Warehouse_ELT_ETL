@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4A6E78F6-07D6-AA98-1795-A596DE7C593C" name="TB_DIM_CLIMA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:55:55 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_CLIMA" id="5F6CAD8A-4722-1D8D-A8A8-986F0CF3B5D1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:56:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave substituta da dimensão clima]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CLIMA" id="24739A37-3DF0-0C88-9BE7-D5B3D50226D1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:57:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do clima (Ensolarado, Chuvoso, Nublado etc.)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_TEMPERATURA" id="EC742226-D683-D5BC-E276-DD1DCA478E44">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:57:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria (Alta, Média, Baixa)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TEMPERATURA_MEDIA" id="6B6446A2-C720-221E-AAB9-C45219EF72D1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:58:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura média do dia]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_UMIDADE" id="6D078F07-9424-49E8-3838-9AADB8519A36">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:58:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentual de umidade]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CONDICAO_EXTREMA" id="52280D5A-2AAA-EF12-AB66-A5B054D54532">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:59:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ex: “Tempestade”, “Neve”, “Calor Extremo”]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="F0CE3D8F-7CB4-0F86-A139-3E09DD3902F7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:59:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_USUARIO_CARGA" id="053B1E3E-0FCB-D73B-0C41-25AE42DBDF8E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:00:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOTE_CARGA" id="74EFC788-C613-A1EF-FA55-59D9CA101710">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:02:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="200C8B05-4516-60E7-CD95-80D8B731BF15">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:03:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="BE763FBE-80C6-20DA-FAD5-AC83111487F4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:03:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="E02E2E82-86B7-062D-3818-33C76C252CF7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:04:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F0CD049-27FA-C535-0CFF-DE485D1F02A3" name="TB_DIM_CLIMA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:56:47 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>5F6CAD8A-4722-1D8D-A8A8-986F0CF3B5D1</newElementsIDs>
+<usedAttributes>
+<attributeRef>5F6CAD8A-4722-1D8D-A8A8-986F0CF3B5D1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,284 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9FB4025-D088-0509-E7D7-DA7CA6532902" name="DIM_FILME">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:48:20 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_CD_FILME" id="63382550-5BD8-1DDE-B184-B9CB0E181372">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:49:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único do filme (Chave Primária da Dimensão).-- Usado para ligar a dimensão às tabelas Fato (ex: FATO_BILHETERIA).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FILME" id="1101EC08-A079-633C-BC0D-B9BDD8DF2C1B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sinopse curta (logline) ou tagline de marketing do filme.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_DISTRIBUIDOR" id="A2E58327-9443-726D-9C90-52E6A35AE2B2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da empresa distribuidora. Pode ser uma Chave Estrangeira (FK)-- para uma DIM_DISTRIBUIDOR ou um código de negócio.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_DISTRIBIDOR" id="09AC1CDF-25E7-9504-A7E4-3A91683F29A6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome comercial da empresa distribuidora (ex: 'Walt Disney Studios', 'Warner Bros. Pictures').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_FILME" id="93F11BDD-F2BC-0C57-3187-F4FAA8FF4A4B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título comercial do filme no território (ex: 'O Rei Leão').-- Principal descritor usado em filtros e relatórios.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_IDIOMA_FILME" id="19BA3605-0D5B-4ED9-B872-17FBAA02C87C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do Idioma de exibição da cópia do filme (ex: 'Português', 'Inglês', 'Espanhol').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_TRADUCAO_FILME" id="5188D953-36FB-806B-F059-2DFEC75752E8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 16:36:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idioma de exibição da cópia do filme (ex: 'Dublado', 'Legendado', 'Nacional').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CL_INDICATIVA_FILME " id="585BC3F7-2A75-EF4B-690D-C59636B7A232">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:52:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação de idade indicativa (censura) do filme. Ex: 0 (Livre), 10, 12, 14, 16, 18.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ESTREIA_FILME" id="A89EB37E-F354-55B8-B080-C0400D232351">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:49:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data oficial de lançamento do filme (estreia) no país ou circuito.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_GENERO_FILME" id="39563D74-EA57-5FD5-5B67-C4EEB555F51D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:49:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Gênero cinematográfico principal do filme (ex: 'Ação', 'Comédia Romântica', 'Terror').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_TITULO_FILME " id="F22B8901-D121-263D-66EA-D69B974BB228">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:49:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Título original do filme, no idioma de produção. Ex: 'Die Hard'.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DURAÇÃO_FILME " id="2A629BE7-77BA-385E-0B81-1EB641D412C5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:49:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Duração (runtime) do filme. Formato VARCHAR, pode armazenar '120m' ou '02:00'.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_PAIS_FILME " id="D6C5C647-E128-2F2C-F2DB-D6D2BC5FDBC9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:49:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[País de origem ou produção principal do filme (ex: 'EUA', 'Brasil', 'Coreia do Sul').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_IDIOMA_ORIGINAL " id="A8FE68C7-56D4-9CF8-AA0E-62350F4E3031">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:57:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Idioma principal falado no filme em sua produção original (ex: 'Inglês', 'Coreano').]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="367A0220-4D7A-9C02-34EF-68086A1C90B7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:57:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="DA088731-A81B-8886-B07B-D263246E0633">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:57:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="60DFDD91-AB0C-306B-5CE0-5D75AE2EB6E0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:57:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="B593CCB9-EC97-BEF7-5E26-8DCEC58F143F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 15:57:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="250ED9B2-082F-4F3F-DA1F-4E97C3B2BC18" name="DIM_FILME">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-18 14:50:38 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>63382550-5BD8-1DDE-B184-B9CB0E181372</newElementsIDs>
+<usedAttributes>
+<attributeRef>63382550-5BD8-1DDE-B184-B9CB0E181372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

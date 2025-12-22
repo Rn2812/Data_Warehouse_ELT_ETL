@@ -1,0 +1,261 @@
+-- Gerado por Oracle SQL Developer Data Modeler 24.3.1.351.0831
+--   em:        2025-11-12 21:44:12 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE DIM_CANAL 
+    ( 
+     SK_ID_CANAL       NUMBER  NOT NULL , 
+     DS_CANAL_COLETA   VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_CANAL 
+    ADD CONSTRAINT DIM_CANAL PRIMARY KEY ( SK_ID_CANAL ) ;
+
+CREATE TABLE DIM_LOCAL 
+    ( 
+     SK_ID_LOCAL       NUMBER  NOT NULL , 
+     DS_END_COMPLETO   VARCHAR2 (150)  NOT NULL , 
+     NM_BAIRRO         VARCHAR2 (50)  NOT NULL , 
+     NM_CIDADE         VARCHAR2 (50)  NOT NULL , 
+     SG_ESTADO         VARCHAR2 (2)  NOT NULL , 
+     NM_ESTADO         VARCHAR2 (50)  NOT NULL , 
+     NR_DDD            NUMBER (2)  NOT NULL , 
+     NR_TELEFONE       VARCHAR2 (10)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_LOCAL 
+    ADD CONSTRAINT DIM_LOCAL PRIMARY KEY ( SK_ID_LOCAL ) ;
+
+CREATE TABLE DIM_PARTICIPANTE 
+    ( 
+     SK_ID_PARTIC          NUMBER  NOT NULL , 
+     CD_PARTIC             NUMBER (8)  NOT NULL , 
+     NM_PARTIC             VARCHAR2 (50)  NOT NULL , 
+     NR_CPF                VARCHAR2 (14)  NOT NULL , 
+     DT_ANIVERSARIO        DATE  NOT NULL , 
+     DS_GENERO             VARCHAR2 (20)  NOT NULL , 
+     DS_NIVEL_ESCOLARIDADE VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA              DATE  NOT NULL , 
+     DT_ATUALIZACAO        DATE  NOT NULL , 
+     ID_PROCESSO_ETL       NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL     NUMBER (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_PARTICIPANTE 
+    ADD CONSTRAINT DIM_PARTICIPANTE PRIMARY KEY ( SK_ID_PARTIC ) ;
+
+CREATE TABLE DIM_PESQUISA 
+    ( 
+     SK_ID_PESQUISA       NUMBER  NOT NULL , 
+     DS_TEMA_PESQUISA     VARCHAR2 (100)  NOT NULL , 
+     DS_HABILIDADE_FUTURA VARCHAR2 (100)  NOT NULL , 
+     DT_CARGA             DATE  NOT NULL , 
+     DT_ATUALIZACAO       DATE  NOT NULL , 
+     ID_PROCESSO_ETL      NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL    VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_PESQUISA 
+    ADD CONSTRAINT DIM_PESQUISA PRIMARY KEY ( SK_ID_PESQUISA ) ;
+
+CREATE TABLE DIM_PROFISSAO 
+    ( 
+     SK_ID_PROFISSAO   NUMBER  NOT NULL , 
+     NM_PROFISSAO      VARCHAR2 (50)  NOT NULL , 
+     NM_AREA_ATUACAO   VARCHAR2 (50)  NOT NULL , 
+     NM_GESTOR         VARCHAR2 (50)  NOT NULL , 
+     NM_DIRETOR        VARCHAR2 (50)  NOT NULL , 
+     NM_DIR_RECURSOS   VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_PROFISSAO 
+    ADD CONSTRAINT DIM_PROFISSAO_PK PRIMARY KEY ( SK_ID_PROFISSAO ) ;
+
+CREATE TABLE DIM_TEMPO 
+    ( 
+     SK_ID_TEMPO         NUMBER  NOT NULL , 
+     DT_REFERENCIA       DATE  NOT NULL , 
+     NR_ANO              NUMBER (4)  NOT NULL , 
+     NR_SEMESTRE         VARCHAR2 (2)  NOT NULL , 
+     DS_SEMESTRE_ANO     VARCHAR2 (25)  NOT NULL , 
+     DS_SEMESTRE         VARCHAR2 (15)  NOT NULL , 
+     NR_TRIMESTRE        NUMBER (2)  NOT NULL , 
+     DS_TRIMESTRE_ANO    VARCHAR2 (25)  NOT NULL , 
+     DS_TRIMESTRE        VARCHAR2 (15)  NOT NULL , 
+     NR_MES              NUMBER (2)  NOT NULL , 
+     NR_ANO_MES          NUMBER (6)  NOT NULL , 
+     DS_MES_ANO          VARCHAR2 (25)  NOT NULL , 
+     DS_MES              VARCHAR2 (15)  NOT NULL , 
+     DS_ABV_MES          VARCHAR2 (3)  NOT NULL , 
+     DS_ABV_MES_ANO      VARCHAR2 (15)  NOT NULL , 
+     DS_DIA_SEMANA       VARCHAR2 (15)  NOT NULL , 
+     DS_DATA             VARCHAR2 (25)  NOT NULL , 
+     NR_DIA_MES          NUMBER (2)  NOT NULL , 
+     NR_DIA_SEMANA       NUMBER (1)  NOT NULL , 
+     NR_DIA_ANO          NUMBER (3)  NOT NULL , 
+     DS_DIA_UTIL_FERIADO VARCHAR2 (15)  NOT NULL , 
+     DS_FIM_SEMANA       VARCHAR2 (15)  NOT NULL , 
+     DS_DATA_EXTENSO     VARCHAR2 (15)  NOT NULL , 
+     NR_HORA             NUMBER (4)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE DIM_TEMPO 
+    ADD CONSTRAINT DIM_TEMPO PRIMARY KEY ( SK_ID_TEMPO ) ;
+
+CREATE TABLE FATO_AVALIACAO 
+    ( 
+     SK_ID_CANAL       NUMBER  NOT NULL , 
+     SK_ID_LOCAL       NUMBER  NOT NULL , 
+     SK_ID_PARTIC      NUMBER  NOT NULL , 
+     SK_ID_PESQUISA    NUMBER  NOT NULL , 
+     SK_ID_PROFISSAO   NUMBER  NOT NULL , 
+     SK_ID_TEMPO       NUMBER  NOT NULL , 
+     VL_NOTA_AVALIACAO NUMBER (3,1)  NOT NULL , 
+     QT_AVALIACAO      NUMBER (1)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT FATO_AVALIACAO_PK PRIMARY KEY ( SK_ID_TEMPO, SK_ID_LOCAL, SK_ID_PESQUISA, SK_ID_PARTIC, SK_ID_CANAL, SK_ID_PROFISSAO ) ;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_CANAL_FATO_AVALIACAO FOREIGN KEY 
+    ( 
+     SK_ID_CANAL
+    ) 
+    REFERENCES DIM_CANAL 
+    ( 
+     SK_ID_CANAL
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_LOCAL_FATO_AVALIACAO FOREIGN KEY 
+    ( 
+     SK_ID_LOCAL
+    ) 
+    REFERENCES DIM_LOCAL 
+    ( 
+     SK_ID_LOCAL
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_PARTIC_FATO_AVAL FOREIGN KEY 
+    ( 
+     SK_ID_PARTIC
+    ) 
+    REFERENCES DIM_PARTICIPANTE 
+    ( 
+     SK_ID_PARTIC
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_PESQUISA_FATO_AVALIACAO FOREIGN KEY 
+    ( 
+     SK_ID_PESQUISA
+    ) 
+    REFERENCES DIM_PESQUISA 
+    ( 
+     SK_ID_PESQUISA
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_PROFISSAO_FATO_AVALIACAO FOREIGN KEY 
+    ( 
+     SK_ID_PROFISSAO
+    ) 
+    REFERENCES DIM_PROFISSAO 
+    ( 
+     SK_ID_PROFISSAO
+    ) 
+;
+
+ALTER TABLE FATO_AVALIACAO 
+    ADD CONSTRAINT DIM_TEMPO_FATO_AVALIACAO FOREIGN KEY 
+    ( 
+     SK_ID_TEMPO
+    ) 
+    REFERENCES DIM_TEMPO 
+    ( 
+     SK_ID_TEMPO
+    ) 
+;
+
+
+
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                             7
+-- CREATE INDEX                             0
+-- ALTER TABLE                             13
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

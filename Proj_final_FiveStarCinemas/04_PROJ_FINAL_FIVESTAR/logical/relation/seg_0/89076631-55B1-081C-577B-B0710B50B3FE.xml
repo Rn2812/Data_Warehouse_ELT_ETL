@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_CLIMA_FTO_VENDA" directorySegmentName="seg_0" id="89076631-55B1-081C-577B-B0710B50B3FE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:28:26 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<sourcePk>FBFBE7BF-7C06-FF10-1B34-808D2C454856</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7E05E953-F7DD-EECA-752C-73C41F1872E9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6AEECC0A-E025-A2FF-1412-45069CBE6D98</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

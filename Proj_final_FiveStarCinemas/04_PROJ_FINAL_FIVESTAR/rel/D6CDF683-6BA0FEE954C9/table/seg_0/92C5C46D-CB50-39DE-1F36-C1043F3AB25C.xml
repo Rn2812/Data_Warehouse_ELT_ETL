@@ -1,0 +1,406 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92C5C46D-CB50-39DE-1F36-C1043F3AB25C" name="FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>6AEECC0A-E025-A2FF-1412-45069CBE6D98</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_CD_PESSOA" id="CACEB3E1-6D13-1625-D5CC-F33394C64BC3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>916A7753-1D3A-6920-0281-162EE0CB10F7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86996C49-5FE6-7F7C-8160-82407477DBAF" referredColumn="9AA09122-3595-B163-E0A9-F4998CD49F4E"/>
+</associations>
+</Column>
+<Column name="SK_CD_LOJA" id="3529A57E-838B-2FF5-8394-32CCE92EB63D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>BFF9D925-68ED-5489-164D-EA503AF14538</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A4A595E-2BDF-243D-645E-0D73A3FF8B68" referredColumn="879D63B3-3090-3657-A6D3-35068200C4F2"/>
+</associations>
+</Column>
+<Column name="SK_CD_TEMPO" id="344EC2C1-58A3-1AA3-B3DE-189691901299">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>76F0C2D0-EF36-11A3-1FF7-784F720AD06C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2885A8BD-B324-6067-20EC-24BCFEE79600" referredColumn="69FE6432-000E-584B-7ED7-AE605AF75972"/>
+</associations>
+</Column>
+<Column name="SK_CD_FILME" id="FC3763F7-20ED-63CF-03FD-83320759B954">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>52769CC2-FDDD-A9C9-F2AA-7434D05197FF</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72870156-C230-51D0-B48C-973CC6BB7DD5" referredColumn="B202BC54-F92D-6C29-58CE-2822E873B6BD"/>
+</associations>
+</Column>
+<Column name="SK_CD_PRODUTO" id="02593A89-56DA-126E-6D66-389C001CE6C0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>578748D1-F73B-930E-D622-1A18E06500F2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="873DA434-3E6F-FC9B-5BDD-7AEFEF63AEFE" referredColumn="1E33A18E-4FB0-5E5C-F079-EC343985F139"/>
+</associations>
+</Column>
+<Column name="SK_CD_PAG" id="4E3A09DC-52C5-97AA-D24D-831178239C11">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>00AF7835-21D3-6A8B-EEFA-6B59C5C9B654</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DE9D890-286E-B9C9-DD74-A8301D19E95F" referredColumn="8F92883D-E432-2DB9-26A3-6A590F4899F4"/>
+</associations>
+</Column>
+<Column name="SK_CD_CLIMA" id="579516B7-BDCC-A2CD-846E-364F11D38685">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>9FA71614-CE5D-E955-CA30-6F529E639A3F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C25947B8-A127-F819-1A82-87EF1E097093" referredColumn="E57EB4A2-773C-248A-12F0-D9E47E6C7E49"/>
+</associations>
+</Column>
+<Column name="SK_CD_TIPO_INGRESSO" id="96D02578-4BC7-5E59-1C91-69E94AE7A4BD">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>FB3B4FCE-B0C3-5334-0F69-D23EDBFE4D92</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="901B0FF9-E793-4346-35BF-95542B828CF2" referredColumn="11217094-4390-3DF9-DA68-40163BE8A61B"/>
+</associations>
+</Column>
+<Column name="CD_VENDA" id="52750D34-7A2A-3B7F-D1AD-C56DAD9B6FF0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Armazena o CÓDIGO identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).]]></commentInRDBMS>
+<generatorID>17DA1402-F068-11F2-BFAD-4B237711F642</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_VENDA" id="064C70BF-E36B-3937-7EBF-E16F92F8BB63">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Dimensão Degenerada). Armazena o identificador da transação (ex: nº do pedido, nº do cupom fiscal) do sistema original (PDV/E-commerce). Não é uma métrica (não deve ser somada), mas serve para ligar a Fato de volta à origem e permitir recontagens (COUNT DISTINCT).]]></commentInRDBMS>
+<generatorID>3B6789CE-A92C-2E13-3BB5-65D2D3E778B8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_VENDA" id="9E9227A0-724E-852E-2D0B-936FE1A59364">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena o valor bruto total da venda antes da aplicação de quaisquer descontos. É a base de cálculo para a receita.]]></commentInRDBMS>
+<generatorID>5F7B3F7C-5E92-F533-07DC-3377C29A6496</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_VENDIDA" id="33F7179A-992F-7032-CDE1-61F82613009D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena a quantidade de unidades vendidas (ex: 2 ingressos, 1 pipoca). É uma métrica fundamental para análises de volume.]]></commentInRDBMS>
+<generatorID>4A2B3DC5-63BB-96FD-7967-6FBE6079AA52</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FORMA_PAG" id="AF5E3CBB-317E-5E63-A81A-C108DF6820E9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo textual para detalhes adicionais, regras de negócio ou explicações sobre a forma-- de pagamento, que não cabem no nome. Ex: 'Pagamento à vista via QR Code PIX'.]]></commentInRDBMS>
+<generatorID>822B1225-4F81-7CEE-331B-CDDA3BEC0239</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_DESCONTO" id="98B34201-04DF-A0A9-AF44-4E54D564ED3C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). Armazena o valor monetário total do desconto aplicado à venda (ex: meia-entrada, cupom promocional).]]></commentInRDBMS>
+<generatorID>FB4D2995-F4B2-F036-6459-39C35D878A4E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_VENDA" id="7891D87E-A740-67CD-D44A-9B917699183A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Atributo de Fato / Ruim). Data/hora em que a transação ocorreu. Melhoria: Este campo deve ser uma Chave Estrangeira (ID_TEMPO) que aponta para uma DIM_TEMPO (Dimensão Calendário).]]></commentInRDBMS>
+<generatorID>C97D9F4A-4044-F98A-9772-36DB35CF3C87</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_VENDA" id="9124A7D9-3837-B260-5F59-53655DFAB4C4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Atributo de Fato / Ruim). Campo de texto que indica a situação da venda (ex: 'APROVADA', 'CANCELADA'). Melhoria: Este campo deve ser uma Chave Estrangeira (CD_STATUS) que aponta para uma DIM_STATUS_VENDA.]]></commentInRDBMS>
+<generatorID>588BA4D4-824E-5064-D863-95368A717BEC</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_LIQUIDO" id="E3AF408F-B9EE-69F8-C5CA-E77D292EC091">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[(Métrica). A métrica de receita mais importante. É o valor final pago pelo cliente, calculado como (VL_VENDA - VL_DESCONTO).]]></commentInRDBMS>
+<generatorID>1C1BF85B-312B-B497-4659-77E9924EAD57</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="A5E13BC3-D3F6-3336-D120-9BCAD87F0352">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>DCA752A4-62C6-71BE-00CF-C460D2A196D6</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="7588BF1C-6D22-2074-E653-798A62567646">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>7A145EFE-D1B2-B38A-0980-6D6B9C3C0268</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="6CE1059F-B2BA-A569-833E-26136FBC4788">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>A1BAA056-9F8B-5E3A-E8EF-B93BA4BFAB88</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="BD0835B7-7448-039C-174A-75EA5F11D62A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>631C5D1C-BC0F-781D-6BFA-AFBB98848573</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18771651-18EB-695B-EBE2-92D2BE444DBF" name="FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>B454C379-5B04-D55A-73F8-CAFEF0868E75</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CACEB3E1-6D13-1625-D5CC-F33394C64BC3"/>
+<colUsage columnID="3529A57E-838B-2FF5-8394-32CCE92EB63D"/>
+<colUsage columnID="344EC2C1-58A3-1AA3-B3DE-189691901299"/>
+<colUsage columnID="FC3763F7-20ED-63CF-03FD-83320759B954"/>
+<colUsage columnID="02593A89-56DA-126E-6D66-389C001CE6C0"/>
+<colUsage columnID="4E3A09DC-52C5-97AA-D24D-831178239C11"/>
+<colUsage columnID="579516B7-BDCC-A2CD-846E-364F11D38685"/>
+<colUsage columnID="96D02578-4BC7-5E59-1C91-69E94AE7A4BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C068549B-1D6E-7BF3-5690-F1C0FF94373D" name="DIM_CINEMA_FTO_CLIENTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>A37AD8D7-36B7-0EA7-0836-89899DF64489</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3529A57E-838B-2FF5-8394-32CCE92EB63D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A9A2665D-639C-CDFA-769F-3DF2B72F2021" name="DIM_CLIENTE_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>9542DAE2-F8F7-0F86-6607-6E19F3EF54D1</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CACEB3E1-6D13-1625-D5CC-F33394C64BC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4839652-D6DE-AC1A-F904-B6C8C2C1DCA6" name="DIM_CLIMA_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>89076631-55B1-081C-577B-B0710B50B3FE</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="579516B7-BDCC-A2CD-846E-364F11D38685"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EE5CC4C-F208-2605-26C1-9EA780F65F23" name="DIM_FILME_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>17635AC3-931C-01EF-26F8-D2272B5D2470</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC3763F7-20ED-63CF-03FD-83320759B954"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C1B4C09-EEBA-0939-D39A-09A97AB42229" name="DIM_FORMA_PAGAMENTO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>2583DAD8-9E74-B25B-893D-B9CB94CDBEAD</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E3A09DC-52C5-97AA-D24D-831178239C11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="575FDFAC-49EF-A6CD-6949-AE6AAB3CAB39" name="DIM_INGRESSO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>972ED342-AD17-356E-CB90-AF7B2C36AFE5</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96D02578-4BC7-5E59-1C91-69E94AE7A4BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58C49360-AA0C-42DA-F2AF-E389939CE231" name="DIM_PRODUTO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>7A8A84FE-9420-560B-43A3-47C503FB9044</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="02593A89-56DA-126E-6D66-389C001CE6C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80B44C4D-0F9D-06F6-B20A-BA07CA1BAF00" name="DIM_TEMPO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>423A903E-019C-EA88-7BEC-2FB596C02333</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="344EC2C1-58A3-1AA3-B3DE-189691901299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

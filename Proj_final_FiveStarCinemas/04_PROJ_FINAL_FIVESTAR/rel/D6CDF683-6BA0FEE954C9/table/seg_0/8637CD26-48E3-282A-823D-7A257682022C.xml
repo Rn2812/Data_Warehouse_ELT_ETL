@@ -1,0 +1,400 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8637CD26-48E3-282A-823D-7A257682022C" name="DIM_CLIENTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>64CF7498-EBD7-A754-38DE-FE2A8042EE36</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_CD_PESSOA" id="9AA09122-3595-B163-E0A9-F4998CD49F4E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo COD_PESSOA da tabela DB_DIM_PESSOA, referente a "Código da Pessoa". Identifica de forma única cada pessoa cadastrada no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.]]></commentInRDBMS>
+<generatorID>97B09C78-CC46-3C05-ED23-96B8C03AFEF2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_TIPO_PESSOA" id="128DCCEA-7E8E-E39C-2E2C-12B429AE39C1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo COD_TIPO_PESSOA da tabela DB_DIM_PESSOA, referente a "Código do Tipo de Pessoa". Define se a pessoa é cliente, funcionário, fornecedor ou outra categoria. Tipo: NUMBER, tamanho: 4 bytes.]]></commentInRDBMS>
+<generatorID>CFD17444-1F99-93D7-59F7-541769A44981</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PESSOA" id="0B64FB3A-A387-8650-CAF0-901249ECF7CC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo NOME_PESSOA da tabela DB_DIM_PESSOA, referente a "Nome da Pessoa". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.]]></commentInRDBMS>
+<generatorID>55DCA418-CCDB-9930-7F21-047CBF34C17E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_RG" id="88ACD481-C838-436F-AA2B-7FDFF9A9B793">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo NUM_RG da tabela DB_DIM_PESSOA, referente a "Número do RG". Guarda o registro geral da pessoa, documento oficial de identificação. Tipo: VARCHAR2, tamanho: 10 bytes.
+Colocamos 12 caracteres, considerando 00.000.000-0]]></commentInRDBMS>
+<generatorID>04310DCB-E0CA-003B-E5F0-0F4A3E6AC17F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CPF" id="62E3B489-A778-7DEE-9979-DDB1EEB581DE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo NUM_CPF da tabela DB_DIM_PESSOA, referente a "Número do CPF". Armazena o CPF válido da pessoa, usado para cadastros fiscais e jurídicos. Tipo: VARCHAR2, tamanho: 13 bytes.]]></commentInRDBMS>
+<generatorID>35EB0092-99D7-669A-7E03-CEB1C74ADA0F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_NASCIMENTO" id="10406BF3-AFF1-DB62-43F2-14B79F37B447">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo DT_NASCIMENTO da tabela DB_DIM_PESSOA, referente a "Data de Nascimento". Registra a data de nascimento da pessoa para identificação e controle de idade. Tipo: DATE.]]></commentInRDBMS>
+<generatorID>ED1E0C1B-0FBE-1D23-5545-96D2DBEC134B</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_CLIENTE" id="3E29C8E7-CF97-A4A2-AEC0-91BCAA71E020">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação que define a natureza do cliente(PF, MEI, PJ, etc.), diferenciando finalidades do cadastro, comercial, cobrança ou entrega, acompanhamento. Campo de texto curto, padronizado.]]></commentInRDBMS>
+<generatorID>5A951AD5-B655-A26A-2189-732B7A41923D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SX_PESSOA" id="9D444514-FC9E-1897-7A0F-9FAB9B3CF4E4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo SEXO_PESSOA da tabela DB_DIM_PESSOA, referente a "Sexo da Pessoa". Identifica o gênero da pessoa com código único (M/F/Outro). Tipo: CHAR, tamanho: 1 byte.]]></commentInRDBMS>
+<generatorID>45D3DABA-B591-088B-E50A-8ADC0F97EDFC</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_PESSOA" id="8B932D9C-2CD5-1607-9533-FB9C85432279">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Os campos ESTADO_CIVIL (VARCHAR5(10)) e SEXO_PESSOA (CHAR(1)) são atributos demográficos que ajudam a compor um perfil mais detalhado do cliente. O estado civil pode indicar diferentes necessidades e padrões de consumo, enquanto a informação de sexo permite a segmentação para produtos ou serviços com apelo de gênero específico. Embora sejam informações sensíveis, quando utilizadas de forma agregada e anônima, contribuem para análises de mercado mais profundas, permitindo que a empresa entenda melhor a composição de sua base de clientes e personalize suas ofertas de maneira mais eficaz.]]></commentInRDBMS>
+<generatorID>9601429C-D500-483B-C186-06E041818098</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_CIVIL" id="77A57405-37F6-964B-D865-CDD5B74E2DB8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo ESTADO_CIVIL da tabela DB_DIM_PESSOA, referente a "Estado Civil". Informa a condição civil da pessoa (solteiro, casado, etc.). Tipo: VARCHAR2, tamanho: 10 bytes.]]></commentInRDBMS>
+<generatorID>9779A5C0-98CF-2255-E10D-FEFAB8CF257C</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="A3FF5D54-26FD-AEB2-7E8F-84BACC036A79">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo EMAIL da tabela DB_DIM_PESSOA, referente a "E-mail". Guarda o endereço eletrônico da pessoa para contato e comunicação. Tipo: VARCHAR2, tamanho: 100 bytes.]]></commentInRDBMS>
+<generatorID>2DB33D09-CBD2-4FE6-B64D-B0858F2A7C22</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ENDERECO" id="2D2C1F40-7934-D3BF-C80F-F75F34345A07">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número da edificação no logradouro, identificando a posição do imóvel (ex.: 123, 4567). Campo numérico inteiro, sem formatação, aceitando até 6 dígitos. Essencial para localização e correspondência.]]></commentInRDBMS>
+<generatorID>EDF8A77D-87D7-63F9-FC54-2EB756CB9B49</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLEMENTO" id="72E95948-2E13-784C-8A54-11F1C2650C9E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informação complementar do endereço que detalha a unidade interna (ex.: APTO 101, BLOCO B, CASA 2). Campo de texto opcional, até 20 caracteres, útil para localizar entradas, torres ou conjuntos.]]></commentInRDBMS>
+<generatorID>32011C07-4FC3-92EF-E964-113AB658F1FF</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="40ACC8D4-8892-F7D3-9BEE-05B2037F892C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data a partir da qual o registro passa a valer. Marca o início da vigência de um endereço ou vínculo. Armazena somente data (AAAA-MM-DD), sem hora, usada para histórico, versionamento e auditoria.]]></commentInRDBMS>
+<generatorID>4A27636E-A596-DEA2-67EF-6E0E83C1C19F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_TERMINO" id="101C28AC-68EB-096F-EA3B-1AA27C805850">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que a validade do registro se encerra. Indica fim de vigência de endereço ou período. Apenas data (AAAA-MM-DD), sem hora. Permite controle de histórico, cortes temporais e consultas ativas.]]></commentInRDBMS>
+<generatorID>CA6328C0-5E1D-F775-DC1D-DA1CFC6CAB34</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_ENDERECO" id="DF31F4D4-C73B-99D8-E331-A30E75A09E95">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação que define a natureza do endereço (RES, COM, COB, ENT, etc.), diferenciando finalidades residencial, comercial, cobrança ou entrega. Campo de texto curto, padronizado, com até 5 caracteres.]]></commentInRDBMS>
+<generatorID>CCC95B9F-F823-5BB2-0CCC-469A2D9C1EAD</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOGRADOURO" id="BE2DDB6F-EC5B-C450-452E-443FF0EF8968">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do logradouro onde o imóvel se localiza (rua, avenida, alameda, estrada, etc.). Campo de texto livre, até 100 caracteres, sem abreviações obrigatórias. Base para CEP e roteirização.]]></commentInRDBMS>
+<generatorID>EABBF0F1-0B53-9BBF-2BEB-3ED44C423F0D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_BAIRRO" id="BAAEAC98-3157-6609-93FA-972A23B71EB6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo NOME_BAIRRO da tabela DB_DIM_PESSOA, referente a "Nome dO bairro". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.]]></commentInRDBMS>
+<generatorID>A1E76FED-0D49-0B20-C183-638279E82E9A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_CIDADE" id="945E2EBF-BEDC-AA01-7AE1-15775158857F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade (município) onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.]]></commentInRDBMS>
+<generatorID>7B84401C-3FBF-794A-35F7-EDBCA7B211C3</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ESTADO" id="D7DA0A1A-E924-DA94-F83F-7D8D11CF7596">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome Do Estado onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.]]></commentInRDBMS>
+<generatorID>08FA1E33-F184-C1EA-1159-30D540B47DE9</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_ESTADO" id="69020C07-F720-0D67-93C3-D75B09EDC0AF">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da Unidade Federativa (UF) do endereço, com duas letras (ex.: SP, RJ, MG). Campo de texto fixo, 2 caracteres, validado contra lista oficial. Essencial para padronização e regras fiscais.]]></commentInRDBMS>
+<generatorID>1DF1F9BB-2F95-4477-B688-3D773132D1BA</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CEP" id="6CD9C5B2-87C8-980E-8AB5-73DFF7037138">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.
+incluí 9 caracter incluindo o traçõ -]]></commentInRDBMS>
+<generatorID>8330124E-8F4E-D319-969A-2D155BEA12E6</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="2D012A3B-6578-3DFA-2874-EC60629B0260">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<generatorID>5654AB58-721C-B903-D7D6-6D16430A1C2A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="CE024BC8-15F5-5F87-968A-4D6F73F14163">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<generatorID>115D43DD-CF33-7F2A-8244-7230A157F83F</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="968A8E6E-B654-AEF5-11EA-D926688C77C7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<generatorID>72FF2A38-8DBD-59FC-FDC3-F97959AAB23A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="FE30DBA3-68E4-4E97-2973-F86829956CD9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<generatorID>02BE7465-E05E-4D65-4217-8AB81C869268</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PAIS_CLI" id="0BA88777-82DF-5638-9072-C26BE65C6A18">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOME DO PAÍS ONDE O CLIENTE RESIDE]]></commentInRDBMS>
+<generatorID>CD4F1DBD-FAE2-B408-7051-C2C53514BB2E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ESCOLARIDADE_CLI" id="29DD3294-D3B4-F2CE-DF85-FCD5C5415B06">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIÇÃO DA ESCOLARIDADE DO CLIENTE]]></commentInRDBMS>
+<generatorID>51041F95-D53C-14B8-7C09-9781316C70B1</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_RELIGIAO_CLI" id="9A667F1C-22E2-27BD-9DBB-5EF57BCAD8CC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIÇÃO DA RELIGIÃO OU DAS PREFERENCIAS DOS CLIENTE]]></commentInRDBMS>
+<generatorID>542B645D-FC94-75AC-3622-34E7EC774AA8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEE82351-A1ED-013C-C6E0-9E8E58234392" name="DIM_CLIENTE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>523C7F5D-7054-F7C8-667A-F1EE34979773</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AA09122-3595-B163-E0A9-F4998CD49F4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

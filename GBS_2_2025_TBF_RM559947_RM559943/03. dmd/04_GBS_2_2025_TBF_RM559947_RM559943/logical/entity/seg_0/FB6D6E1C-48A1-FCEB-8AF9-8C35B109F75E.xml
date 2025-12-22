@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FB6D6E1C-48A1-FCEB-8AF9-8C35B109F75E" name="DIM_LOCAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:19:19 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_LOCAL" id="93BDC8EA-56F8-BA28-C522-7F65A81C2083">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:20:55 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_END_COMPLETO" id="BEA58BC0-71CC-817E-6788-45F13B9747CE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:21:13 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_BAIRRO" id="0F0B4B36-CED9-0A61-4DA8-65C82190C68E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:21:59 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CIDADE" id="7A139B1E-9C70-F833-3C3F-5F18CA618F21">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:22:32 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_ESTADO" id="AC57DFDF-DE7B-D41E-0E48-9C2A41E99EE3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:24:09 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="1475D741-E470-0810-2F93-A5273F92FE24">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:25:00 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DDD" id="353C6F76-FFC3-BB93-4EDF-9C286C6EA6E4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:06:23 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TELEFONE" id="C1FE7EA2-8188-D9C2-6836-E961C96495A0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:08:57 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="E4960C3C-1B65-3BFB-9D73-C94F9D2F2207">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:25:18 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="4ED75F23-6017-E24D-2FB6-4EE1E1AD40C0">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:25:56 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="C0112C0A-EC9C-D09F-81EA-567CD413558F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:26:15 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="F170F435-0131-B605-65F5-3FC37FFE5CD2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:26:29 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E59D1A66-F4F5-D3EA-3C56-354C97872B5D" name="DIM_LOCAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:21:09 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>93BDC8EA-56F8-BA28-C522-7F65A81C2083</newElementsIDs>
+<usedAttributes>
+<attributeRef>93BDC8EA-56F8-BA28-C522-7F65A81C2083</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

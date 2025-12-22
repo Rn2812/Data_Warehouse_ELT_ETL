@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5E89B35E-2506-3392-D1F1-29EAD917C7C6" name="DIM_PESQUISA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>E64F5035-9B9E-12AC-699F-507DC30A2B32</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_PESQUISA" id="5F2E233F-0A8F-226C-EF45-71310ADF11FE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>9F4C805C-7D27-A0C0-C0CF-D1ADB5618D8E</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TEMA_PESQUISA" id="C20B1859-5AE4-4A12-734E-5AC61F5B4E46">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>943C0584-B588-9E9C-C5E4-1BBE6C35A668</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_HABILIDADE_FUTURA" id="83029AD6-AF35-4D2E-75D5-904FFB65A9E7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>20D29D05-24B4-3451-DA97-B871937CAD17</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="A069456D-B2E5-477D-169E-4AD6D984B367">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>11E3C229-8AE7-9E29-2139-D4283DB32021</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="C580867B-939C-D9B3-7CA4-67CCF6658D3D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>5DC66548-8AA1-5933-068E-6BF77ADDB006</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="EA0C7E70-6646-9C16-5B19-2B97AAC75BFC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>4E0B90AE-A98D-A235-EF0E-D56E44F8DE90</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="B072DA39-B609-2699-F120-5FC1397ABF90">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>F7B43BA9-2D31-D772-9A39-D5314956FDEF</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1A3EFB1-D4E0-7594-173E-E55F8DEA4966" name="DIM_PESQUISA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>7F4E2613-1208-27DA-ECE3-1C41B29B8CEC</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F2E233F-0A8F-226C-EF45-71310ADF11FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

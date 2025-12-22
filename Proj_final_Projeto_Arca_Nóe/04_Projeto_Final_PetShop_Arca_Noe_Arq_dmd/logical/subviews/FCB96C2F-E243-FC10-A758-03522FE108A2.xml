@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="FCB96C2F-E243-FC10-A758-03522FE108A2">
+<createdBy>rodri</createdBy>
+<modifiedBy>rodri</modifiedBy>
+<createdTime>2025-09-09 18:12:32 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="0E1FABEC-3DE7-6CB7-AEC8-CD9288EB90A3" otype="Entity" vid="EE93EFFE-113D-DC3D-4E85-497E902E0A90">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="950" y="158" width="269" height="420"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="288237AE-8510-EF88-476D-488F0C9BC20C" otype="Note" vid="F879BA3A-60F5-658B-2BD8-E63A245E6383">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="47" width="388" height="146"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-3355444</backgroundColor>
+<foregroundColor>-16777216</foregroundColor>
+<comment>INTEGRANTES DO GRUPO:
+
+		EDUARDO BEJAR - RM560684
+		GUILHERME PEÇANHA - RM559723
+		RODRIGO NILLO - RM559947
+		THIAGO NOVAIS - RM559315</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4D1DBAB9-DB69-C41E-756C-99A210547DBE" otype="Entity" vid="C2DF0586-C4A3-A7EE-A10C-E8009F076354">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="531" y="5" width="266" height="150"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A9F166BB-6584-05C4-B65B-026B0F1B16C3" otype="Entity" vid="8506FD5E-B1A5-8C8A-BBFC-85603F56DA4F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="529" y="582" width="264" height="271"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="CF8286A4-6440-7DD2-C31C-3169D1ADDD75" otype="Note" vid="6746C703-4CCA-DC68-305F-B4B694AA7290">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1" y="0" width="387" height="48"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-16711732</backgroundColor>
+<foregroundColor>-6710785</foregroundColor>
+<comment>PROJETO - PETSHOP - ARCA DE NOÉ</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="D7601362-BABA-8437-3F0E-C52855D2F75A" otype="Entity" vid="E334AD85-629A-016E-9CD7-AB04B126B869">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="479" y="230" width="373" height="298"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="FCDF0048-5BEE-ADF2-E2D1-BE631610AA19" otype="Entity" vid="A2176A41-5166-4A82-DE8B-D5AF1870859B">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="136" y="227" width="291" height="409"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="0A1DD00B-99C7-C053-6732-469D979ABE20" otype="Relation" vid_source="A2176A41-5166-4A82-DE8B-D5AF1870859B" vid_target="E334AD85-629A-016E-9CD7-AB04B126B869">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="427" y="394"/>
+<point x="479" y="394"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="1BD6EC54-7378-4000-B60E-F14D8EDD92E2" otype="Relation" vid_source="C2DF0586-C4A3-A7EE-A10C-E8009F076354" vid_target="E334AD85-629A-016E-9CD7-AB04B126B869">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="679" y="155"/>
+<point x="679" y="230"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="D137CB4B-AAB6-66B5-69AD-DC4353583A19" otype="Relation" vid_source="EE93EFFE-113D-DC3D-4E85-497E902E0A90" vid_target="E334AD85-629A-016E-9CD7-AB04B126B869">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="950" y="349"/>
+<point x="852" y="349"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="D3885190-3B82-E8D6-2F29-BCCB8183BB02" otype="Relation" vid_source="8506FD5E-B1A5-8C8A-BBFC-85603F56DA4F" vid_target="E334AD85-629A-016E-9CD7-AB04B126B869">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="676" y="582"/>
+<point x="676" y="528"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

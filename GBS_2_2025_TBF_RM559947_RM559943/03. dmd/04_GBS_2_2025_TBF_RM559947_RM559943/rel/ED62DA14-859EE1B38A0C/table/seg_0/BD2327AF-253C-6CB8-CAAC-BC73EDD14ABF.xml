@@ -1,0 +1,259 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD2327AF-253C-6CB8-CAAC-BC73EDD14ABF" name="FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>44AD48B6-F6D8-D440-EA66-7FA39A39DF3D</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_CANAL" id="C95D33B1-52CB-73E9-32BC-98A92B58FE79">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>787FB1FA-FD30-BC86-6803-A86D3177419C</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C73F20D-6F10-B47F-68DE-E74F6ABEE033" referredColumn="E91A02B5-50D4-2DFA-4227-C71640E51B00"/>
+</associations>
+</Column>
+<Column name="SK_ID_LOCAL" id="40BDC7A3-B7C3-D24B-D4BE-F810698ECB7C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>8B15D3F2-F045-931A-471A-E6E53E8812FB</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F546C55E-9DFC-1ED4-8D4B-C0D9EFC937FF" referredColumn="EB80B17C-922B-CDFD-8988-7F012864B0F9"/>
+</associations>
+</Column>
+<Column name="SK_ID_PARTIC" id="7B7CF4BC-2022-945C-5856-4DBCB4F534D3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>6B1EF43B-7512-B6AC-8319-0A90C4CA9A97</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24CD76FE-B70C-A476-F116-55BEC4E918F8" referredColumn="FC5D315E-417E-BC20-92E5-D584BBE28871"/>
+</associations>
+</Column>
+<Column name="SK_ID_PESQUISA" id="D25B6C80-0A03-A932-73B1-57CF4ED09CA6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>39DA0CBF-F97E-33F5-F2F2-073E634D3A8C</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A648465-D2B3-054F-5092-0FB4B578CDD9" referredColumn="5F2E233F-0A8F-226C-EF45-71310ADF11FE"/>
+</associations>
+</Column>
+<Column name="SK_ID_PROFISSAO" id="C80230DC-4DDE-35C0-3A8F-C3B8B87FACBB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>AA4C531E-C3EE-6113-E0E1-21025FE2BAA6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE97CF25-FC81-6F87-0748-2B400CAF37E5" referredColumn="4C3DEC5E-46AD-944E-4CEE-98B6CA143AE4"/>
+</associations>
+</Column>
+<Column name="SK_ID_TEMPO" id="FA12DEBE-110F-1E58-8015-1B7D839CBCA6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>3A3D54F4-F683-E74C-ADC1-280CEC34830B</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EB54A94-6CB7-CD7D-41CB-11CACC2DDC79" referredColumn="2D1004FC-CADC-A31E-A0D9-C550A06782B6"/>
+</associations>
+</Column>
+<Column name="VL_NOTA_AVALIACAO" id="F6BC641D-8DCC-1449-3A81-C9D9CE8E900C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>05C4C8C9-99A4-72F3-E0AC-2017F349C68E</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_AVALIACAO" id="212F294C-A628-B8AA-E2D2-3D6D095EB3E1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>BB3A289B-8468-91D2-C6F9-CC40520D3376</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="6C6B0E19-EDA3-3D28-14E2-26220CF16B7B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>1752D367-2055-905F-2437-F5E6C71A3AA6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="5D01F1CA-2984-40DA-3AE4-48715C38218F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>AC61115E-6230-7F3C-5452-EC0F80E64437</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="CE3A0CC4-1128-46D2-22A3-16B83FADBEB8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>3003B998-8B9F-9812-8023-61BF07CD9F01</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="E15887A4-FF31-172B-9CB4-67C8D7B79E91">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>84F4B1F3-2BB0-FA93-60D0-C2DB19450BB8</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D29092C-1963-B614-B573-35EE2BE2DF79" name="FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>FFB23AAA-E0E9-22B7-5106-4AEAA51516C3</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA12DEBE-110F-1E58-8015-1B7D839CBCA6"/>
+<colUsage columnID="40BDC7A3-B7C3-D24B-D4BE-F810698ECB7C"/>
+<colUsage columnID="D25B6C80-0A03-A932-73B1-57CF4ED09CA6"/>
+<colUsage columnID="7B7CF4BC-2022-945C-5856-4DBCB4F534D3"/>
+<colUsage columnID="C95D33B1-52CB-73E9-32BC-98A92B58FE79"/>
+<colUsage columnID="C80230DC-4DDE-35C0-3A8F-C3B8B87FACBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF31683D-8516-FAA0-3760-92F2C022E6CC" name="DIM_CANAL_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>42AF6AAB-535B-9CD1-AADE-53FDC13421E7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C95D33B1-52CB-73E9-32BC-98A92B58FE79"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA194B95-0207-E415-E646-E50C97526619" name="DIM_LOCAL_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>77DB2540-568C-6A0D-F0EA-2AF30F0A04D7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40BDC7A3-B7C3-D24B-D4BE-F810698ECB7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D1B8A25-F71C-7BA9-161F-D3F452038971" name="DIM_PARTIC_FATO_AVAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>DF554A90-2641-7B11-537E-9D0444ED5222</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B7CF4BC-2022-945C-5856-4DBCB4F534D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2929876E-094E-CAF4-F3ED-CF1FEB366E1A" name="DIM_PESQUISA_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>2BD4CB09-2A1C-76BB-1A14-6DB50C1216D8</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D25B6C80-0A03-A932-73B1-57CF4ED09CA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FFB5E9B-40C9-C8B1-3B3D-5299CAB1E98E" name="DIM_PROFISSAO_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>B7FDC1E3-7635-8457-F049-59AD951C11A6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C80230DC-4DDE-35C0-3A8F-C3B8B87FACBB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F7BDD6A-93D7-C902-3DB2-BCDDFF460049" name="DIM_TEMPO_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>26F3A549-DB94-B8B7-1A8D-9BC30FDE35A9</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA12DEBE-110F-1E58-8015-1B7D839CBCA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_CINEMA_FTO_CLIENTE" directorySegmentName="seg_0" id="A37AD8D7-36B7-0EA7-0836-89899DF64489">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 00:29:30 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<sourcePk>CB06541E-E01B-27B7-CD9F-B0D356C0F18D</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B04D1FC-DBBC-71D5-A75A-5D2DA34B8814</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6AEECC0A-E025-A2FF-1412-45069CBE6D98</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TB_DIM_CLIMA_TB_FTO_TRAFEGO" directorySegmentName="seg_0" id="399F0953-06F1-4F83-26FA-5DE52DF2A328">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:26:13 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<sourcePk>6F0CD049-27FA-C535-0CFF-DE485D1F02A3</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A6E78F6-07D6-AA98-1795-A596DE7C593C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>210CA5CD-6954-9BA7-A050-1262810EE6F8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

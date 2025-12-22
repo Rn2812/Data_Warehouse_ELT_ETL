@@ -1,0 +1,379 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D6BF1A1-3CC7-CA36-6EE1-F250178E774E" name="TB_DIM_TEMPO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<generatorID>0E1FABEC-3DE7-6CB7-AEC8-CD9288EB90A3</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_TEMPO" id="992CA8F4-D422-7458-6FB4-62F3CF11DFD3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo SK_TEMPO da tabela TB_DIM_TEMPO, referente a "Código da loja". Identifica de forma única cada cadastro do estabelecimento no sistema. Utilizado como chave primária em relacionamentos. Tipo: NUMBER, tamanho: 10 bytes.]]></commentInRDBMS>
+<generatorID>8BFA2471-DA0D-E4FC-4E91-E0803C78B7B3</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_REFERENCIA" id="9C2C52CA-A4E3-C6C8-11CD-6E50B4080BFC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data completa, sendo a chave primária da tabela de tempo. Ela serve de referência para todos os atributos temporais, permitindo uma análise flexível e multidimensional.
+]]></commentInRDBMS>
+<generatorID>F1C775A1-F3ED-D080-CD00-41ED2B12C819</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_MES" id="426C3B9D-056D-6BD2-D842-65C3D3E8E025">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do mês do ano (1 a 12). Permite análises de desempenho mensais, como vendas e consultas.
+]]></commentInRDBMS>
+<generatorID>2D61EE49-B0BC-38A5-0033-99B681ED0469</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ANO" id="42F94AF4-E78B-7F2D-BC5E-BD7D0B4FBDCE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do ano (ex: 2023). Essencial para análises anuais de desempenho, comparativos e tendências de longo prazo.
+]]></commentInRDBMS>
+<generatorID>DDFC2C73-9949-C8E6-44A0-A1B5949BA85D</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ANO_MES" id="FD821C2C-5251-E823-543F-529A1ACBD75A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Concatenação do ano e mês, como 202409. Útil para ordenação cronológica e para a criação de chaves compostas em outras tabelas.
+]]></commentInRDBMS>
+<generatorID>74683414-AFEA-95AB-65BB-8129A6294F08</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_SEMESTRE" id="33BB2C01-6722-AEFA-8134-2564941CC4AD">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do semestre do ano (1 ou 2). Útil para a análise de desempenho em períodos maiores que o trimestre, como sazonalidade semestral.
+]]></commentInRDBMS>
+<generatorID>8CD161A3-2BB0-1EB9-4BCA-31295EB16567</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TRIMESTRE" id="C8809657-B816-009A-9363-1BCADBC52741">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do trimestre (1 a 4). Essencial para o monitoramento de metas e resultados de curto prazo, além de permitir comparações trimestrais.
+]]></commentInRDBMS>
+<generatorID>EF5FDEA7-6DF2-81AC-C948-5744CEEAD42E</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DATA" id="5B4FC3D3-9355-F2A3-4983-A9984D09EBB5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da data (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.]]></commentInRDBMS>
+<generatorID>58E49C3C-6E19-36CC-1759-12A847ACCD40</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DATA_EXTENSO" id="CC6A71E9-E796-F370-BBDC-8285B806D04A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[A data completa por extenso, em formato legível para humanos. Ótimo para relatórios e exibição em interfaces.
+]]></commentInRDBMS>
+<generatorID>ED7336FA-76E3-C369-B396-1386CC279894</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MES" id="5865E21C-18F2-7FFB-9173-5D968DC4FA32">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do mês e ano por extenso (ex: "Setembro de 2024"). Ideal para títulos de relatórios e dashboards.]]></commentInRDBMS>
+<generatorID>2C671D2A-7853-A1C9-BDF1-DC7DF35D4486</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DIA_SEMANA" id="7BFE7059-0B3E-B6D8-EEC5-B226D9C9D473">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do dia da semana (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.]]></commentInRDBMS>
+<generatorID>69A1899F-BE90-2C19-F8BE-FC7D63BB9381</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DIA_UTIL_FERIADO" id="B0AA8427-8E89-1E37-3E93-9BE33EF8D579">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicador que distingue dias úteis de feriados. Crucial para analisar o impacto de feriados no desempenho operacional.
+]]></commentInRDBMS>
+<generatorID>4680938B-6870-A573-20B3-0ED90C25D2E0</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FIM_SEMANA" id="730CCCF6-676C-D8A0-D84F-93224D1C4340">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicador para dias de fim de semana. Essencial para a análise da sazonalidade de atendimentos em relação aos dias de trabalho.
+]]></commentInRDBMS>
+<generatorID>287ED851-6C7B-B245-A318-C9E9310639B6</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MES_ANO" id="22E5FB09-7496-3F8E-A809-F195FA3C4552">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do mês por extenso (ex: "Setembro"). Facilita a leitura e compreensão dos relatórios.
+]]></commentInRDBMS>
+<generatorID>852D7B9E-766C-2CA5-C899-B38D6A25CED3</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ABV_MES" id="B119F8ED-6B58-330A-C100-32757F1AE1D2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação do nome do mês (ex: "Set"). Formato compacto para visualizações em dashboards e tabelas.]]></commentInRDBMS>
+<generatorID>8574896E-781C-34CE-E121-4C1A2E707C18</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_SEMESTRE" id="0EC5FA08-5EA4-7843-5282-F72569A2654F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.
+]]></commentInRDBMS>
+<generatorID>FAE2ABBC-D008-7C9B-BC97-D429A22352F2</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TRIMESTRE" id="2FBCD241-FBFC-6B9E-7CF8-038359570B02">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.
+]]></commentInRDBMS>
+<generatorID>474EE960-0E16-ABEB-B0EA-29F71BC6BA0D</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_SEMESTRE_ANO" id="3DFEFF6B-3C40-196F-0509-8897F28E7AAF">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.
+]]></commentInRDBMS>
+<generatorID>89957B83-A90B-7D9C-3706-79B35215AC1F</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TRIMESTRE_ANO" id="82A741CF-F029-B25E-5E64-8AC13A070B54">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.
+]]></commentInRDBMS>
+<generatorID>F5421E64-EAB0-F674-DBF6-CE60548D7C08</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_ABV_MES_ANO" id="1A6684D6-DF04-08DF-64F2-891865D52E12">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviação do mês e ano (ex: "Set 2024"). Formato compacto para rótulos em gráficos e relatórios.]]></commentInRDBMS>
+<generatorID>BDBD2B05-7174-3F83-2865-3F43C2DB3712</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_DIA_SEMANA" id="96583B27-1B88-DCBB-8D75-7A7C0587A1E1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia da semana, por exemplo, 1 para domingo e 7 para sábado. Útil para cálculos e lógica de negócios.
+]]></commentInRDBMS>
+<generatorID>3D6F5DCD-0FE1-7827-7878-F7DA039F360A</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_DIA_MES" id="DE49CF07-1F2C-0154-D943-C9ED042F716E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia dentro do mês (1 a 31). Permite a análise diária de métricas e ajuda a identificar padrões em curtos períodos de tempo.]]></commentInRDBMS>
+<generatorID>2F351604-D448-75A1-39A3-1458C3D1701A</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_DIA_ANO" id="965D2F1E-14CB-BA1F-4893-965A086B945F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do dia dentro do ano, de 1 a 366 em anos bissextos. Permite análises de tendências diárias ao longo de um ano completo.
+]]></commentInRDBMS>
+<generatorID>473BE11F-7A37-9876-8AF9-6BEEFE6DF656</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_HORA" id="D15B9C7F-C428-4005-0902-40E893105FC3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número da hora do dia, de 0 a 23. Permite a análise do fluxo de atendimentos por hora, ajudando a identificar horários de pico e otimizar a alocação de equipe.
+]]></commentInRDBMS>
+<generatorID>8E556D62-5E56-D0CA-85C0-6CF8F9E6F0D8</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="346E11AE-25EB-F40A-5628-6C03FC4EB02A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW.]]></commentInRDBMS>
+<generatorID>4335E7C3-1A66-1CC0-CF64-BB7A9E0E43FF</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="45529F52-9509-F5B0-89F5-B2DBE535419F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da execução do processo ETL responsável pela carga.]]></commentInRDBMS>
+<generatorID>573F6923-DF38-CBF3-407B-95F90C8B1012</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B34618ED-F420-8FBB-8E95-E8FC1AB45685" name="SK_TB_DIM_TEMPO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:22:10 UTC</createdTime>
+<generatorID>8DFC4335-0FE0-C8BE-C6F7-89663B3D5C64</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="992CA8F4-D422-7458-6FB4-62F3CF11DFD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

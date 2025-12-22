@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2501D5EE-C893-328F-C7FC-CC9F37AAC037" mainViewID="3DB7FE4F-5A6E-C70C-EEF1-E07F58373BA2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 14:44:29 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="04_Projeto_Final_PetShop_Arca_Noe_v1" id="03FDE237-86E6-B405-E5AB-A6F42AB761C2" version="3.5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 18:04:36 UTC</createdTime>
+<ownerDesignName>Proj_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>03FDE237-86E6-B405-E5AB-A6F42AB761C2</designId>
+</OSDM_Design>

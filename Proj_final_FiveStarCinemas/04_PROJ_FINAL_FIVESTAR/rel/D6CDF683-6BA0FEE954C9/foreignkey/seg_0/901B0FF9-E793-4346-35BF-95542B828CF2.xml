@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="901B0FF9-E793-4346-35BF-95542B828CF2" containerWithKeyObject="92C5C46D-CB50-39DE-1F36-C1043F3AB25C" localFKIndex="575FDFAC-49EF-A6CD-6949-AE6AAB3CAB39" name="DIM_INGRESSO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>972ED342-AD17-356E-CB90-AF7B2C36AFE5</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<referredTableLongName>DIM_INGRESSO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7599540B-9822-1688-B0C4-F5CAFD883145</referredTableID>
+<keyObject>CF9682EA-34A6-E649-7AFE-880CEB5CBB35</keyObject>
+<referredKeyID>CF9682EA-34A6-E649-7AFE-880CEB5CBB35</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_CD_TIPO_INGRESSO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4690DEC0-B79F-E553-BB0C-5B81BF04CA8E" name="DIM_INGRESSO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:12:56 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_CD_TIPO_INGRESSO" id="47F3F8DC-DDA6-BDB2-31C7-C1932E4790A4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:13:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave substituta da dimensão Ingresso]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TIPO_INGRESSO" id="C8F7FA3F-098A-B25E-947F-791843DB35DE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:14:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[descrição detalhada do tipo de ingresso(Promoção, combo, unitário, meia estudante, meia idoso).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PROMOCAO" id="0A706FB2-F8EA-100A-3966-9D7C81215F90">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:16:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[CD_PROMOCAO - lista os códigos classificados para a promoção ou campanha.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_PROMOCAO " id="6BC434BC-E421-124A-CDAC-B07888803BD6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:17:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[descrição detalhada do tipo de promoção(Promoção, combo, unitário, meia estudante, meia idoso).]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INICIO_PROMOCAO" id="20C7BB71-0499-1CE7-D44C-6BB8801C4A53">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:18:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[data de início da promoção ou campanha]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_FIM_PROMOCAO" id="BA9980F2-EEF7-5C2A-6C07-DE3B5CE3AFF4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:19:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[data de fim da promoção ou campanha]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PROMOCAO" id="6E986B52-D0A6-970D-C5F1-2B57F670799D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:20:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[descrição curta com o nome do tipo de promoção(Dia do professor, dia dos namorados etc....)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E2F1F48-48B8-B56E-25CF-751BD9367405" name="DIM_INGRESSO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:13:57 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>47F3F8DC-DDA6-BDB2-31C7-C1932E4790A4</newElementsIDs>
+<usedAttributes>
+<attributeRef>47F3F8DC-DDA6-BDB2-31C7-C1932E4790A4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

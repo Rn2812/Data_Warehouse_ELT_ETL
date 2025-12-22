@@ -1,0 +1,625 @@
+-- Gerado por Oracle SQL Developer Data Modeler 24.3.1.351.0831
+--   em:        2025-11-01 20:26:46 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE TB_DIM_CLIMA 
+    ( 
+     SK_ID_CLIMA          NUMBER  NOT NULL , 
+     DS_CLIMA             VARCHAR2 (30)  NOT NULL , 
+     TP_TEMPERATURA       VARCHAR2 (15)  NOT NULL , 
+     NR_TEMPERATURA_MEDIA NUMBER (5,2)  NOT NULL , 
+     NR_UMIDADE           NUMBER (5,2)  NOT NULL , 
+     DS_CONDICAO_EXTREMA  VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA             DATE  NOT NULL , 
+     NM_USUARIO_CARGA     VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA        NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO       DATE  NOT NULL , 
+     ID_PROCESSO_ETL      NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL    VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.SK_ID_CLIMA IS 'Chave substituta da dimensão clima' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.DS_CLIMA IS 'Descrição do clima (Ensolarado, Chuvoso, Nublado etc.)' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.TP_TEMPERATURA IS 'Categoria (Alta, Média, Baixa)' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.NR_TEMPERATURA_MEDIA IS 'Temperatura média do dia' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.NR_UMIDADE IS 'Percentual de umidade' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.DS_CONDICAO_EXTREMA IS 'Ex: “Tempestade”, “Neve”, “Calor Extremo”' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_CLIMA.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_CLIMA 
+    ADD CONSTRAINT TB_DIM_CLIMA PRIMARY KEY ( SK_ID_CLIMA ) ;
+
+CREATE TABLE TB_DIM_COND_PISTA 
+    ( 
+     SK_ID_COND_PISTA  NUMBER  NOT NULL , 
+     TP_COND_PISTA     VARCHAR2 (20)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     NM_USUARIO_CARGA  VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA     NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.SK_ID_COND_PISTA IS 'Chave estrangeira da dimensão RADAR' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.TP_COND_PISTA IS '(Seca, Úmida, Molhada, Rachada, Quebrada)' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_COND_PISTA.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_COND_PISTA 
+    ADD CONSTRAINT TB_DIM_COND_PISTA PRIMARY KEY ( SK_ID_COND_PISTA ) ;
+
+CREATE TABLE TB_DIM_LOCAL 
+    ( 
+     SK_ID_LOCAL       NUMBER  NOT NULL , 
+     NM_LOGRADOURO     VARCHAR2 (100)  NOT NULL , 
+     NR_LOGRADOURO     VARCHAR2 (10)  NOT NULL , 
+     NR_CEP            VARCHAR2 (8)  NOT NULL , 
+     NM_BAIRRO         VARCHAR2 (50)  NOT NULL , 
+     NM_CIDADE         VARCHAR2 (50)  NOT NULL , 
+     NM_ESTADO         VARCHAR2 (50)  NOT NULL , 
+     SG_ESTADO         VARCHAR2 (2)  NOT NULL , 
+     NR_QUADRANTE      NUMBER (2)  NOT NULL , 
+     NR_LATITUDE       NUMBER (12)  NOT NULL , 
+     NR_LONGITUDE      NUMBER (12)  NOT NULL , 
+     LC_HEMISFERIO     VARCHAR2 (5)  NOT NULL , 
+     DT_CARGA          DATE  NOT NULL , 
+     NM_USUARIO_CARGA  VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA     NUMBER (8)  NOT NULL , 
+     DT_ATUALIZACAO    DATE  NOT NULL , 
+     ID_PROCESSO_ETL   NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.SK_ID_LOCAL IS 'Chave estrangeira da dimensão LOCALIDADE' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NM_LOGRADOURO IS 'Nome completo do logradouro onde o imóvel se localiza (rua, avenida, alameda, estrada, etc.). Campo de texto livre, até 100 caracteres, sem abreviações obrigatórias. Base para CEP e roteirização.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_LOGRADOURO IS 'Numero do logradouro onde o imóvel se localiza até 10 caracteres, podendo ser alphanúmerico, sem abreviações obrigatórias.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_CEP IS 'Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NM_BAIRRO IS 'Campo NOME_BAIRRO da tabela DB_DIM_PESSOA, referente a "Nome dO bairro". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NM_CIDADE IS 'Nome da cidade (município) onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NM_ESTADO IS 'Nome do Estado onde o endereço está situado. Campo de texto, até 50 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.SG_ESTADO IS 'Sigla da Unidade Federativa (UF) do endereço, com duas letras (ex.: SP, RJ, MG). Campo de texto fixo, 2 caracteres, validado contra lista oficial. Essencial para padronização e regras fiscais.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_QUADRANTE IS 'O campo NR_QUADRANTE NUMBER é um atributo descritivo que enriquece a dimensão de localidade. Ele transforma dados geográficos granulares (como bairros ou CEPs) em categorias estratégicas de alto nível (Quadrantes), tornando a análise de Business Intelligence (BI) mais simples, rápida e eficaz.EX:(Regioes:Norte, Sul, Leste, Oeste)' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_LATITUDE IS 'O campo em destque armazena o valor da latitude de uma localização. Ex: -27.572880' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_LONGITUDE IS 'O campo em destque armazena o valor da longitude de uma localização. Ex: -48.425942' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.LC_HEMISFERIO IS 'O campo em destque armazena o valor do Hemisfério(Norte, Sul, Leste, Oeste) necessário para definir a localização exata Ex:(28º05''56"S,48º40''30"O)' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_LOCAL.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_LOCAL 
+    ADD CONSTRAINT TB_DIM_LOCAL PRIMARY KEY ( SK_ID_LOCAL ) ;
+
+CREATE TABLE TB_DIM_RADAR 
+    ( 
+     SK_ID_RADAR                 NUMBER  NOT NULL , 
+     NR_RADAR                    VARCHAR2 (20)  NOT NULL , 
+     NM_FABRICANTE               VARCHAR2 (50)  NOT NULL , 
+     DT_FABRICACAO               DATE  NOT NULL , 
+     DT_ULTIMA_MANUTENCAO        DATE  NOT NULL , 
+     NM_MODELO                   VARCHAR2 (50)  NOT NULL , 
+     TP_RADAR                    VARCHAR2 (5)  NOT NULL , 
+     DT_ULTIMA_ATUALIZACAO_RADAR DATE  NOT NULL , 
+     DT_CARGA                    DATE  NOT NULL , 
+     NM_USUARIO_CARGA            VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA               NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO              DATE  NOT NULL , 
+     ID_PROCESSO_ETL             NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL           VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.SK_ID_RADAR IS 'Chave estrangeira da dimensão RADAR' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.NR_RADAR IS 'Número único do radar, pode conter letras e números em sua composição.' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.NM_FABRICANTE IS 'Fabricante do radar' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.DT_FABRICACAO IS 'Data de fabricação do radar' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.DT_ULTIMA_MANUTENCAO IS 'Data da última manutenção' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.NM_MODELO IS 'Nome do modelo do radar' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.TP_RADAR IS 'TIPO DO RADAR IMPLANTADO(FIXO OU MOVEL).' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.DT_ULTIMA_ATUALIZACAO_RADAR IS 'ESTE CAMPO COMTEM A DATA DA ÚLTIMA ATUALIZAÇÃO DO SOFTWARE DO RADAR' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_RADAR.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_RADAR 
+    ADD CONSTRAINT TB_DIM_RADAR PRIMARY KEY ( SK_ID_RADAR ) ;
+
+CREATE TABLE TB_DIM_TEMPO 
+    ( 
+     SK_ID_TEMPO         NUMBER  NOT NULL , 
+     DT_REFERENCIA       DATE  NOT NULL , 
+     NR_ANO              NUMBER (4)  NOT NULL , 
+     NR_SEMESTRE         NUMBER (2)  NOT NULL , 
+     DS_SEMESTRE_ANO     VARCHAR2 (20)  NOT NULL , 
+     DS_SEMESTRE         VARCHAR2 (20)  NOT NULL , 
+     NR_TRIMESTRE        NUMBER (2)  NOT NULL , 
+     DS_TRIMESTRE_ANO    VARCHAR2 (20)  NOT NULL , 
+     DS_TRIMESTRE        VARCHAR2 (20)  NOT NULL , 
+     NR_MES              NUMBER (2)  NOT NULL , 
+     NR_ANO_MES          NUMBER (6)  NOT NULL , 
+     DS_MES              VARCHAR2 (20)  NOT NULL , 
+     DS_MES_ANO          VARCHAR2 (20)  NOT NULL , 
+     DS_ABV_MES          VARCHAR2 (3)  NOT NULL , 
+     DS_ABV_MES_ANO      VARCHAR2 (10)  NOT NULL , 
+     DS_DIA_SEMANA       VARCHAR2 (15)  NOT NULL , 
+     DS_DATA             VARCHAR2 (20)  NOT NULL , 
+     NR_DIA_MES          NUMBER (2)  NOT NULL , 
+     NR_DIA_SEMANA       NUMBER (2)  NOT NULL , 
+     NR_DIA_ANO          NUMBER (3)  NOT NULL , 
+     DS_DIA_UTIL_FERIADO VARCHAR2 (10)  NOT NULL , 
+     DS_FIM_SEMANA       VARCHAR2 (10)  NOT NULL , 
+     DS_DATA_EXTENSO     VARCHAR2 (30)  NOT NULL , 
+     NR_HORA             VARCHAR2 (5)  NOT NULL , 
+     DT_CARGA            DATE  NOT NULL , 
+     NM_USUARIO_CARGA    VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA       NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO      DATE  NOT NULL , 
+     ID_PROCESSO_ETL     NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL   VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.SK_ID_TEMPO IS 'Chave estrangeira da dimensão TEMPO' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DT_REFERENCIA IS 'Data completa, sendo a chave primária da tabela de tempo. Ela serve de referência para todos os atributos temporais, permitindo uma análise flexível e multidimensional.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_ANO IS 'Número do ano (ex: 2023). Essencial para análises anuais de desempenho, comparativos e tendências de longo prazo.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_SEMESTRE IS 'Número do semestre do ano (1 ou 2). Útil para a análise de desempenho em períodos maiores que o trimestre, como sazonalidade semestral.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_SEMESTRE_ANO IS 'Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_SEMESTRE IS 'Descrição do semestre e ano, como "2º Semestre de 2024". Facilita a visualização e a leitura de relatórios.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_TRIMESTRE IS 'Número do trimestre (1 a 4). Essencial para o monitoramento de metas e resultados de curto prazo, além de permitir comparações trimestrais.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_TRIMESTRE_ANO IS 'Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_TRIMESTRE IS 'Descrição do trimestre e ano, como "3º Trimestre de 2024". Torna os relatórios mais legíveis e intuitivos para os usuários.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_MES IS 'Número do mês do ano (1 a 12). Permite análises de desempenho mensais, como vendas e consultas.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_ANO_MES IS 'Concatenação do ano e mês, como 202409. Útil para ordenação cronológica e para a criação de chaves compostas em outras tabelas.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_MES IS 'Nome do mês por extenso (ex: "Setembro"). Facilita a leitura e compreensão dos relatórios.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_MES_ANO IS 'Nome do mês e ano por extenso (ex: "Setembro de 2024"). Ideal para títulos de relatórios e dashboards.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_ABV_MES IS 'Abreviação do nome do mês (ex: "Set"). Formato compacto para visualizações em dashboards e tabelas.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_ABV_MES_ANO IS 'Abreviação do mês e ano (ex: "Set 2024"). Formato compacto para rótulos em gráficos e relatórios.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_DIA_SEMANA IS 'Nome do dia da semana (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_DATA IS 'Nome da data (ex: "Terça-feira"). Essencial para análises de tráfego e volume de atendimentos em dias específicos.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_DIA_MES IS 'Número do dia dentro do mês (1 a 31). Permite a análise diária de métricas e ajuda a identificar padrões em curtos períodos de tempo.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_DIA_SEMANA IS 'Número do dia da semana, por exemplo, 1 para domingo e 7 para sábado. Útil para cálculos e lógica de negócios.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_DIA_ANO IS 'Número do dia dentro do ano, de 1 a 366 em anos bissextos. Permite análises de tendências diárias ao longo de um ano completo.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_DIA_UTIL_FERIADO IS 'Indicador que distingue dias úteis de feriados. Crucial para analisar o impacto de feriados no desempenho operacional.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_FIM_SEMANA IS 'Indicador para dias de fim de semana. Essencial para a análise da sazonalidade de atendimentos em relação aos dias de trabalho.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DS_DATA_EXTENSO IS 'A data completa por extenso, em formato legível para humanos. Ótimo para relatórios e exibição em interfaces.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_HORA IS 'Número da hora do dia, de 00:00 a 23:59. Permite a análise do fluxo de atendimentos por hora, ajudando a identificar horários de pico e otimizar a alocação de equipe.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_TEMPO.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_TEMPO 
+    ADD CONSTRAINT TB_DIM_TEMPO PRIMARY KEY ( SK_ID_TEMPO ) ;
+
+CREATE TABLE TB_DIM_VEICULO 
+    ( 
+     SK_ID_VEICULO        NUMBER  NOT NULL , 
+     DS_VEICULO           VARCHAR2 (30)  NOT NULL , 
+     NM_MARCA             VARCHAR2 (30)  NOT NULL , 
+     NM_MODELO            VARCHAR2 (30)  NOT NULL , 
+     NR_PLACA             VARCHAR2 (10)  NOT NULL , 
+     NM_COR               VARCHAR2 (20)  NOT NULL , 
+     TP_PLACA             VARCHAR2 (20)  NOT NULL , 
+     FG_PLACA_ESTRANGEIRA VARCHAR2 (3)  NOT NULL , 
+     PS_ORIGEM_PLACA      VARCHAR2 (50)  NOT NULL , 
+     DT_CARGA             DATE  NOT NULL , 
+     NM_USUARIO_CARGA     VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA        NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO       DATE  NOT NULL , 
+     ID_PROCESSO_ETL      NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL    VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.SK_ID_VEICULO IS 'Chave estrangeira da dimensão VEICULO' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.DS_VEICULO IS 'Descrição detalhado tipo de veiculo(carro, moto, caminhão etc.)' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NM_MARCA IS 'Descrição detalhada da Marca do veículo' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NM_MODELO IS 'Descrição detalhada do Modelo' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NR_PLACA IS 'Descrição detalhada da Placa' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NM_COR IS 'Descrição detalhada da cor' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.TP_PLACA IS 'Descrição detalhada da nacionalidade da placa(''Nacional'', ''Mercosul-Estrangeira'', ''Outra-Estrangeira'')' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.FG_PLACA_ESTRANGEIRA IS 'TIPO DE DESCRIÇÃO SE A PLACA É ESTRANGEIRA OU NÃO(SIM/NÃO)' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.PS_ORIGEM_PLACA IS 'PAÍS DE ORIGEM DA PLACA' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.DT_CARGA IS 'Esse campo sera para mostrar a Data em que o registro foi inserido no DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_DIM_VEICULO.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_DIM_VEICULO 
+    ADD CONSTRAINT TB_DIM_VEICULO PRIMARY KEY ( SK_ID_VEICULO ) ;
+
+CREATE TABLE TB_FATO_TRAFEGO 
+    ( 
+     SK_ID_COND_PISTA               NUMBER  NOT NULL , 
+     SK_ID_CLIMA                    NUMBER  NOT NULL , 
+     SK_ID_LOCAL                    NUMBER  NOT NULL , 
+     SK_ID_RADAR                    NUMBER  NOT NULL , 
+     SK_ID_TEMPO                    NUMBER  NOT NULL , 
+     SK_ID_VEICULO                  NUMBER  NOT NULL , 
+     ST_VEICULO                     VARCHAR2 (7)  NOT NULL , 
+     QT_VEICULOS                    NUMBER (1)  NOT NULL , 
+     VL_MULTA                       NUMBER (10,2)  NOT NULL , 
+     ST_INFRACOES                   VARCHAR2 (7)  NOT NULL , 
+     QT_INFRACOES                   NUMBER (10)  NOT NULL , 
+     TP_PENALIDADE_APLICADA         VARCHAR2 (100)  NOT NULL , 
+     VL_VELOCIDADE_REGISTRADA       NUMBER (5,2)  NOT NULL , 
+     "VL_VELOCIDADE_PERMITIDA_KM/H" NUMBER (3)  NOT NULL , 
+     DT_CARGA                       DATE  NOT NULL , 
+     NM_USUARIO_CARGA               VARCHAR2 (50)  NOT NULL , 
+     NR_LOTE_CARGA                  NUMBER (10)  NOT NULL , 
+     DT_ATUALIZACAO                 DATE  NOT NULL , 
+     ID_PROCESSO_ETL                NUMBER (8)  NOT NULL , 
+     ST_REGISTRO_ATUAL              VARCHAR2 (3)  NOT NULL 
+    ) 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.ST_VEICULO IS 'Indica se o VEICULO possui o não infrações' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.QT_VEICULOS IS 'Indica a quantidade de VEICULOs por placa' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.VL_MULTA IS 'Valor da multa aplicada' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.ST_INFRACOES IS 'Indica se o evento se trornou o não uma infração (Ativo/Inativo)' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.QT_INFRACOES IS 'Quantidade de infrações (agregável)' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.TP_PENALIDADE_APLICADA IS 'TIPO DE PENALIDADE APLICADA, SUSPENSÃO DA CARTEIRA DE MOTORISTA, MULTA, MULTA + PRISÃO ETC...' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.VL_VELOCIDADE_REGISTRADA IS 'Velocidade do veículo no momento' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO."VL_VELOCIDADE_PERMITIDA_KM/H" IS 'Velocidade máxima da via' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.DT_CARGA IS 'Data da carga do dado' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.NM_USUARIO_CARGA IS 'Usuário responsável pela carga' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.NR_LOTE_CARGA IS 'Número do lote de carga' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.DT_ATUALIZACAO IS 'Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.ID_PROCESSO_ETL IS 'Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.' 
+;
+
+COMMENT ON COLUMN TB_FATO_TRAFEGO.ST_REGISTRO_ATUAL IS 'Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como ''A'' para Ativo e ''I'' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.' 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT TB_FATO_TRAFEGO PRIMARY KEY ( SK_ID_LOCAL, SK_ID_TEMPO, SK_ID_VEICULO, SK_ID_RADAR, SK_ID_COND_PISTA, SK_ID_CLIMA ) ;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_CLIMA_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_CLIMA
+    ) 
+    REFERENCES TB_DIM_CLIMA 
+    ( 
+     SK_ID_CLIMA
+    ) 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_COND_PISTA_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_COND_PISTA
+    ) 
+    REFERENCES TB_DIM_COND_PISTA 
+    ( 
+     SK_ID_COND_PISTA
+    ) 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_LOCAL_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_LOCAL
+    ) 
+    REFERENCES TB_DIM_LOCAL 
+    ( 
+     SK_ID_LOCAL
+    ) 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_RADAR_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_RADAR
+    ) 
+    REFERENCES TB_DIM_RADAR 
+    ( 
+     SK_ID_RADAR
+    ) 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_TEMPO_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_TEMPO
+    ) 
+    REFERENCES TB_DIM_TEMPO 
+    ( 
+     SK_ID_TEMPO
+    ) 
+;
+
+ALTER TABLE TB_FATO_TRAFEGO 
+    ADD CONSTRAINT DIM_VEICULO_FATO_TRAFEGO FOREIGN KEY 
+    ( 
+     SK_ID_VEICULO
+    ) 
+    REFERENCES TB_DIM_VEICULO 
+    ( 
+     SK_ID_VEICULO
+    ) 
+;
+
+
+
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                             7
+-- CREATE INDEX                             0
+-- ALTER TABLE                             13
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

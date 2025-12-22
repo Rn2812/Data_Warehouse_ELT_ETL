@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIM_TEMPO_FTO_CONSULTA" directorySegmentName="seg_0" id="D137CB4B-AAB6-66B5-69AD-DC4353583A19">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-25 02:20:40 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<sourcePk>8DFC4335-0FE0-C8BE-C6F7-89663B3D5C64</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0E1FABEC-3DE7-6CB7-AEC8-CD9288EB90A3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7601362-BABA-8437-3F0E-C52855D2F75A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

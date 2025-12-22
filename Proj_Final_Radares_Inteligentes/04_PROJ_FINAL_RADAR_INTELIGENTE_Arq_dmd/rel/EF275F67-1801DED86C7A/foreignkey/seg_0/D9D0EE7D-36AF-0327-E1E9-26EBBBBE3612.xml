@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9D0EE7D-36AF-0327-E1E9-26EBBBBE3612" containerWithKeyObject="C603D4CD-2687-22F3-8D18-46EDE63B9703" localFKIndex="9914FA84-0CF6-1397-7D8D-3EA5CBBF8E64" name="DIM_RADAR_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>F2B85214-E525-226E-042B-A0CDE4E440B2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<referredTableLongName>TB_DIM_RADAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04A73E14-B0CE-F0BD-2901-714039DD3822</referredTableID>
+<keyObject>4142954C-1FDE-C270-055F-1CB17FAFFDE8</keyObject>
+<referredKeyID>4142954C-1FDE-C270-055F-1CB17FAFFDE8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_RADAR</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

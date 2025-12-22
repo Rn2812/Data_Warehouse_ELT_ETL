@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="44AD48B6-F6D8-D440-EA66-7FA39A39DF3D" name="FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:53:45 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<typeID>1</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_CANAL" id="787FB1FA-FD30-BC86-6803-A86D3177419C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:17:26 UTC</createdTime>
+<generatorID>42AF6AAB-535B-9CD1-AADE-53FDC13421E7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>FA961A69-4962-9E22-862C-69AE0E8619C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_LOCAL" id="8B15D3F2-F045-931A-471A-E6E53E8812FB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:14:24 UTC</createdTime>
+<generatorID>77DB2540-568C-6A0D-F0EA-2AF30F0A04D7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>93BDC8EA-56F8-BA28-C522-7F65A81C2083</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_PARTIC" id="6B1EF43B-7512-B6AC-8319-0A90C4CA9A97">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:15:47 UTC</createdTime>
+<generatorID>DF554A90-2641-7B11-537E-9D0444ED5222</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>03E0A15C-12DC-81AE-DC6C-38E1343BC267</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_PESQUISA" id="39DA0CBF-F97E-33F5-F2F2-073E634D3A8C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:14:52 UTC</createdTime>
+<generatorID>2BD4CB09-2A1C-76BB-1A14-6DB50C1216D8</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>9F4C805C-7D27-A0C0-C0CF-D1ADB5618D8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_PROFISSAO" id="AA4C531E-C3EE-6113-E0E1-21025FE2BAA6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:18:00 UTC</createdTime>
+<generatorID>B7FDC1E3-7635-8457-F049-59AD951C11A6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>E73847ED-AD81-39CD-C746-6128BDE791E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_ID_TEMPO" id="3A3D54F4-F683-E74C-ADC1-280CEC34830B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:12:32 UTC</createdTime>
+<generatorID>26F3A549-DB94-B8B7-1A8D-9BC30FDE35A9</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<referedAttribute>DE6BAA28-A007-E1AE-C911-F0851EC74357</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_NOTA_AVALIACAO" id="05C4C8C9-99A4-72F3-E0AC-2017F349C68E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:57:40 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QT_AVALIACAO" id="BB3A289B-8468-91D2-C6F9-CC40520D3376">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:58:25 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="1752D367-2055-905F-2437-F5E6C71A3AA6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:58:47 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="AC61115E-6230-7F3C-5452-EC0F80E64437">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:58:58 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="3003B998-8B9F-9812-8023-61BF07CD9F01">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:59:14 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="84F4B1F3-2BB0-FA93-60D0-C2DB19450BB8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-12 23:59:36 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FFB23AAA-E0E9-22B7-5106-4AEAA51516C3" name="FATO_AVALIACAO PK">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:12:32 UTC</createdTime>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<engineerTo>
+<item key="ED62DA14-6D8D-A0CB-E3A6-859EE1B38A0C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A3D54F4-F683-E74C-ADC1-280CEC34830B</attributeRef>
+<attributeRef>8B15D3F2-F045-931A-471A-E6E53E8812FB</attributeRef>
+<attributeRef>39DA0CBF-F97E-33F5-F2F2-073E634D3A8C</attributeRef>
+<attributeRef>6B1EF43B-7512-B6AC-8319-0A90C4CA9A97</attributeRef>
+<attributeRef>787FB1FA-FD30-BC86-6803-A86D3177419C</attributeRef>
+<attributeRef>AA4C531E-C3EE-6113-E0E1-21025FE2BAA6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

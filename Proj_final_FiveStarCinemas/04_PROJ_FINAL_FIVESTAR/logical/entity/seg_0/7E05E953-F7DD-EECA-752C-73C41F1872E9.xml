@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E05E953-F7DD-EECA-752C-73C41F1872E9" name="DIM_CLIMA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:21:25 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_CD_CLIMA" id="623C9444-69F3-AE51-6FC5-1E09BD813C66">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:21:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave substituta da dimensão clima]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CLIMA" id="E5DDBBDE-D97D-B469-806A-1CA8EE60B493">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:22:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição do clima (Ensolarado, Chuvoso, Nublado etc.)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_TEMPERATURA" id="5484C560-DD0B-3E7B-5BD4-59685F5753E7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:22:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria (Alta, Média, Baixa)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_TEMPERATURA_MEDIA" id="7C731329-3C91-DEE1-BC2C-DB5CA19E5FCC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:23:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Temperatura média do dia]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_UMIDADE" id="225025D7-A2AD-2ACA-4BC8-7B97662BFC1F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:23:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Percentual de umidade]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CONDICAO_EXTREMA" id="A91C7042-2463-75D0-D624-EED504F3DDA1">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:24:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ex: “Tempestade”, “Neve”, “Calor Extremo”]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="811D0ACD-4023-29E5-8FD2-EFE3BF2A5E9C">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:24:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de carga no DW, Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="4FA67A17-A530-A2C2-124B-D1B0A4086C47">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:25:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da Última atualização, Esse campo sera para mostrar a Data em que o registro s foram atualizados no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="385750DA-EEDF-0F0B-48A9-4FF5326AE9C8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:25:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador do processo ETL, Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="C4BCF643-3C24-4025-427F-BC111EAFE7CE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:26:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FBFBE7BF-7C06-FF10-1B34-808D2C454856" name="DIM_CLIMA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 01:22:02 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<engineerTo>
+<item key="D6CDF683-948D-B4EE-D590-6BA0FEE954C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>623C9444-69F3-AE51-6FC5-1E09BD813C66</newElementsIDs>
+<usedAttributes>
+<attributeRef>623C9444-69F3-AE51-6FC5-1E09BD813C66</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

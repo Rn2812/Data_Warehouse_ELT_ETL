@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="1C030A0C-ED24-2EE8-2851-393030B56412">
+<createdBy>rodri</createdBy>
+<modifiedBy>rodri</modifiedBy>
+<createdTime>2025-08-21 01:15:42 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="AA6B18BC-FB8B-1047-50A6-BFF5C213173D" otype="Entity" vid="77C25263-AE90-9A2B-CE08-78DA754459C5">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="97" y="128" width="316" height="266"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="D20A63F7-FFE5-D7C3-B3A8-C4FAE0FFFBB8" otype="Note" vid="CB63BD7C-E2EB-28D4-1B7A-F990FABB7527">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="0" y="0" width="428" height="64"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-16777063</backgroundColor>
+<foregroundColor>-1184275</foregroundColor>
+<comment>PROJETO LÓGICO DBURGER
+MODELO DE DADOS DIMENSIONAL DE VENDAS</comment>
+</OView>
+</objectViews>
+</Diagram>

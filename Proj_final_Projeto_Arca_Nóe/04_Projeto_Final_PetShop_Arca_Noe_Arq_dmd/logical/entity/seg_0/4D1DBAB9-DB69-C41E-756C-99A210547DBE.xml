@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D1DBAB9-DB69-C41E-756C-99A210547DBE" name="TB_DIM_ANIMAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:11:18 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_ANIMAL" id="6787D9F6-4213-102F-27A0-7C3C646A49CD">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:11:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único de identificação para cada animal cadastrado. É a chave primária da tabela e estabelece a conexão com dados de saúde e histórico do animal em outras tabelas.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_NASCIMENTO_ANIMAL" id="7364399B-C7D6-A7B6-81AD-AE97DE0F2342">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:26:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data exata de nascimento do animal. Essa informação é crucial para calcular a idade, determinar fases de vida (filhote, adulto, idoso) e planejar calendários de vacinação e check-ups específicos para cada faixa etária.]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_RACA" id="D9251C79-37EE-6956-AFF2-F208785D3A87">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:27:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo descritivo para a raça do animal, como "Golden Retriever" ou "Siamês". Ajuda a classificar os animais e pode ser útil para identificar padrões de saúde ou comportamento associados a raças específicas.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_ESPECIE" id="9CE8ECDC-2CD7-BD2A-ECD5-FCDC7FE53E3B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:27:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descreve a espécie do animal (por exemplo, "Canina", "Felina", "Ave", "Réptil"). Essencial para organizar os serviços, produtos e protocolos de atendimento de forma adequada para cada tipo de animal.
+]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="022BDE53-1E38-7F74-FE20-144C3A969C12">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:36:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="68F3B9B6-6C87-FFD2-9056-298CB56EBF79">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-11 01:37:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indicador do registro atual (1 = vigente, 0 = histórico).
+ ]]></commentInRDBMS>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="DD9BF0E3-F5EB-9D2D-7284-4A2EB33896EA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-23 01:46:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único da execução do processo ETL responsável pela carga.]]></commentInRDBMS>
+<generatorID>926C023D-E7DA-0C47-8FC8-841842199F33</generatorID>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="31A40F95-2675-F382-A070-59CA5664B5D9" name="SK_TB_DIM_ANIMAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-09-09 22:19:11 UTC</createdTime>
+<ownerDesignName>04_Projeto_Final_PetShop_Arca_Noe_v1</ownerDesignName>
+<engineerTo>
+<item key="48FA7736-4D0C-13ED-17F0-3FF5B9A3616F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>6787D9F6-4213-102F-27A0-7C3C646A49CD</newElementsIDs>
+<usedAttributes>
+<attributeRef>6787D9F6-4213-102F-27A0-7C3C646A49CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

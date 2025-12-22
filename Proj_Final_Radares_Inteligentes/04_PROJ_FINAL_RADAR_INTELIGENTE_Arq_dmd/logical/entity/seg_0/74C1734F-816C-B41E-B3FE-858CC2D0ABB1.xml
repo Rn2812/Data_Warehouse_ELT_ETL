@@ -1,0 +1,284 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74C1734F-816C-B41E-B3FE-858CC2D0ABB1" name="TB_DIM_LOCAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:51:31 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<typeID>2</typeID>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_ID_LOCAL" id="30CC2A3E-AFA3-9CFF-A62A-1D3A7D3BF7D3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:52:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira da dimensão LOCALIDADE]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LOGRADOURO" id="999FFE13-3EBF-C528-D87D-06855CA3A89A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:52:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do logradouro onde o imóvel se localiza (rua, avenida, alameda, estrada, etc.). Campo de texto livre, até 100 caracteres, sem abreviações obrigatórias. Base para CEP e roteirização.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOGRADOURO" id="23C02920-2DEA-9AED-D4A6-37DB64239EC8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:53:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero do logradouro onde o imóvel se localiza até 10 caracteres, podendo ser alphanúmerico, sem abreviações obrigatórias.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CEP" id="F1688989-CEC9-A0AD-966E-73AED60E9D8B">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:54:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de Endereçamento Postal do Brasil, composto por 8 dígitos numéricos, sem hífen. Identifica região, setor e distribuição do endereço. Fundamental para validação, geocodificação e entregas.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_BAIRRO" id="9A7F9115-C11C-45CE-127A-66C05F449B17">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:11:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Campo NOME_BAIRRO da tabela DB_DIM_PESSOA, referente a "Nome dO bairro". Armazena o nome completo utilizado para identificação. Tipo: VARCHAR2, tamanho: 40 bytes.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_CIDADE" id="0C275021-D288-40E7-522A-3C7087C7AF99">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:12:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade (município) onde o endereço está situado. Campo de texto, até 20 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="BFFAE220-C394-0682-4910-0C7F36F580DC">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:12:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do Estado onde o endereço está situado. Campo de texto, até 50 caracteres. Usado em padronização, relatórios e integrações. Ideal manter ortografia oficial e acentuação correta.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_ESTADO " id="A4B98B30-DE4F-34BC-9434-6C005FB4C13E">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:13:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla da Unidade Federativa (UF) do endereço, com duas letras (ex.: SP, RJ, MG). Campo de texto fixo, 2 caracteres, validado contra lista oficial. Essencial para padronização e regras fiscais.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_QUADRANTE" id="8B593D38-3AA4-FA65-F92E-E73B8065BA7F">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:19:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[O campo NR_QUADRANTE NUMBER é um atributo descritivo que enriquece a dimensão de localidade. Ele transforma dados geográficos granulares (como bairros ou CEPs) em categorias estratégicas de alto nível (Quadrantes), tornando a análise de Business Intelligence (BI) mais simples, rápida e eficaz.EX:(Regioes:Norte, Sul, Leste, Oeste)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LATITUDE" id="5D415DA3-682E-AA0B-AD77-595D66E0DEBB">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:20:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[O campo em destque armazena o valor da latitude de uma localização. Ex: -27.572880]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LONGITUDE" id="29B7FE91-ADC0-1670-4984-CB4AD5862636">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:20:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[O campo em destque armazena o valor da longitude de uma localização. Ex: -48.425942]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LC_HEMISFERIO" id="20CA4A22-B4E6-EF50-8DC4-168CADF51EF8">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:21:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[O campo em destque armazena o valor do Hemisfério(Norte, Sul, Leste, Oeste) necessário para definir a localização exata Ex:(28º05'56"S,48º40'30"O)]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CARGA" id="2D81B70F-A031-977A-C57A-2216AAE475E6">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:22:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro foi inserido no DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_USUARIO_CARGA" id="420FFB53-374F-931B-0011-188EA64E71BF">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:22:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_LOTE_CARGA" id="86E48A20-1DFF-6E2E-DA74-77CF91BCF0A2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:23:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_ATUALIZACAO" id="6A449E8E-96C7-600B-296A-03D48D1F3FE7">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:23:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PROCESSO_ETL" id="552723F7-DD43-F613-BD0E-6B7AD8C3B260">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:23:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_REGISTRO_ATUAL" id="A9A741EB-231C-FA01-2C85-A353FB147BBA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 16:24:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2B77CB61-393E-FFA1-9D07-BA2C8864192B" name="TB_DIM_LOCALIDADE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 15:52:17 UTC</createdTime>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<engineerTo>
+<item key="EF275F67-B814-26AD-B25E-1801DED86C7A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>30CC2A3E-AFA3-9CFF-A62A-1D3A7D3BF7D3</newElementsIDs>
+<usedAttributes>
+<attributeRef>30CC2A3E-AFA3-9CFF-A62A-1D3A7D3BF7D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0CE5AE69-09BC-9665-6D77-830C5A0E40CF" name="DIM_CANAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>EEBFF28D-B777-23AD-BD88-FC345F166CE9</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_CANAL" id="E91A02B5-50D4-2DFA-4227-C71640E51B00">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>FA961A69-4962-9E22-862C-69AE0E8619C7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CANAL_COLETA" id="5040DAEF-82A5-4B61-A65F-9AFDBFEC7826">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>5B8DADD9-79BA-4781-D515-00E8E0779F11</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="80327D0D-60CD-AFA5-7457-3269807E1CE3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>54F4E31E-0FF8-30D5-D11B-0269CCE84811</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="C59438AA-1FD0-44A4-316E-800ECF3CFBDE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>6AF3F72E-70BE-57B5-8AC3-76832E8BFF47</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="66AC54D6-A85B-84B9-10C6-72C294780BE9">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>5AA7EE29-EE1A-7F56-3C6B-4E1AB6947E2E</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="C72A5B02-C1D2-7CD1-690F-F8FD44468F95">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>A75A3E06-EA4F-7387-9D08-D3686DB00390</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFFE6F8A-E286-C31C-93DA-06C1077F6B17" name="DIM_CANAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:10 UTC</createdTime>
+<generatorID>9A0D91ED-C701-AC7D-DA4F-42F7BF1883A6</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E91A02B5-50D4-2DFA-4227-C71640E51B00"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

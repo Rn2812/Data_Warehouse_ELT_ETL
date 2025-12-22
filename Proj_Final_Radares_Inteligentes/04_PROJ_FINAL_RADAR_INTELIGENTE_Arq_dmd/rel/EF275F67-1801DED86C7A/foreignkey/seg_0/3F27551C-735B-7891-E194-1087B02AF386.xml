@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F27551C-735B-7891-E194-1087B02AF386" containerWithKeyObject="C603D4CD-2687-22F3-8D18-46EDE63B9703" localFKIndex="4B7F3677-E886-B62D-8F85-ABF579115F1E" name="DIM_CLIMA_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>399F0953-06F1-4F83-26FA-5DE52DF2A328</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<referredTableLongName>TB_DIM_CLIMA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>52969942-4204-26A5-B547-BE2CFF080B8C</referredTableID>
+<keyObject>7323FEDE-5D58-5B73-F769-020462870E82</keyObject>
+<referredKeyID>7323FEDE-5D58-5B73-F769-020462870E82</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_CLIMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

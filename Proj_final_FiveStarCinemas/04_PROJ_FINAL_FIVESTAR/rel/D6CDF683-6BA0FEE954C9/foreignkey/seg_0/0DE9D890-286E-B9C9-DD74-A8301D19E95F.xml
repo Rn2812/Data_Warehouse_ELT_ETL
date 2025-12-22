@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0DE9D890-286E-B9C9-DD74-A8301D19E95F" containerWithKeyObject="92C5C46D-CB50-39DE-1F36-C1043F3AB25C" localFKIndex="0C1B4C09-EEBA-0939-D39A-09A97AB42229" name="DIM_FORMA_PAGAMENTO_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>2583DAD8-9E74-B25B-893D-B9CB94CDBEAD</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<referredTableLongName>DIM_FORMA_PAGAMENTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>48D5925C-6E7A-9F12-ACE8-DA946C55DF5F</referredTableID>
+<keyObject>9DE12743-775D-D784-7A7E-2A036327A5D7</keyObject>
+<referredKeyID>9DE12743-775D-D784-7A7E-2A036327A5D7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_CD_PAG</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

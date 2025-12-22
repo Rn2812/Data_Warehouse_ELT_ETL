@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C25947B8-A127-F819-1A82-87EF1E097093" containerWithKeyObject="92C5C46D-CB50-39DE-1F36-C1043F3AB25C" localFKIndex="D4839652-D6DE-AC1A-F904-B6C8C2C1DCA6" name="DIM_CLIMA_FTO_VENDA">
+<createdBy>rodri</createdBy>
+<createdTime>2025-10-19 19:26:04 UTC</createdTime>
+<generatorID>89076631-55B1-081C-577B-B0710B50B3FE</generatorID>
+<ownerDesignName>04_PROJ_FINAL_FIVESTAR</ownerDesignName>
+<referredTableLongName>DIM_CLIMA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7EECBA6D-F04A-F959-EF89-9361B765BD51</referredTableID>
+<keyObject>85FCD3A2-790A-21E9-BB0F-33078F971A0C</keyObject>
+<referredKeyID>85FCD3A2-790A-21E9-BB0F-33078F971A0C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_CD_CLIMA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

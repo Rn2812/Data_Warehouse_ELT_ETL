@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C603D4CD-2687-22F3-8D18-46EDE63B9703" name="TB_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>210CA5CD-6954-9BA7-A050-1262810EE6F8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<ordsAlias>tb_fto_trafego</ordsAlias>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_ID_COND_PISTA" id="4E7A31BF-F295-5A8D-AE47-C822C7209208">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>1A5EA324-F046-A8D3-0BDC-5EC13C5B231A</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="11C4BE3E-C961-50A9-1EE1-55A8B6A49948" referredColumn="7E9641C0-F3AA-71C4-ABE0-834B61AD64B1"/>
+</associations>
+</Column>
+<Column name="SK_ID_CLIMA" id="42925494-9C15-671C-371E-FA7D99F55756">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>779D36C2-8C7B-3A2D-9163-489019D09F97</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F27551C-735B-7891-E194-1087B02AF386" referredColumn="A50646B1-04E0-DA72-720E-21DBF4B5EC73"/>
+</associations>
+</Column>
+<Column name="SK_ID_LOCAL" id="34924AA0-807B-6AB3-E00A-3F5B0EF7C0DD">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>82440803-2F61-27C7-AB8B-AA57FBE49624</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A6D9137-07DA-9466-D5C3-DEE808B0D70F" referredColumn="1EE533F8-19EB-CD58-73E2-D2AEC4E90D95"/>
+</associations>
+</Column>
+<Column name="SK_ID_RADAR" id="8A6736DB-C434-7476-EB1E-D8EE7B8EFFB3">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>8232F33C-DDEB-165C-5A0D-D81CC89C6216</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9D0EE7D-36AF-0327-E1E9-26EBBBBE3612" referredColumn="D5F26BE9-9BD1-F917-271E-AD63EE233C8A"/>
+</associations>
+</Column>
+<Column name="SK_ID_TEMPO" id="D81AD2B1-8B09-4ADB-4525-1462857D8FB2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>2E0029B5-AB2A-1D26-C280-ABC493C5629E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D1EE710-52A6-3599-7E15-C041D3FC2603" referredColumn="9FC883E9-ACAF-F4AE-B122-B83812F688AF"/>
+</associations>
+</Column>
+<Column name="SK_ID_VEICULO" id="1B354135-9F1B-F258-CCE4-873C2624FF72">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>16535A34-DB7C-1837-9CAE-74566442F44B</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14E7B1A7-181E-4EED-2218-C4E78271CE17" referredColumn="F72E9013-9F41-280B-7C6E-2C31313A32E6"/>
+</associations>
+</Column>
+<Column name="ST_VEICULO" id="8D456A63-45D1-D412-5041-3FC4106EE0AE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se o VEICULO possui o não infrações]]></commentInRDBMS>
+<generatorID>DDA6CE7A-BF29-555C-8572-1E24D83AF261</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_VEICULOS" id="64B281F1-9216-359A-3001-9949641D0D20">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica a quantidade de VEICULOs por placa]]></commentInRDBMS>
+<generatorID>FA163812-FF6C-7764-E162-C04C8991CE47</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_MULTA" id="C7CF04D1-00F1-E8E4-E2C0-5C9C7F15E7A5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor da multa aplicada]]></commentInRDBMS>
+<generatorID>B7738C61-8F93-DD1C-64ED-B7CC8D31A7E5</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_INFRACOES" id="5CE16F84-00CB-9BE7-2733-767C1DB13132">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Indica se o evento se trornou o não uma infração (Ativo/Inativo)]]></commentInRDBMS>
+<generatorID>18E96609-9F4D-34AD-A9C0-2293696A4391</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_INFRACOES" id="379F9E11-C6E4-49E5-7A75-A7A56F8F8EA4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de infrações (agregável)]]></commentInRDBMS>
+<generatorID>140993F5-103C-FA41-62B2-2B89F6ED1BB5</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_PENALIDADE_APLICADA" id="CD95FB0C-4414-A2A6-D8CA-A697DC597514">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO DE PENALIDADE APLICADA, SUSPENSÃO DA CARTEIRA DE MOTORISTA, MULTA, MULTA + PRISÃO ETC...]]></commentInRDBMS>
+<generatorID>B66A9C90-28EF-1A74-5070-1DB5C1BF1470</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_VELOCIDADE_REGISTRADA" id="DC3BFDAE-78F1-785F-B801-B891A15C645A">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade do veículo no momento]]></commentInRDBMS>
+<generatorID>5104E940-4DF5-D5BF-DD49-8549C8E8FDAA</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_VELOCIDADE_PERMITIDA_KM/H" id="0C3549BC-5B01-9FBD-BE3C-CE4CE4956E7D">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Velocidade máxima da via]]></commentInRDBMS>
+<generatorID>6DCDB51D-DB65-3A84-DE06-A5A45239A3CF</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CARGA" id="04B9F962-D458-ADCE-72E0-972C09EBFDF4">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data da carga do dado]]></commentInRDBMS>
+<generatorID>CBBE8C3F-E235-1524-42F0-8DF0B891B83E</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_USUARIO_CARGA" id="52EACD3A-FB78-CF79-6238-F2AE4A3720EE">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuário responsável pela carga]]></commentInRDBMS>
+<generatorID>DAA8936E-968F-BDFC-8F0D-DD1BBC5F4DB2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_LOTE_CARGA" id="055D17F5-69BD-4E7F-CB6D-45014E8BEB81">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do lote de carga]]></commentInRDBMS>
+<generatorID>48D2865C-6BD0-BF4F-CF52-878AC8A6D994</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATUALIZACAO" id="7C32194E-D7EE-85EB-5F77-E6A904916452">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Esse campo sera para mostrar a Data em que o registro s foram atualizadosno DW]]></commentInRDBMS>
+<generatorID>9D355881-C369-FB1A-21F8-A419663A3830</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROCESSO_ETL" id="0A5A62F2-B519-4FC1-8215-035C999404A2">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Chave estrangeira (FK) que identifica a execução específica do processo de carga (ETL) -- que inseriu ou atualizou o registro. Essencial para rastreabilidade e auditoria dos dados.]]></commentInRDBMS>
+<generatorID>88E71427-4CA8-940D-A4CB-571CFB2647B2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_REGISTRO_ATUAL" id="BBEB3AFA-C5AD-5528-2C85-E9B6315FF8E5">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Este campo do tipo CHAR(3) representa a situação no sistema, geralmente utilizando valores como 'A' para Ativo e 'I' para Inativo. É um campo de controle fundamental para a governança de dados. Um cliente inativo, por exemplo, pode ser excluído de campanhas de marketing ativas, mas seu histórico deve ser mantido para fins de análise e conformidade legal. Este atributo garante que apenas registros válidos e ativos sejam considerados nas operações do dia a dia, como agendamentos e vendas, ao mesmo tempo que preserva a integridade do histórico de dados para o Data Warehouse.]]></commentInRDBMS>
+<generatorID>91E56DE6-4408-A869-9C62-9BC384E57CF7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F794BA45-0F86-D56E-4103-9162D1966F8A" name="TB_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>8DEC28D7-9A41-4647-DAD2-8E7A452E1BDD</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34924AA0-807B-6AB3-E00A-3F5B0EF7C0DD"/>
+<colUsage columnID="D81AD2B1-8B09-4ADB-4525-1462857D8FB2"/>
+<colUsage columnID="1B354135-9F1B-F258-CCE4-873C2624FF72"/>
+<colUsage columnID="8A6736DB-C434-7476-EB1E-D8EE7B8EFFB3"/>
+<colUsage columnID="4E7A31BF-F295-5A8D-AE47-C822C7209208"/>
+<colUsage columnID="42925494-9C15-671C-371E-FA7D99F55756"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B7F3677-E886-B62D-8F85-ABF579115F1E" name="DIM_CLIMA_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>399F0953-06F1-4F83-26FA-5DE52DF2A328</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42925494-9C15-671C-371E-FA7D99F55756"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10AF9871-29CF-8C20-E0FF-F1BEE4DB6E54" name="DIM_COND_PISTA_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>7AE49FDE-F208-B3F0-8CED-6BC53C379CE7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E7A31BF-F295-5A8D-AE47-C822C7209208"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3E14637-AD57-FE54-7368-E0A72DB87266" name="DIM_LOCAL_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>3B889B6D-2E32-4EBB-6412-825F220216E8</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34924AA0-807B-6AB3-E00A-3F5B0EF7C0DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9914FA84-0CF6-1397-7D8D-3EA5CBBF8E64" name="DIM_RADAR_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>F2B85214-E525-226E-042B-A0CDE4E440B2</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A6736DB-C434-7476-EB1E-D8EE7B8EFFB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34E67D22-8DA6-A4B1-986C-7D3A9E3D82A4" name="DIM_TEMPO_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>A1D3B418-74E4-2DB1-BAEA-C7843F762C7D</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D81AD2B1-8B09-4ADB-4525-1462857D8FB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E98C4AFB-0F71-6769-81E8-9D36AADA63AF" name="DIM_VEICULO_FATO_TRAFEGO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-01 22:35:53 UTC</createdTime>
+<generatorID>83051E7D-E894-FBEC-D7ED-B752A867A2B7</generatorID>
+<ownerDesignName>04_PROJ_FINAL_RADAR_INTELIGENTE</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B354135-9F1B-F258-CCE4-873C2624FF72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

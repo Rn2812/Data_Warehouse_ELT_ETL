@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6A648465-D2B3-054F-5092-0FB4B578CDD9" containerWithKeyObject="BD2327AF-253C-6CB8-CAAC-BC73EDD14ABF" localFKIndex="2929876E-094E-CAF4-F3ED-CF1FEB366E1A" name="DIM_PESQUISA_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>2BD4CB09-2A1C-76BB-1A14-6DB50C1216D8</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<referredTableLongName>DIM_PESQUISA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5E89B35E-2506-3392-D1F1-29EAD917C7C6</referredTableID>
+<keyObject>D1A3EFB1-D4E0-7594-173E-E55F8DEA4966</keyObject>
+<referredKeyID>D1A3EFB1-D4E0-7594-173E-E55F8DEA4966</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_PESQUISA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

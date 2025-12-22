@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F546C55E-9DFC-1ED4-8D4B-C0D9EFC937FF" containerWithKeyObject="BD2327AF-253C-6CB8-CAAC-BC73EDD14ABF" localFKIndex="FA194B95-0207-E415-E646-E50C97526619" name="DIM_LOCAL_FATO_AVALIACAO">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>77DB2540-568C-6A0D-F0EA-2AF30F0A04D7</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<referredTableLongName>DIM_LOCAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D08C9EB1-DA60-A5AE-D186-EBDB60516E28</referredTableID>
+<keyObject>3703AF08-E55E-0780-1C3B-9D64B16673EE</keyObject>
+<referredKeyID>3703AF08-E55E-0780-1C3B-9D64B16673EE</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_LOCAL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

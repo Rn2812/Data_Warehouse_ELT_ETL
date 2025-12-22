@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="24CD76FE-B70C-A476-F116-55BEC4E918F8" containerWithKeyObject="BD2327AF-253C-6CB8-CAAC-BC73EDD14ABF" localFKIndex="9D1B8A25-F71C-7BA9-161F-D3F452038971" name="DIM_PARTIC_FATO_AVAL">
+<createdBy>rodri</createdBy>
+<createdTime>2025-11-13 00:30:11 UTC</createdTime>
+<generatorID>DF554A90-2641-7B11-537E-9D0444ED5222</generatorID>
+<ownerDesignName>04_GBS_2_2025_TBF_RM559947_RM559943</ownerDesignName>
+<referredTableLongName>DIM_PARTICIPANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3DA511B1-666D-02A6-96A4-33EC80DC3624</referredTableID>
+<keyObject>0C202520-900A-2131-B139-C989EE61FB90</keyObject>
+<referredKeyID>0C202520-900A-2131-B139-C989EE61FB90</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_ID_PARTIC</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
