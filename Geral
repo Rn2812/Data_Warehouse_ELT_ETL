@@ -1,0 +1,56 @@
+**PORTFÓLIO DE DATA WAREHOUSING & MODELAGEM DIMENSIONAL Global Solution & Challenges – 2º Semestre/2025**
+
+PROJETOS APRESENTADOS: 
+
+                              1. 🍔 D_Burger (Dublin Burger): Analytics para Varejo e Satisfação do Cliente 
+                              
+                              2. 🎬 FiveStar Cinemas: Gestão de Bilheteria e Ocupação 
+                              
+                              3. 🏎️ Radares Inteligentes: Monitoramento de Tráfego e Infrações (Smart Cities) 
+                              
+                              4. 🐾 Petshop Arca de Noé: Gestão Clínica Veterinária 
+                              
+                              5. 💼 GBS - O Futuro do Trabalho: Análise de Pesquisas e Habilidades Futuras 
+
+TECNOLOGIAS: Oracle Data Modeler (DMD), SQL Developer, Star Schema, StarUML, DrawIo.
+
+
+Aprendi na disciplina de Data Warehousing, a desenvolver soluções analíticas completas para cinco cenários de negócios distintos, desde Smart Cities, Varejo e Saúde.
+
+Utilizando o Oracle Data Modeler e SQL, nosso grupo modelou a arquitetura de dados para: 
+
+                              🔹 Dublin Burger: Análise de vendas e fidelidade. 
+                              
+                              🔹 FiveStar Cinemas: Métricas de bilheteria e exibição. 
+                              
+                              🔹 Radares Inteligentes: Monitoramento de tráfego e condições climáticas. 
+                              
+                              🔹 Arca de Noé: KPIs clínicos veterinários. 
+                              
+                              🔹 GBS Future of Work: Insights sobre tendências e habilidades profissionais.
+
+**Abaixo, destaco as principais competências técnicas consolidadas neste portfólio:**
+
+                              ✅ 1) Fundamentos de Modelagem Dimensional Aplicação prática da modelagem analítica padrão Star Schema, garantindo performance e integridade. Foco total em boas práticas de padronização de nomenclaturas e estruturação de entidades para suportar grandes volumes de dados.
+                              
+                              ✅ 2) Projeto Prático de Star Schema Atuação ponta a ponta na definição de Tabelas Fato (métricas de negócio) e Dimensões (contextos de análise), como a criação de Dimensões de Tempo, Localidade e Perfis de Clientes/Participantes.
+
+                              ✅ 3) Relacionamentos em Esquemas em Estrela Implementação de relacionamentos estratégicos para responder a perguntas de negócio complexas. Otimizamos os modelos para consultas de alto desempenho, essenciais para ambientes de Business Intelligence (BI).
+                              
+                              ✅ 4) Domínio dos Elementos Dimensionais Entendimento profundo da anatomia de um Data Warehouse
+
+
+                                        Fatos: Transações como Vendas , Tráfego e Avaliações.
+                                        
+                                        Dimensões & Hierarquias: Estruturação de atributos para "fatiar e picar" (slice and dice) os dados.
+                                        
+                                        Naming Conventions: Uso rigoroso de padrões para garantir a manutenibilidade e clareza do modelo.
+                                       
+                                        Manipulaçãod e arquivos Dmd e Dml, conversão do tipo lógico para o relacional, notações de Barker, notações de Bachman e notações de engenharia
+
+                                        Arquivo cria e apaga, Bus_matriz, Arquivo de inserts, Views, Estrutura de dados do projeto.
+
+                                        
+                                        Pronto para os próximos desafios em Engenharia e Análise de Dados! 📊💡
+                                        
+                                        #DataWarehouse #BusinessIntelligence #StarSchema #DataModeling #Oracle #SQL #DataAnalytics #Portfolio #FIAP
