@@ -1,0 +1,22 @@
+🌈 PORTFÓLIO DE DATA WAREHOUSING & BUSINESS INTELLIGENCE
+🎓 2º Semestre - FIAP 2025
+
+Bem-vindo ao nosso laboratório de dados! Abaixo, apresentamos o Projeto de Modelagem Dimensional (Star Schema) desenvolvidos para transformar dados brutos em inteligência de negócio.
+
+_______________________________________________________________________________________________________________________________________________________________________________________
+
+🏎️ 3. RADARES INTELIGENTES (SMART CITIES)
+
+      🎯 O Desafio:** Aumentar a segurança viária monitorando tráfego e infrações.
+      
+            O que modelamos:** Um cenário de **Internet das Coisas (IoT)**. Correlacionamos infrações de trânsito com fatores externos.
+
+            A "Mágica" do Modelo:
+
+                  * 🌧️ Dimensão Clima: Temperatura, Umidade e Condições (Chuva/Sol) no momento da infração.
+                  * 🛣️ Dimensão Pista: Estado de conservação da via.
+                  * 📸 Dimensão Radar: Fabricante, Modelo e Data de Manutenção do equipamento.
+
+Tabela Fato: `TB_FATO_TRAFEGO`
+
+_______________________________________________________________________________________________________________________________________________________________________________________
