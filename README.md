@@ -18,6 +18,16 @@ O projeto está organizado conforme a estrutura técnica exigida, contendo:
 * `PDF`: Documentação dos modelos Lógicos e Relacionais.
 * `SQL`: Scripts de DDL (Criação) e DML (Inserts).
 
+| Pasta | Case |
+|---|---|
+| [`Projeto_DW_DBURGER`](Projeto_DW_DBURGER) | Dublin Burger |
+| [`Proj_final_FiveStarCinemas`](Proj_final_FiveStarCinemas) | FiveStar Cinemas |
+| [`Proj_Final_Radares_Inteligentes`](Proj_Final_Radares_Inteligentes) | Radares Inteligentes |
+| [`Proj_final_Projeto_Arca_Nóe`](Proj_final_Projeto_Arca_N%C3%B3e) | Arca de Noé |
+| [`Proj_final_GBS_Future_of_Work`](Proj_final_GBS_Future_of_Work) | GBS (Future of Work) |
+
+Em cada case, os scripts `CRIA` criam as tabelas e os scripts `DROP_TABELAS` as removem, ambos gerados pelo Oracle SQL Developer Data Modeler.
+
 ---
 
 ## 🚀 Resumo dos Projetos
